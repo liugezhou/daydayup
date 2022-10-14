@@ -1,0 +1,24 @@
+name: Build and Deploy
+# 在main分支发生push事件时触发。
+on:
+  push:
+    branches:
+      - main
+env: # 设置环境变量
+  TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用时区时间）
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        TARGET_REPO: liugezhou/frontend-docs
+        TARGET_BRANCH: gh-pages
+        BUILD_SCRIPT: npm install && npm run  build
+        BUILD_DIR: docs/.vuepress/dist
+        # CNAME: https://www.xxx.com

@@ -1,0 +1,15 @@
+{
+  "name": "frontend-docs",
+  "version": "1.0.0",
+  "description": "frontend notes",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
