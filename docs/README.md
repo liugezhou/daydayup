@@ -13,4 +13,4 @@ features:
 ::: slot footer
 MIT Licensed | Copyright © 2022-present [liugezhou](https://github.com/liugezhou)
 :::
-<!-- <comment/> -->
+<comment/>
