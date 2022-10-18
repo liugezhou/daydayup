@@ -2,10 +2,20 @@ module.exports = {
   title: '今日前端',
   description: '',
   base: '',
-  // TODO 百度统计
   head: [
     [
-     
+      'script',
+      {},
+      `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4ef6dc604509807e9702b3851e114a74";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
+      `,
     ],
   ],
   themeConfig: {
@@ -34,11 +44,41 @@ module.exports = {
         '32',
         '33',
       ],
-      '/daily/': ['today', '202210','202209'],
+      '/daily/': [
+        {
+          title: '2022年10月',
+          collapsable: true,
+          children: [
+            'day17',
+            'day16',
+            'day15',
+            'day14',
+            'day13',
+            'day12',
+            'day11',
+          ],
+        },
+        {
+          title: '2022年9月',
+          collapsable: true,
+          children: [
+            'day10',
+            'day9',
+            'day8',
+            'day7',
+            'day6',
+            'day5',
+            'day4',
+            'day3',
+            'day2',
+            'day1',
+          ],
+        },
+      ],
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '今日前端', link: '/daily/today' },
+      { text: '今日前端', link: '/daily/day17' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
     ],
