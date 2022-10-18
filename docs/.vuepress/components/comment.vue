@@ -12,7 +12,7 @@ export default {
   mounted() {
     let body = document.querySelector('.gitalk-container');
     let script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js';
+    script.src = '/gitalk.min.js';
     body.appendChild(script);
     script.onload = () => {
       const commentConfig = {
