@@ -4,7 +4,7 @@ heroImage: /official.png
 heroText: 今日前端
 tagline: null
 actionText: Go →
-actionLink: /daily/day18
+actionLink: /daily/day19
 features:
 - title: 每日5道前端题
   details: 每日五道前端基础知识
