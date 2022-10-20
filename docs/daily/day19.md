@@ -2,9 +2,9 @@
 title: Day19
 ---
 
-<div align="right" style="color:#512DA8">2022-10-19 星期三</div> 
+<div align="right" style="color:#512DA8">2022-10-20 星期四</div> 
 
-> 
+> 只有有耐心圆满完成简单工作的人，才能轻而易举地完成困难的事。
 
 <p style="color:blue">1. React useState的使用以及注意点 【React】</p>
 <details>
