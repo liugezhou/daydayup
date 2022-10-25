@@ -6,8 +6,10 @@ tagline: null
 actionText: Go →
 actionLink: /daily/day21
 features:
-- title: 每日5道前端题
+- title: 今日前端
   details: 每日五道前端基础知识
+- title: Github说明书
+  details: Github上一些feature说明总结
 ---
 
 ::: slot footer

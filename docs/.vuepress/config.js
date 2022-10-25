@@ -24,6 +24,7 @@ module.exports = {
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',
     sidebar: {
+      // '/github/': ['before', 'settings'],
       '/web/': [
         'before',
         '00',
@@ -83,6 +84,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '今日前端', link: '/daily/day21' },
+      // { text: 'Github说明书', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
     ],

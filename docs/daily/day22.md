@@ -22,16 +22,27 @@ title: Day22
 </details>
 
 <hr/>
-<p style="color:blue">2.  </p>
+<p style="color:blue">2. CSS如何使文本以大写字母开头 【CSS】 </p>
 <details>
 <summary><b>参考答案</b></summary>
+
+```css
+p{
+  text-transform:capitalize;
+}
+```
+```html
+<p>my name is liugezhou </p>
+<!-- covert to : My Name Is Liugezhou -->
+```
 
 </details>
 
 <hr/>
-<p style="color:blue">3. </p>
+<p style="color:blue">3. QUIC协议是什么？ 【HTTP】 </p>
 <details>
 <summary><b>参考答案</b></summary>
+
 
 </details>
 
