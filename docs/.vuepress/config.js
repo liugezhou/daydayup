@@ -19,7 +19,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
-    logo: '/time.png',
+    logo: '/favicon.ico',
     displayAllHeaders: true,
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',

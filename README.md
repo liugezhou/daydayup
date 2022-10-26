@@ -13,8 +13,9 @@
 于每个工作日随机发布。
 
 ## 快速入口
-公众号-菜单栏-今日前端
-<image src="https://cdn.staticaly.com/gh/liugezhou/image@master/common/Wakaka.webp" style="width:50%"></image >
+
+**<i>公众号-菜单栏-今日前端</i>**
+<image src="https://cdn.staticaly.com/gh/liugezhou/image@master/common/Wakaka_.webp" style="width:50%"></image >
 
 ## 项目搭建全流程
 1. mkdir frontend-docs
