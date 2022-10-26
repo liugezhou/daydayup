@@ -2,15 +2,16 @@
 title: Day23
 ---
 
-<div align="right" style="color:#512DA8">2022-10-27 星期四</div> 
+<div align="right" style="color:#512DA8">2022-10-27 星期四</div>
 
-> 
+>
 
 <p style="color:blue">1. Vue如何监听Vuex的变化  【Vue】</p>
 <details>
 <summary><b>参考答案</b></summary>
 
-1. 通过watch方法监听    
+1. 通过 watch 方法监听
+
 ```JavaScript
 const app = createApp({
     watch: {
@@ -20,7 +21,9 @@ const app = createApp({
     }
 })
 ```
-2. 使用vuex提供的API：`store.subscribe()`
+
+2. 使用 vuex 提供的 API：`store.subscribe()`
+
 ```JavaScript
 store.subscribe((mutation, state) => {
     if (mutation.type === 'add') {
@@ -30,8 +33,9 @@ store.subscribe((mutation, state) => {
 ```
 
 总结：
-- watch方式简单好用，且能获取变化前后值，首选； 
-- subscribe方法会被所有commit行为触发，因此还需要判断mutation.type，用起来略繁琐，一般用于vuex插件中。
+
+- watch 方式简单好用，且能获取变化前后值，首选；
+- subscribe 方法会被所有 commit 行为触发，因此还需要判断 mutation.type，用起来略繁琐，一般用于 vuex 插件中。
 
 </details>
 
@@ -39,6 +43,7 @@ store.subscribe((mutation, state) => {
 <p style="color:blue">2.  </p>
 <details>
 <summary><b>参考答案</b></summary>
+
 
 </details>
 
@@ -62,7 +67,6 @@ store.subscribe((mutation, state) => {
 
 <details>
 <summary><b>参考答案</b></summary>
-
 
 </details>
 
