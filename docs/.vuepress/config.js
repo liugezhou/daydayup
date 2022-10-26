@@ -50,6 +50,7 @@ module.exports = {
           title: '2022年10月',
           collapsable: true,
           children: [
+            'day22',
             'day21',
             'day20',
             'day19',
@@ -83,7 +84,7 @@ module.exports = {
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '今日前端', link: '/daily/day21' },
+      { text: '今日前端', link: '/daily/day22' },
       // { text: 'Github说明书', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
