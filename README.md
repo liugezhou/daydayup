@@ -91,5 +91,9 @@ jobs:
 - [x] 将之前的[链接](https://blog.liugezhou.online/frontend-docs/everyday/today.html)做一个重定向或者固定页面 
 - [x] 添加Github Issue的评论  
 - [x] UI设计排版等  
-- [x] 新域名的百度统计  
+- [x] 新域名的百度统计 
+
+## Contributer
+- liugezhou
+- aliya
 
