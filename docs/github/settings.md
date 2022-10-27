@@ -65,4 +65,15 @@ title: Settings
 | Current plan     | 个人账单设置、可以升级付费,Pro 版本的售价为 $4,主要比免费版多出的功能是关于私有仓库的。 |
 | GitHub Copilot   | $10/month 代码助手                                                                      |
 | Usage this month | 🤔 本月使用量的一些内容                                                                 |
-|
+| Github Sponsors  | 捐助                                                                                    |
+
+## Email
+Email的添加、设置主邮件、备份邮件、邮件地址私密隐藏、邮件订阅列表等功能。
+
+## Password and authentication
+密码修改、双重认证、设备登录记录
+
+## SSH and GPG keys
+- SSH添加后代码提交使用git方式不用验证密码。  
+- 🤔 GPG设置、使用流程暂未体验
+- 🤔 Vigilant mode

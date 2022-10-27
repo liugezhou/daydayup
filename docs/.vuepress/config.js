@@ -17,13 +17,13 @@ module.exports = {
       </script>
       `,
     ],
-    [
-      'script', // js 文件
-      {
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958',
-        crossorigin: 'anonymous',
-      },
-    ],
+    // [
+    //   'script', // js 文件
+    //   {
+    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958',
+    //     crossorigin: 'anonymous',
+    //   },
+    // ],
   ],
   themeConfig: {
     logo: '/favicon.ico',
@@ -31,7 +31,7 @@ module.exports = {
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',
     sidebar: {
-      // '/github/': ['before', 'settings'],
+      '/github/': ['before', 'settings'],
       '/web/': [
         'before',
         '00',

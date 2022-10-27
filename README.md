@@ -15,7 +15,7 @@
 ## 快速入口
 
 **<i>公众号[Wakaka]-菜单栏-今日前端</i>**
-<image src="https://cdn.staticaly.com/gh/liugezhou/image@master/common/Wakaka_.webp" style="width:50%"></image >
+<image src="https://cdn.staticaly.com/gh/liugezhou/image@master/common/wakaka.webp" style="width:50%"></image >
 
 ## 项目搭建全流程
 1. mkdir frontend-docs
