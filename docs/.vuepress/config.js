@@ -92,7 +92,7 @@ module.exports = {
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '今日前端', link: '/daily/day2' },
+      { text: '今日前端', link: '/daily/day23' },
       // { text: 'Github说明书', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
