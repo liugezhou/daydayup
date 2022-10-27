@@ -18,10 +18,11 @@ module.exports = {
       `,
     ],
     [
-      `
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958"
-     crossorigin="anonymous"></script>
-      `,
+      'script', // js 文件
+      {
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958',
+        crossorigin: 'anonymous',
+      },
     ],
   ],
   themeConfig: {
@@ -30,7 +31,7 @@ module.exports = {
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',
     sidebar: {
-      '/github/': ['before', 'settings'],
+      // '/github/': ['before', 'settings'],
       '/web/': [
         'before',
         '00',
@@ -91,7 +92,7 @@ module.exports = {
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '今日前端', link: '/daily/day23' },
+      { text: '今日前端', link: '/daily/day2' },
       // { text: 'Github说明书', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
