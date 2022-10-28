@@ -2,6 +2,16 @@ module.exports = {
   title: '今日前端',
   description: '',
   base: '',
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        dateOptions:{
+          hour12: false,
+        }
+      },
+    ]
+  ],
   head: [
     [
       'script',
@@ -94,7 +104,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '今日前端', link: '/daily/day24' },
-      // { text: 'Github说明书', link: '/github/before' },
+      { text: 'Github网站食用', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
     ],

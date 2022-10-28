@@ -80,7 +80,56 @@ Email的添加、设置主邮件、备份邮件、邮件地址私密隐藏、邮
 
 ## Organizations
 - New organization: 创建组织、可以对组织进行一系列的设置
-- Transform account: 将账户转为组织
+- Transform account: 将账户转为组织,用户自动注销
 
+## Moderation
+- Blocked users: 拉黑用户的设置
+- Interaction limits:🤔 互动设置
+- Code review limits:🤔 代码检查限制
 
+## Repository
+- Repository default branch:设置你的项目主分支,默认是main,如果还对主分支是master有要求,可以在这里设置。 
+- Repositories: 罗列出了你的所有仓库,以及最近删除的仓库,在一段时间内你所删除的仓库可以恢复至私有项目，恢复后可再做公开操作。
 
+## Codespaces
+- Dotfiles:🤔 代码空间可以自动将点文件安装到您创建的每个代码空间中。  
+- Codespaces secrets: 生成新的secret以及已生成的列表,可选择在多个仓库使用，🤔暂未使用过
+- GPG verification: 从以下存储库创建的代码空间可以具有GPG功能并对提交进行签名，以便GitHub可以验证它们来自可信的源。仅为您信任的存储库启用此功能 
+- TODO: 剩下的内容在了解完 Codespaces功能后再补充
+
+## Packages
+这些是以前已删除的属于您的包。您可以恢复在过去30天内删除的包。
+
+## Github Copilot
+GitHub Copilot 编码时提供自动完成风格的建议，有60天的免费试用。
+
+## Pages
+TODO: 🤔待设置后补充
+
+## Saved replies
+保存回复用作可重用的文本片段，可以在 GitHub 的评论中使用。如果经常输入类似的回复，保存的回复可以节省时间。  
+使用保存的回复在评论栏的最后一侧(TODO:添加图片说明)
+
+## Code security and analysis
+🤔 安全和分析功能有助于保持存储库的安全和更新。通过启用这些功能，您将授予我们对存储库执行只读分析的权限。
+
+## Applications
+- Installed Github Apps: 安装的工作流(worrflows)的一些第三方开源工具，比如Travis CI、Imgbot等。   
+- Authorized Github Apps: 授权的一些Github Apps
+- Authorized OAuth Apps: 通过这个列表可以看到使用Github账号在哪些第三方网站登录过(一般是网站的评论、注册功能)
+
+## Scheduled reminders
+🤔 管理团队的预定提醒,与团队有关的题型设置。
+
+## Security log
+这里展示的是账户的一些安全操作日志
+
+## Sponsorship log
+这里展示的是捐助的日志列表。
+
+## Developer settings
+- Github Apps:如果想要构建与GitHub集成并扩展的东西，可以注册一个新的GitHub应用程序，开始在GitHubAPI上开发。还可以在Github提供的开发者文档中阅读更多关于构建GitHub应用程序的信息。 
+- OAuth Apps: 目前使用比较多的是网站的评论功能,创建了一个新的 OAuth App后会得到了相应的 Client ID 和 Client Secret,然后进行相应配置。 
+- Personal access tokens
+  - Fine-grained tokens:目前是beta版，与原始的token相比，颗粒度更小、更专注。
+  - Tokens(classic):tokens设置给予所有仓库权限,每次生成后只会出现一次,在项目部署等中有用，TODO:具体实例待补充

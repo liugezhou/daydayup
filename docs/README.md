@@ -8,10 +8,10 @@ actionLink: /daily/day24
 features:
 - title: 今日前端
   details: 每日五道前端基础知识
+- title: Github网站食用
+  details: 开始写作中......
 - title: 前端脚手架
   details: 细致入微的前端脚手架总结
-- title: Github说明书
-  details: 规划中...
 ---
 ## 快速入口
 
@@ -26,6 +26,10 @@ features:
 这个契机就是每天不断的一个一个小知识点的累积。  
 
 ## 今日前端
+每天随机5道前端知识点,包含但不限于`JavaScript`、`HTML`、`CSS`、`Vue`、`React`、`Browser`、`编程概念`等。   
+于每个工作日随机发布。
+
+## Github网站食用
 每天随机5道前端知识点,包含但不限于`JavaScript`、`HTML`、`CSS`、`Vue`、`React`、`Browser`、`编程概念`等。   
 于每个工作日随机发布。
 
