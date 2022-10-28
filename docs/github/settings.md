@@ -77,3 +77,10 @@ Email的添加、设置主邮件、备份邮件、邮件地址私密隐藏、邮
 - SSH添加后代码提交使用git方式不用验证密码。  
 - 🤔 GPG设置、使用流程暂未体验
 - 🤔 Vigilant mode
+
+## Organizations
+- New organization: 创建组织、可以对组织进行一系列的设置
+- Transform account: 将账户转为组织
+
+
+

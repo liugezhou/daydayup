@@ -17,13 +17,13 @@ module.exports = {
       </script>
       `,
     ],
-    // [
-    //   'script', // js 文件
-    //   {
-    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958',
-    //     crossorigin: 'anonymous',
-    //   },
-    // ],
+    [
+      'script', // js 文件
+      {
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958',
+        crossorigin: 'anonymous',
+      },
+    ],
   ],
   themeConfig: {
     logo: '/favicon.ico',
