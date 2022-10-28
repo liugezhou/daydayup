@@ -2,7 +2,7 @@
 title: Day24
 ---
 
-<div align="right" style="color:#512DA8"></div>
+<div align="right" style="color:#512DA8">2022-10-28 星期五</div>
 
 > 你日渐平庸，甘于平庸，将继续平庸。
 
