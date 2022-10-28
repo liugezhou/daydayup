@@ -2,7 +2,7 @@
 title: Day23
 ---
 
-<div align="right" style="color:#512DA8">2022-10-27 星期四</div>
+<div align="right" style="color:#512DA8"></div>
 
 >
 
