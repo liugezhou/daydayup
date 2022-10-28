@@ -36,7 +36,7 @@ const App = ({
 | ------------------------------------------- | ---------------------------------------- |
 | Object.keys(obj)                            | 返回对象自身的所有可遍历属性             |
 | for(let v of Object.values(obj)){}          | 配合 for...of 使用，遍历对象的值         |
-| for(let [k,v] of Object.values(obj)){}      | 配合 for...of 使用，遍历键值对           |
+| for(let [k,v] of Object.entries(obj)){}      | 配合 for...of 使用，遍历键值对           |
 | Object.getOwnPropertyNames(obj)             | 返回对象自身的所有属性(包括不可遍历的)   |
 | Object.getOwnPropertyDescriptors(obj)       | 返回该对象所有属性的描述对象             |
 | Object.getOwnPropertyDescriptor(obj,'name') | 返回该对象'name'属性的描述对象           |
