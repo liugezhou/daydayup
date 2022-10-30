@@ -10,7 +10,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案每晚六点补充
+欢迎评论，答案今晚六点下班补充
 
 </details>
 
@@ -19,7 +19,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案每晚六点补充
+欢迎评论，答案今晚六点下班补充
 
 </details>
 
@@ -28,7 +28,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案每晚六点补充
+欢迎评论，答案今晚六点下班补充
 
 </details>
 
@@ -38,7 +38,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案每晚六点补充
+欢迎评论，答案今晚六点下班补充
 
 </details>
 
@@ -48,7 +48,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案每晚六点补充
+欢迎评论，答案今晚六点下班补充
 
 </details>
 

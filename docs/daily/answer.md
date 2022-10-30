@@ -21,7 +21,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-晚上补充啊
+https://github.com/febobo/web-interview/issues/19
 
 </details>
 
@@ -30,7 +30,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-晚上补充啊
+https://github.com/febobo/web-interview/issues/81
 
 </details>
 
@@ -40,7 +40,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-晚上补充啊
+https://github.com/febobo/web-interview/issues/84
 
 </details>
 
@@ -50,7 +50,7 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-每晚补充
+https://github.com/febobo/web-interview/issues/155
 
 </details>
 

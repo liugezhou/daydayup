@@ -86,14 +86,12 @@ jobs:
         BUILD_DIR: docs/.vuepress/dist
         # CNAME: https://www.xxx.com
 ```
-## TODO 
+## TODO ｜ Plan
 - [x] 添加CNAME更换域名为 https://day.liugezhou.online
 - [x] 将之前的[链接](https://blog.liugezhou.online/frontend-docs/everyday/today.html)做一个重定向或者固定页面 
 - [x] 添加Github Issue的评论  
 - [x] UI设计排版等  
 - [x] 新域名的百度统计 
-
-## Contributer
-- liugezhou
-- aliya
+- [ ] 头一天晚上出题、第二天晚上补充答案
+- [ ] 
 
