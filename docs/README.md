@@ -4,11 +4,11 @@ heroImage: /official.png
 tagline: null
 heroText: 今日前端
 actionText: Go →
-actionLink: /daily/day24
+actionLink: /daily/day25
 features:
 - title: 今日前端
-  details: 每日五道前端基础知识
-- title: Github网站食用
+  details: 工作日五道前端基础知识
+- title: Github网站使用说明书
   details: 开始写作中......
 - title: 前端脚手架
   details: 细致入微的前端脚手架总结
@@ -30,8 +30,9 @@ features:
 于每个工作日随机发布。
 
 ## Github网站食用
-每天随机5道前端知识点,包含但不限于`JavaScript`、`HTML`、`CSS`、`Vue`、`React`、`Browser`、`编程概念`等。   
-于每个工作日随机发布。
+Github网站功能记录。    
+争取写成Github网站使用说明书
+
 
 ## 前端脚手架
 记录在慕课网看的《Web架构工程师》课程关于脚手架的章节细节记录。

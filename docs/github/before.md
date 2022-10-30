@@ -1,6 +1,6 @@
 ---
 title: 关于
-description: Github网站说明书
+description: Github网站使用说明书
 ---
 
 我在食用Github的时候，总是有一些feature闹不清，朦朦胧胧磕磕绊绊。   

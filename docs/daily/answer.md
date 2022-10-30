@@ -10,7 +10,9 @@ title: Day25
 <details>
 <summary><b>参考答案</b></summary>
 
-晚上补充
+- vue2中组件确实只能有一个根，但vue3中组件已经可以多根节点了。
+- 之所以需要这样是因为vdom是一颗单根树形结构，patch方法在遍历的时候从根节点开始遍历，它要求只有一个根节点。组件也会转换为一个vdom，自然应该满足这个要求。
+- vue3中之所以可以写多个根节点，是因为引入了`Fragment`的概念，这是一个抽象的节点，如果发现组件是多根的，就创建一个`Fragment`节点，把多个根节点作为它的children。将来patch的时候，如果发现是一个`Fragment`节点，则直接遍历children创建或更新。
 
 </details>
 
