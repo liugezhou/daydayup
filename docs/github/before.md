@@ -9,16 +9,18 @@ description: Github网站使用说明书
 
 当前刚刚开始，且记录内容在我的理解范围内，因此免不得内容较粗犷。  
 
-接下来我会继续更新，优化细节、添加图片、具体实现的demo示例。    
+接下来我会空闲时间持续更新完善，优化细节，添加图片，具体实现的demo示例等。    
 
-最后,特别希望有对Github细节感兴趣的道友们，一同加入，提意见、奉献你的爱心 💗 。 
+欢迎对Github感兴趣的道友们，一同加入，提意见、奉献你的爱心 💗 。 
 
 
-你的一个评论、一个star对于我来说：<b>让我知道我还活着。</b>
 
 ### 目录
 
  - [Settings](./settings.md)
+ - [alerts](./alerts.md)
+ - [codespaces](./codespaces.md)
+ - [packages](./packages.md)
 
 
  <comment/>

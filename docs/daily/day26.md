@@ -10,22 +10,21 @@ title: Day26
 <details>
 <summary><b>参考答案</b></summary>
 
-- document.getElementsByClassName()方法返回一个**类似数组的对象**，包含了所有class名字符合指定条件的元素。
-- document.getElementById()方法返回匹配指定id属性的**元素节点**。如果没有发现匹配的节点，则返回null。
+参考答案今晚六点下班前补充
 
 </details> 
 
 <hr/>
-<p style="color:blue">2. offsetWidth与offsetHeight的属性含义 【DOM】 </p>
+<p style="color:blue">2. 复习:offsetWidth、offsetHeight、offsetLeft、offsetTop属性的含义 【DOM】 </p>
 <details>
 <summary><b>参考答案</b></summary>
 
-- offsetWidth的含义是获取元素的宽度，包括边框(border)和边距(padding)
+参考答案今晚六点下班前补充
 
 </details>
 
 <hr/>
-<<p style="color:blue">3. CSS属性大全 </p>
+<p style="color:blue">3. CSS属性大全 </p>
 <details>
 <summary><b>参考答案</b></summary>
 
@@ -39,7 +38,8 @@ title: Day26
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案今晚六点下班补充
+参考答案今晚六点下班前补充
+
 
 </details>
 
@@ -49,6 +49,8 @@ title: Day26
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案今晚六点下班补充
+参考答案今晚六点下班前补充
 
 </details>
+
+<comment/>

@@ -4,7 +4,7 @@ heroImage: /official.png
 tagline: null
 heroText: 今日前端
 actionText: Go →
-actionLink: /daily/day25
+actionLink: /daily/day26
 features:
 - title: 今日前端
   details: 工作日五道前端基础知识
@@ -31,7 +31,7 @@ features:
 
 ## Github网站食用
 Github网站功能记录。    
-争取写成Github网站使用说明书
+争取沉淀成Github网站使用说明书。
 
 
 ## 前端脚手架

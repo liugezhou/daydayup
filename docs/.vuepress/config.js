@@ -41,7 +41,7 @@ module.exports = {
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',
     sidebar: {
-      '/github/': ['before', 'settings'],
+      '/github/': ['before', 'settings','alerts','codespaces','packages'],
       '/web/': [
         'before',
         '00',
@@ -63,6 +63,13 @@ module.exports = {
         '33',
       ],
       '/daily/': [
+        {
+          title: '2022年11月',
+          collapsable: true,
+          children: [
+            'day26',
+          ],
+        },
         {
           title: '2022年10月',
           collapsable: true,
@@ -104,7 +111,7 @@ module.exports = {
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '今日前端', link: '/daily/day25' },
+      { text: '今日前端', link: '/daily/day26' },
       { text: 'Github网站食用', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
