@@ -10,8 +10,6 @@ title: Day26
 <details>
 <summary><b>参考答案</b></summary>
 
-- document.getElementsByClassName()方法返回一个**类似数组的对象**，包含了所有class名字符合指定条件的元素。
-- document.getElementById()方法返回匹配指定id属性的**元素节点**。如果没有发现匹配的节点，则返回null。
 
 </details> 
 
@@ -20,7 +18,6 @@ title: Day26
 <details>
 <summary><b>参考答案</b></summary>
 
-- offsetWidth的含义是获取元素的宽度，包括边框(border)和边距(padding)
 
 </details>
 
@@ -29,7 +26,7 @@ title: Day26
 <details>
 <summary><b>参考答案</b></summary>
 
-[https://blog.csdn.net/u014424282/article/details/72827709](https://blog.csdn.net/u014424282/article/details/72827709)
+
 
 </details>
 
