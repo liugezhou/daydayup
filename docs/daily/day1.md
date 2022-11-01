@@ -59,6 +59,8 @@ title: Day1
 3. display:flex | inline-block | table-cells
 4. position:absolute | fixed
 
+[https://github.com/febobo/web-interview/issues/99](https://github.com/febobo/web-interview/issues/99)
+
 </p>
 </details>
 

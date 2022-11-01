@@ -10,7 +10,7 @@ title: Settings
 
 进入 settings 后如图所示。
 ![settings_public](https://cdn.staticaly.com/gh/liugezhou/image@master/settings_public.webp)
-
+3
 ### 字段介绍
 
 | 属性                     | 介绍                                                                |

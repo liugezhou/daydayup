@@ -67,6 +67,7 @@ module.exports = {
           title: '2022年11月',
           collapsable: true,
           children: [
+            'day27',
             'day26',
           ],
         },
@@ -111,7 +112,7 @@ module.exports = {
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '今日前端', link: '/daily/day26' },
+      { text: '今日前端', link: '/daily/day27' },
       { text: 'Github网站食用', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },

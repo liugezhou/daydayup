@@ -15,45 +15,44 @@ M:表示这个文件已在远程仓库上了，本地做了修改
 D:表示这个文件在远程仓库上，本地做了删除
 U:表示文件未被追踪，即远方仓库没有，本地也没有提交至暂存区。
 R:表示文件名称做了修改，且本地提交至暂存区
-欢迎评论，答案今晚六点下班补充
 
 </details>
 
 <hr/>
-<p style="color:blue">2.  </p>
+<p style="color:blue">2. 如果要做优化，CSS提高性能的方法有哪些？【CSS】  </p>
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案今晚六点下班补充
+https://github.com/febobo/web-interview/issues/114
 
 </details>
 
 <hr/>
-<p style="color:blue">3.  </p>
+<p style="color:blue">3. TCP为什么需要三次握手和四次挥手？【HTTP】 </p>
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案今晚六点下班补充
+https://github.com/febobo/web-interview/issues/151
 
 </details>
 
 <hr/>
-<p style="color:blue">4. </p>
+<p style="color:blue">4. Node. js 有哪些全局对象？【Node】 </p>
 
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案今晚六点下班补充
+https://github.com/febobo/web-interview/issues/154
 
 </details>
 
 <hr/>
-<p style="color:blue">5. </p>
+<p style="color:blue">5. 如何解决useEffect重复调用问题【React】 </p>
 
 <details>
 <summary><b>参考答案</b></summary>
 
-欢迎评论，答案今晚六点下班补充
+https://juejin.cn/post/6844904117303934989
 
 </details>
 
