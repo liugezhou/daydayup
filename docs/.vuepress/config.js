@@ -37,11 +37,11 @@ module.exports = {
   ],
   themeConfig: {
     logo: '/favicon.ico',
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',
     sidebar: {
-      '/github/': ['before', 'settings','alerts','codespaces','packages'],
+      '/github/': ['before', 'signup','settings','alerts','codespaces','packages'],
       '/web/': [
         'before',
         '00',

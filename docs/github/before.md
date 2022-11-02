@@ -17,6 +17,7 @@ description: Github网站使用说明书
 
 ### 目录
 
+ - [注册](./signup.md)
  - [Settings](./settings.md)
  - [alerts](./alerts.md)
  - [codespaces](./codespaces.md)

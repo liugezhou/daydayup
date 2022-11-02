@@ -1,5 +1,6 @@
 ---
 title: Settings
+search: true
 ---
 
 本章主要记录如图所示的 settings 内的目录配置内容，入口如下。
