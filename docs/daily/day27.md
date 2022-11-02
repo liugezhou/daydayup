@@ -71,7 +71,27 @@ tcp终止一个连接，需要经过四次挥手
 <details>
 <summary><b>参考答案</b></summary>
 
-[详细链接](https://github.com/febobo/web-interview/issues/154）
+ Node.js中的全局对象是 `global`
+
+全局对象分为 真正的全局对象  和 模块级别的全局变量
+
+**真正的全局对象**
+- Class:Buffer ：可以处理二进制以及非Unicode编码的数据
+- process：提供有关当前过程的信息和控制，包括在执行node程序过程中传入的参数
+- console：控制台打印
+- clearInterval、setInterval
+- clearTimeout、setTimeout
+- global：前面的对象全都放在了global中，`process === global.process`
+
+**模块级别的全局对象**
+- __dirname ：获取当前文件所在的路径，不包括文件名
+- __filename ：获取当前文件所在的路径和文件名称
+- exports：module.exports 用于指定一个模块所导出的内容，即可以通过 require() 访问的内容
+- module：对当前模块的引用，通过module.exports 用于指定一个模块所导出的内容，即可以通过 require() 访问的内容
+- require：用于引入模块、 JSON、或本地文件。 可以从 node_modules 引入模块。
+
+
+[详细链接](https://github.com/febobo/web-interview/issues/154)
 
 </details>
 
