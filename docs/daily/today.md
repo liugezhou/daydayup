@@ -1,12 +1,12 @@
 ---
-title: Day25
+title: Day29
 ---
 
-<div align="right" style="color:#512DA8">2022年11月02日 星期三</div>
+<div align="right" style="color:#512DA8">2022年11月08日 星期二</div>
 
->  
+>  在任何环境下，都坚持做自己是很难的，很多时候也是要付出代价的。但回首过去，坚持做自己反而是最大的收获
 
-<p style="color:blue">1. 文件上的git标识 U A M D 都表示什么意思 【Git】</p>
+<p style="color:blue">1.  </p>
 <details>
 <summary><b>参考答案</b></summary>
 
@@ -15,40 +15,36 @@ title: Day25
 </details>
 
 <hr/>
-<p style="color:blue">2. 如果要做优化，CSS提高性能的方法有哪些？【CSS】  </p>
+<p style="color:blue">2.   </p>
 <details>
 <summary><b>参考答案</b></summary>
 
-https://github.com/febobo/web-interview/issues/114
 
 </details>
 
 <hr/>
-<p style="color:blue">3. TCP为什么需要三次握手和四次挥手？【HTTP】 </p>
+<p style="color:blue">3.  </p>
 <details>
 <summary><b>参考答案</b></summary>
 
-https://github.com/febobo/web-interview/issues/151
 
 </details>
 
 <hr/>
-<p style="color:blue">4. Node. js 有哪些全局对象？【Node】 </p>
+<p style="color:blue">4.   </p>
 
 <details>
 <summary><b>参考答案</b></summary>
 
-https://github.com/febobo/web-interview/issues/154
 
 </details>
 
 <hr/>
-<p style="color:blue">5. 如何解决useEffect重复调用问题【React】 </p>
+<p style="color:blue">5. </p>
 
 <details>
 <summary><b>参考答案</b></summary>
 
-https://juejin.cn/post/6844904117303934989
 
 </details>
 

@@ -4,13 +4,14 @@ module.exports = {
   base: '',
   plugins: [
     [
+      '@vuepress/back-to-top',
       '@vuepress/last-updated',
       {
-        dateOptions:{
+        dateOptions: {
           hour12: false,
-        }
+        },
       },
-    ]
+    ],
   ],
   head: [
     [
@@ -41,7 +42,18 @@ module.exports = {
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',
     sidebar: {
-      '/github/': ['before', 'signup','settings','alerts','codespaces','packages'],
+      '/github/': [
+        'before',
+        'signup',
+        'create',
+        {
+          title: '个人设置',
+          children: ['profile', 'settings'],
+        },
+        'alerts',
+        'codespaces',
+        'packages',
+      ],
       '/web/': [
         'before',
         '00',
@@ -66,10 +78,7 @@ module.exports = {
         {
           title: '2022年11月',
           collapsable: true,
-          children: [
-            'day27',
-            'day26',
-          ],
+          children: ['day28','day27', 'day26'],
         },
         {
           title: '2022年10月',
@@ -112,7 +121,7 @@ module.exports = {
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '今日前端', link: '/daily/day27' },
+      { text: '今日前端', link: '/daily/day28' },
       { text: 'Github网站食用', link: '/github/before' },
       { text: '前端脚手架', link: '/web/before' },
       { text: '他的博客', link: 'https://blog.liugezhou.online' },
