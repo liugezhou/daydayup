@@ -48,7 +48,7 @@ module.exports = {
         'create',
         {
           title: '个人设置',
-          children: ['profile', 'settings'],
+          children: ['profile','repositories', 'settings'],
         },
         'alerts',
         'codespaces',
