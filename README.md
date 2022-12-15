@@ -18,6 +18,7 @@
 <image src="https://cdn.staticaly.com/gh/liugezhou/image@master/common/wakaka.webp" style="width:50%"></image >
 
 ## 100天今日前端
+[day30](https://day.liugezhou.online/daily/day30.html) | 
 [day29](https://day.liugezhou.online/daily/day29.html) | 
 [day28](https://day.liugezhou.online/daily/day28.html) | 
 [day27](https://day.liugezhou.online/daily/day27.html) | 

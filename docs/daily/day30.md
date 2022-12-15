@@ -17,7 +17,8 @@ title: Day30
     e.clipboardData.setData('text','覆盖默认复制内容')
   })
 ```
-在浏览网站的时候，如果网页禁止复制，快速的操作方法是，控制台console里面输入:`document.body.contentEditable = true` 即可。
+在浏览网站的时候，如果网页禁止复制，快速的操作方法是:   
+控制台console里面输入:`document.body.contentEditable = true` 即可。
 
 </details>
 
@@ -37,7 +38,8 @@ title: Day30
 
 **识别爬虫**
 服务器可以轻易识别请求来自爬虫
-```
+
+```markdown
 正常浏览器的User-Agent值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0
 使用requests时的默认User-Agent为：python-requests/2.18.4
 scrapy的默认值为：Scrapy/1.5.0 (+https://scrapy.org)
