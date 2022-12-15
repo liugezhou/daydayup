@@ -19,9 +19,10 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
+        CNAME: https://day.liugezhou.online
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: liugezhou/daydayup
         TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: npm install && npm run  build
+        BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: docs/.vuepress/dist
-        CNAME: https://day.liugezhou.online
+       
