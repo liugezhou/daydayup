@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>15-服务端 CI_CD：Github 自动化 | 今日前端</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4ef6dc604509807e9702b3851e114a74";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
+      </script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958" crossorigin="anonymous"></script>
+    <meta name="description" content="服务端 CI_CD：Github 自动化">
+    
+    <link rel="preload" href="/assets/css/0.styles.ab222855.css" as="style"><link rel="preload" href="/assets/js/app.4690e35c.js" as="script"><link rel="preload" href="/assets/js/2.505fbce2.js" as="script"><link rel="preload" href="/assets/js/1.8644e8ec.js" as="script"><link rel="preload" href="/assets/js/72.afe95f75.js" as="script"><link rel="prefetch" href="/assets/js/10.cab30127.js"><link rel="prefetch" href="/assets/js/11.dd4acf6f.js"><link rel="prefetch" href="/assets/js/12.30378d2b.js"><link rel="prefetch" href="/assets/js/13.52db13dd.js"><link rel="prefetch" href="/assets/js/14.b1e55c9a.js"><link rel="prefetch" href="/assets/js/15.397321e8.js"><link rel="prefetch" href="/assets/js/16.41ea9dc0.js"><link rel="prefetch" href="/assets/js/17.ae9bd38c.js"><link rel="prefetch" href="/assets/js/18.7f05db4f.js"><link rel="prefetch" href="/assets/js/19.e7419ed2.js"><link rel="prefetch" href="/assets/js/20.5de11ad9.js"><link rel="prefetch" href="/assets/js/21.d1e22ea1.js"><link rel="prefetch" href="/assets/js/22.72ada26c.js"><link rel="prefetch" href="/assets/js/23.c0a0b2d8.js"><link rel="prefetch" href="/assets/js/24.3e816b8b.js"><link rel="prefetch" href="/assets/js/25.3f733c03.js"><link rel="prefetch" href="/assets/js/26.db25a028.js"><link rel="prefetch" href="/assets/js/27.15ed1846.js"><link rel="prefetch" href="/assets/js/28.208ac68e.js"><link rel="prefetch" href="/assets/js/29.69d9bd33.js"><link rel="prefetch" href="/assets/js/3.7a4ab8e5.js"><link rel="prefetch" href="/assets/js/30.f039addb.js"><link rel="prefetch" href="/assets/js/31.b9fd445b.js"><link rel="prefetch" href="/assets/js/32.899591cb.js"><link rel="prefetch" href="/assets/js/33.f3808942.js"><link rel="prefetch" href="/assets/js/34.1c51bd04.js"><link rel="prefetch" href="/assets/js/35.5dec34de.js"><link rel="prefetch" href="/assets/js/36.08add187.js"><link rel="prefetch" href="/assets/js/37.5feb420b.js"><link rel="prefetch" href="/assets/js/38.afefe479.js"><link rel="prefetch" href="/assets/js/39.c9cdfded.js"><link rel="prefetch" href="/assets/js/4.0aef8d22.js"><link rel="prefetch" href="/assets/js/40.96b04497.js"><link rel="prefetch" href="/assets/js/41.04859dc6.js"><link rel="prefetch" href="/assets/js/42.3881136d.js"><link rel="prefetch" href="/assets/js/43.d142a153.js"><link rel="prefetch" href="/assets/js/44.5cb88048.js"><link rel="prefetch" href="/assets/js/45.3541cd11.js"><link rel="prefetch" href="/assets/js/46.e6c88c3b.js"><link rel="prefetch" href="/assets/js/47.3f992b97.js"><link rel="prefetch" href="/assets/js/48.5996b4fc.js"><link rel="prefetch" href="/assets/js/49.fea4d36b.js"><link rel="prefetch" href="/assets/js/5.baaddd77.js"><link rel="prefetch" href="/assets/js/50.4cd3422c.js"><link rel="prefetch" href="/assets/js/51.228fffda.js"><link rel="prefetch" href="/assets/js/52.92861e6c.js"><link rel="prefetch" href="/assets/js/53.b72d8ce0.js"><link rel="prefetch" href="/assets/js/54.c15c9cdc.js"><link rel="prefetch" href="/assets/js/55.9bc4f52b.js"><link rel="prefetch" href="/assets/js/56.947ab898.js"><link rel="prefetch" href="/assets/js/57.fa37cf58.js"><link rel="prefetch" href="/assets/js/58.d682c2a2.js"><link rel="prefetch" href="/assets/js/59.4499ef43.js"><link rel="prefetch" href="/assets/js/6.f5ab8614.js"><link rel="prefetch" href="/assets/js/60.aa57de27.js"><link rel="prefetch" href="/assets/js/61.5049d857.js"><link rel="prefetch" href="/assets/js/62.ec9a8087.js"><link rel="prefetch" href="/assets/js/63.38b9610d.js"><link rel="prefetch" href="/assets/js/64.0034d3be.js"><link rel="prefetch" href="/assets/js/65.5a44c8b1.js"><link rel="prefetch" href="/assets/js/66.ad0a55cb.js"><link rel="prefetch" href="/assets/js/67.ab2beac7.js"><link rel="prefetch" href="/assets/js/68.fa3c4346.js"><link rel="prefetch" href="/assets/js/69.4c304a67.js"><link rel="prefetch" href="/assets/js/7.62e43543.js"><link rel="prefetch" href="/assets/js/70.9965b915.js"><link rel="prefetch" href="/assets/js/71.f5f8e219.js"><link rel="prefetch" href="/assets/js/73.55da3950.js"><link rel="prefetch" href="/assets/js/74.860ada40.js"><link rel="prefetch" href="/assets/js/75.66a003ea.js"><link rel="prefetch" href="/assets/js/76.886902cd.js"><link rel="prefetch" href="/assets/js/77.680b69b8.js"><link rel="prefetch" href="/assets/js/78.6440c559.js"><link rel="prefetch" href="/assets/js/79.4f3af818.js"><link rel="prefetch" href="/assets/js/80.b04f59cc.js"><link rel="prefetch" href="/assets/js/81.d4c4e4b3.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.03d43e08.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab222855.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.ico" alt="今日前端" class="logo"> <span class="site-name can-hide">今日前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/daily/day30.html" class="nav-link">
+  今日前端
+</a></div><div class="nav-item"><a href="/github/before.html" class="nav-link">
+  Github网站食用
+</a></div><div class="nav-item"><a href="/web/before.html" class="nav-link">
+  前端脚手架
+</a></div><div class="nav-item"><a href="https://blog.liugezhou.online" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  他的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/liugezhou/daydayup" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/daily/day30.html" class="nav-link">
+  今日前端
+</a></div><div class="nav-item"><a href="/github/before.html" class="nav-link">
+  Github网站食用
+</a></div><div class="nav-item"><a href="/web/before.html" class="nav-link">
+  前端脚手架
+</a></div><div class="nav-item"><a href="https://blog.liugezhou.online" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  他的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/liugezhou/daydayup" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/web/before.html" class="sidebar-link">关于</a></li><li><a href="/web/00.html" class="sidebar-link">00-整体架构设计文档范本V0.1</a></li><li><a href="/web/01.html" class="sidebar-link">01-需求分析与架构设计</a></li><li><a href="/web/02.html" class="sidebar-link">02-脚手架架构设计和框架搭建</a></li><li><a href="/web/03.html" class="sidebar-link">03-脚手架核心流程开发</a></li><li><a href="/web/04.html" class="sidebar-link">04-脚手架命令注册和执行过程开发</a></li><li><a href="/web/05.html" class="sidebar-link">05-脚手架创建项目流程设计和开发</a></li><li><a href="/web/06.html" class="sidebar-link">06-脚手架项目和组件初始化开发</a></li><li><a href="/web/14.html" class="sidebar-link">14-服务端选型：磨刀不如砍柴功</a></li><li><a href="/web/15.html" aria-current="page" class="active sidebar-link">15-服务端 CI_CD：Github 自动化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/15.html#第一章-周介绍" class="sidebar-link">第一章：周介绍</a></li><li class="sidebar-sub-header"><a href="/web/15.html#第二章-github-actions" class="sidebar-link">第二章 Github actions</a></li><li class="sidebar-sub-header"><a href="/web/15.html#第三章-docker" class="sidebar-link">第三章 Docker</a></li><li class="sidebar-sub-header"><a href="/web/15.html#第四章-docker-compose" class="sidebar-link">第四章 Docker-compose</a></li><li class="sidebar-sub-header"><a href="/web/15.html#第五章-发布到测试机" class="sidebar-link">第五章 发布到测试机</a></li></ul></li><li><a href="/web/16.html" class="sidebar-link">16-编辑器服务端API开发</a></li><li><a href="/web/17.html" class="sidebar-link">17-编辑器服务端调用第三方服务</a></li><li><a href="/web/28.html" class="sidebar-link">28-脚手架发布模块架构设计和核心流程开发</a></li><li><a href="/web/29.html" class="sidebar-link">29-脚手架发布模式git自动化流程开发</a></li><li><a href="/web/30.html" class="sidebar-link">30-脚手架发布模块云构建系统开发</a></li><li><a href="/web/31.html" class="sidebar-link">31-脚手架发布模块云发布功能开发</a></li><li><a href="/web/32.html" class="sidebar-link">32-脚手架组件发布功能开发</a></li><li><a href="/web/33.html" class="sidebar-link">33-组件平台开发</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="第一章-周介绍"><a href="#第一章-周介绍" class="header-anchor">#</a> 第一章：周介绍</h2> <p><strong>1-1 介绍</strong></p> <p>服务端 CI/CD流程--让 github 自动化为我们服务<br>
+CI:    Continuous Integration  持续集成<br>
+CD:   Continuous Delivery     持续交付<br>
+合理全面的 CI/CD，自动化研发流程，提高研发效率，增加系统稳定性</p> <p><strong>收获</strong></p> <ul><li>使用 Github actions 进行 CI/CD</li> <li>学会 Docker 在 nodejs 中的应用</li> <li>搭建测试环境</li></ul> <p>关键词</p> <ul><li>CI/CD</li> <li>Github actions：实现 CI/CD 的一个工具</li> <li>Docker Docker-compose</li></ul> <p>链接：<a href="https://www.redhat.com/zh/topics/devops/what-is-ci-cd" target="_blank" rel="noopener noreferrer">CI/CD 介绍<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="第二章-github-actions"><a href="#第二章-github-actions" class="header-anchor">#</a> 第二章 Github actions</h2> <p>这一章讲的真的不知道讲了个啥，自己课下补吧，真是一塌糊涂。<br>
+github actions 的学习确实很有必要啊，回头等学习完毕再来吐槽。<br>
+学习阮一峰大哥的这节文档：http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html</p> <p><strong>第二遍视频笔记记录如下</strong> <strong>2-1 章介绍</strong></p> <ul><li>Github actions 是github 官方发布的一个产品 。</li> <li>使用 Github actions 自动化构建和测试</li> <li>认识 Github actions</li> <li>注意：接口测试会依赖于测试机搭建。</li> <li>二八法则。</li> <li>疑问：为了主流程跑通，不让边角东西打扰我们主流程，难道不注释掉那些代码就不能演示吗？后面再接上，这里的我要搞明白为什么在讲课代码演示的时候，是否为了讲师自己方便注释划水讲课。</li> <li>疑问二：既然不是讲 Github actions 和 Docker 的一门课，又为什么抽出一周的时间来划水(老师的答案可能是后面确实是用到这个知识了，有必要了解一下，那我的疑问又来了，既然用到了，又讲到了，那肯定默认这部分内容是很重要的，作为一门架构课，是不是应该认真对待每一周每一节课的录制，即使不那么深入，起码基础的内容得讲明白，这是必须的吧)</li> <li>疑问三：课程是以业务为导向，不可能把全部细节都讲出来，这个无可厚非，没有毛病，那你好歹把基础的大路边的内容，起码普及个差不多吧。</li> <li>疑问四：这节章介绍内容，你讲解那么多二八法则是干嘛？讲解什么边际效应，是为了后续课程划水先找借口吗？</li></ul> <p><strong>2-2 认识 Github actions</strong></p> <ul><li>00:00-01:00：由于中美时差造成的 Github 不稳定问题。</li> <li>01:00-01:50：讲解了githu被微软收购，变得更好些，有了私有化个人项目，对中小企业越来越友好</li> <li>01:50-02:10:讲解了课程为什么代码不公开的原因是一些数据的线上原因，此事说过好几遍，
+<ul><li>(疑问:有敏感数据，代码公开直接将重要数据脱敏这个方案是否可行？又是否因为写代码的课程录制繁琐而不公开仓库)</li></ul></li> <li>02:10-04:15: 链接一介绍：进入一个项目，讲解如何查找 actions，以及 actions 下面的页面展示，得出的结论：帮助你在项目根目录下新建.github/workflow/xxx.yml 文件。</li> <li>04:16-06:20:链接二介绍，官方翻译版本，挑选了 node.js 发布中的命令 npm install,npm publish，以及 secrets 的点名。</li> <li>06:20-07：00 :拿出代码，介绍有这个文件，然后我们介绍这个文件前，先去看应用场景。</li> <li>07:00-08:50:应用场景、范围介绍，打开开源的项目，介绍有三个文件名 yml，test.yml 对应master 分支，自动化测试，dev 分支即deploy-dev.yml--自动部署到测试机，v.x.x.x格式的 tag，自动上线--deploy-pro.yml</li> <li>08:50- 17:13 :代码演示
+<ul><li>08:50-09:10: 讲解注释，去掉注释，添加注释</li> <li>09:10-10:15: 中心思想为讲解 name 的命名要语义化
+<ul><li>(补充：name 可以省略，省略的话，默认以文件名命名，还有一点演示过程中，yml 文件名称改为 demo，yml 文件内容也更改为demo，会让人误以为这个 name 的命名必须以文件名字命名，其实不是，文件的命令与文件内容中 name 的命名没有关联)</li></ul></li> <li>10:15-12:24: on/push/branches/paths的讲解，其中 paths 讲解可以简练点，讲的啰嗦了
+<ul><li>(补充：on字段可以是事件数组比如 on:[push,pull_request]]),branches可以限定分支或<strong>标签</strong>）</li></ul></li> <li>12:24-17:13:jobs 讲解。
+<ul><li>（补充：runs-on 没什么特殊情况下直接使用 ubuntu-latest,还有可以设置的比如windows-latest，macOS-latest，steps 中 uses 中的 actions/checkout@v2,实际上代表的是github.com/actions/checkout 这个仓库，actions/xxx 中的东西，都是仓库中的内容，GitHub 官方的 actions 都放在 <a href="https://github.com/actions" target="_blank" rel="noopener noreferrer">github.com/actions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 里面）</li></ul></li></ul></li></ul> <p><strong>2-3 Github actions 功能演示</strong></p> <ul><li>00:00-00:50：run为自定义命令。如果为多个命令，则格式为 run: | 。</li> <li>00:50-02:00：演示 run 命令 touch、echo、cat。</li> <li>03:00-03:50：代码提交--将branch 改为本地代码分支，演示本地分支提交触发流程，其中关于 .docker-volumes/加到 ignore，具体干啥的留个问号。还有 commit 规范这块前面<strong>貌似</strong>没讲是如何控制规范的「ci 工具」？</li> <li>03:50-10:00:来到代码仓库-Actions，讲解 workflows。讲解内容为成功失败执行过程的状态以及 job 在 Github 上Actions 中的执行结果，结论：遇到错误看日志 。</li> <li>10:00-10:56 :总结回顾步骤 steps 的四种形式 (我的理解是并不是四种形式，是属于一种：steps 下面的 name属性可省略；uses 是是否有使用第三方 actions的需求，可选；run：执行脚本，可选)</li> <li>11:00-12:57:本章小结
+<ul><li>认识 Github Actions</li> <li>应用场景</li> <li>yml语法格式</li></ul></li></ul> <p><strong>2-4 Github actions 做自动化测试</strong>
+新建 yml 文件</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">name</span><span class="token operator">:</span> test
+
+<span class="token literal-property property">on</span><span class="token operator">:</span>
+    <span class="token literal-property property">push</span><span class="token operator">:</span>
+        <span class="token literal-property property">branches</span><span class="token operator">:</span>
+            <span class="token operator">-</span> master
+        <span class="token literal-property property">paths</span><span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token string">'.github/workflows/**'</span>
+            <span class="token operator">-</span> <span class="token string">'__test__/**'</span>
+            <span class="token operator">-</span> <span class="token string">'src/**'</span>
+
+<span class="token literal-property property">jobs</span><span class="token operator">:</span>
+    <span class="token literal-property property">test</span><span class="token operator">:</span>
+        runs<span class="token operator">-</span>on<span class="token operator">:</span> ubuntu<span class="token operator">-</span>latest
+
+        <span class="token literal-property property">steps</span><span class="token operator">:</span>
+            <span class="token operator">-</span> uses<span class="token operator">:</span> actions<span class="token operator">/</span>checkout@v2
+            <span class="token operator">-</span> name<span class="token operator">:</span> Use Node<span class="token punctuation">.</span>js
+              <span class="token literal-property property">uses</span><span class="token operator">:</span> actions<span class="token operator">/</span>setup<span class="token operator">-</span>node@v1
+              <span class="token keyword">with</span><span class="token operator">:</span>
+                  node<span class="token operator">-</span>version<span class="token operator">:</span> <span class="token number">14</span>
+            <span class="token operator">-</span> name<span class="token operator">:</span> lint and test
+              <span class="token literal-property property">run</span><span class="token operator">:</span> <span class="token operator">|</span>
+                  npm i
+                  npm run lint
+                  npm run test<span class="token operator">:</span>remote
+</code></pre></div><p>本节讲 Github actions 做自动测试</p> <ul><li>00:00-- 03:00   test.yml 代码讲解</li></ul> <p>主要自动测试命令为 npm run lint 和 npm run test:remote(补充：checkout 与setup-node 是 actions 仓库比较常用的两个 actions，分别表示下载代码和安装 node)</p> <ul><li>03:00-- 04:30   本地与远程接口测试</li></ul> <p>pre-commit 执行本地接口测试(我的遗留问题：<strong>关于 pre-commit 部分</strong>)
+master push 远程接口测试</p> <ul><li>04:30 -- 04:50</li></ul> <p>测试 「测试部署机」部署完毕</p> <ul><li>04:45 --  05:30  branches 讲解</li></ul> <p>关于 branches 分支的一些注意说明</p> <ul><li>05:30 --09:50  分支提交actions 讲解
+<ul><li>这里由于直接下载的代码为开源版本，与课程内容代码出入非常大，因此需要对开源的代码进行操作</li> <li>如果将 test.yml 分支改为 main，push到我们自己仓库的时候, actions日志中会发现 lin and test 出现大量错误</li> <li>课程给出的开源代码一团，我们为了修正这个错误，我们要去修改、甚至删除那些相应的代码，这里非常不得劲</li></ul></li></ul> <p><strong>还是那个疑问，为什么不整个与课程同步的代码仓库？这个对学员来说究竟是不是必要的？</strong><br>
+经过笨拙的尝试，终于成功。</p> <p><strong>2-5 Github actions 章总结</strong><br>
+没说什么新的内容</p> <h2 id="第三章-docker"><a href="#第三章-docker" class="header-anchor">#</a> 第三章 Docker</h2> <p><strong>3-1 Docker 章介绍</strong><br>
+Docker
+基于 Docker，我们可以把开发、测试环境，一键部署到任何一台机器上。只要该机器安装了 Docker。
+有了 Docker，就有了一切。</p> <p>主要产出<br>
+使用 Docker 构建 nodejs 项目</p> <p>主要内容<br>
+认识 Dcoker
+Dockerfile</p> <p>注意事项<br>
+专业的运维工程师对 Docker还有更全面的应用：弹性扩展、微服务等。</p> <p><strong>3-2 认识 Docker</strong><br>
+介绍<br>
+Docker 就是一种虚拟机技术，比传统虚拟机(VMware、virtualBox)更加简单、轻量</p> <ul><li>启动快</li> <li>资源占用少</li> <li>体积小</li></ul> <p>查找 docker 安装镜像
+<a href="https://hub.docker.com/" target="_blank" rel="noopener noreferrer">https://hub.docker.com/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/15-1.5y49r0icxak0.webp" alt="15-1"></p> <p><strong>3-3 启动一个Docker容器</strong></p> <p><strong>image镜像</strong></p> <ul><li>下载镜像 docker pull <code>&lt;image-name&gt;</code>:<code>&lt;tag&gt;</code></li> <li>查看所有镜像： docker images</li> <li>删除镜像：    docker rmi <code>&lt;images-id&gt;</code></li> <li>上传镜像：    docker push <code>&lt;username&gt;/&lt;password&gt;:&lt;tags&gt;</code></li> <li>如果出现REPOSITORY为 null 的情况时，使用docker image prune删除</li></ul> <p><strong>container</strong></p> <ul><li>启动容器：<strong>docker run -p xxxx:xxx -v=hostpath:containerPath -d --name <code>&lt;container-name&gt; &lt;image-name&gt;</code></strong> <ul><li>-p 端口映射</li> <li>-v 数据卷，文件映射</li> <li>-d 后台运行</li> <li>--name 定义容器名称</li></ul></li> <li>查看所有容器 docker ps, 加 -a 显示隐藏的容器</li> <li>停止容器 docker stop <code>&lt;container-id&gt;</code></li> <li>删除容器 docker rm <code>&lt;contaier-id&gt;</code>,加-f 是强制删除</li> <li>查看容器信息，如 IP 地址 docker inspect <code>&lt;container-id&gt;</code></li> <li>查看容器日志 docker logs <code>&lt;container-id&gt;</code></li> <li>进入容器控制台 docker exec -it <code>&lt;container-id&gt;</code> /bin/sh</li></ul> <p><strong>3-4 Docker容器的进一步演示</strong> <strong>功能演示</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>docker run <span class="token operator">-</span>p <span class="token number">81</span><span class="token operator">:</span><span class="token number">80</span> <span class="token operator">-</span>d <span class="token operator">--</span>name nginx1 nginx
+docker ps
+
+# 访问 localhost<span class="token operator">:</span><span class="token number">81</span> ，并查看 log
+
+docker exec <span class="token operator">-</span>it <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;container-id&gt;</span><span class="token template-punctuation string">`</span></span> <span class="token operator">/</span>bin<span class="token operator">/</span>sh
+cd <span class="token operator">/</span>usr<span class="token operator">/</span>share<span class="token operator">/</span>nginx<span class="token operator">/</span>html
+echo hello docker world index<span class="token punctuation">.</span>html
+exit
+
+# 重新访问 localhost<span class="token operator">:</span><span class="token number">81</span> ，强制刷新
+
+docker stop <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;container-id&gt;</span><span class="token template-punctuation string">`</span></span>
+docker rm <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;container-id&gt;</span><span class="token template-punctuation string">`</span></span>
+
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code># <span class="token number">1.</span> 新建 <span class="token operator">/</span>Users<span class="token operator">/</span>wfp<span class="token operator">/</span>html<span class="token operator">/</span>index<span class="token punctuation">.</span>html ，内容自定义即可
+
+# <span class="token number">2.</span> 运行
+docker run <span class="token operator">-</span>p <span class="token number">81</span><span class="token operator">:</span><span class="token number">80</span> <span class="token operator">-</span>v<span class="token operator">=</span><span class="token operator">/</span>Users<span class="token operator">/</span>wfp<span class="token operator">/</span>html<span class="token operator">:</span><span class="token operator">/</span>usr<span class="token operator">/</span>share<span class="token operator">/</span>nginx<span class="token operator">/</span>html  <span class="token operator">-</span>d <span class="token operator">--</span>name nginx1 nginx
+
+# <span class="token number">3.</span> 访问 重新访问 localhost<span class="token operator">:</span><span class="token number">81</span> ，看是否你创建的页面？
+
+</code></pre></div><p><strong>3-5 介绍 Dockerfile 语法</strong><br>
+一个简单的配置文件，描述如何构建一个新的 image 镜像<br>
+注意：必须是 Dockerfile 这个文件名，必须在项目的根目录</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Dockerfile
+
+<span class="token constant">FROM</span> <span class="token literal-property property">node</span><span class="token operator">:</span>latest
+<span class="token constant">WORKDIR</span> <span class="token operator">/</span>app
+<span class="token constant">COPY</span> <span class="token punctuation">.</span> <span class="token operator">/</span>app
+
+# 设置时区
+<span class="token constant">RUN</span> ln <span class="token operator">-</span>sf <span class="token operator">/</span>usr<span class="token operator">/</span>share<span class="token operator">/</span>zoneinfo<span class="token operator">/</span>Asia<span class="token operator">/</span>Shanghai <span class="token operator">/</span>etc<span class="token operator">/</span>localtime <span class="token operator">&amp;&amp;</span> echo <span class="token string">'Asia/Shanghai'</span> <span class="token operator">&gt;</span><span class="token operator">/</span>etc<span class="token operator">/</span>timezone
+#安装
+<span class="token constant">RUN</span> npm <span class="token keyword">set</span> registry https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org
+<span class="token constant">RUN</span> npm install
+#启动
+<span class="token constant">CMD</span> echo #<span class="token constant">SERVER_NAME</span> <span class="token operator">&amp;&amp;</span>echo <span class="token operator">&amp;</span><span class="token constant">AUTHOR_NAME</span> <span class="token operator">&amp;&amp;</span> npm run dev <span class="token operator">&amp;&amp;</span> npx pm2 log
+
+#环境变量
+
+<span class="token constant">ENV</span> <span class="token constant">SERVER_NAME</span> <span class="token operator">=</span><span class="token string">&quot;test&quot;</span>
+<span class="token constant">ENV</span> <span class="token constant">AUTHOR_NAME</span> <span class="token operator">=</span><span class="token string">&quot;liugezhou&quot;</span>
+
+</code></pre></div><p><strong>3-6 用 Dockerfile 构建镜像</strong> <strong>构建</strong></p> <ul><li>docker build -t <code>&lt;name&gt;</code>.  #最后的'.'指 Dockerfile 在当前目录下。</li> <li>docker images</li></ul> <p><strong>课程修改代码为(去掉routes/index.js的数据库连接以及bin/www中的数据库同步)：</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Dockerfile
+<span class="token constant">FROM</span> <span class="token literal-property property">node</span><span class="token operator">:</span><span class="token number">14</span>
+<span class="token constant">WORKDIR</span> <span class="token operator">/</span>app
+<span class="token constant">COPY</span> <span class="token punctuation">.</span> <span class="token operator">/</span>app
+
+# 设置时区
+<span class="token constant">RUN</span> ln <span class="token operator">-</span>sf <span class="token operator">/</span>usr<span class="token operator">/</span>share<span class="token operator">/</span>zoneinfo<span class="token operator">/</span>Asia<span class="token operator">/</span>Beijing <span class="token operator">/</span>etc<span class="token operator">/</span>localtime <span class="token operator">&amp;&amp;</span> echo <span class="token string">'Asia/Beijing'</span> <span class="token operator">&gt;</span><span class="token operator">/</span>etc<span class="token operator">/</span>timezone
+
+#安装
+<span class="token constant">RUN</span>  npm <span class="token keyword">set</span> registry https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org
+<span class="token constant">RUN</span> npm install
+
+#启动
+<span class="token constant">CMD</span> echo $<span class="token constant">SERVER_NAME</span> <span class="token operator">&amp;&amp;</span> echo $<span class="token constant">AUTHOR_NAME</span> <span class="token operator">&amp;&amp;</span> npm run dev <span class="token operator">&amp;&amp;</span> npx pm2 log
+
+#环境变量
+<span class="token constant">ENV</span> <span class="token constant">SERVER_NAME</span><span class="token operator">=</span><span class="token string">&quot;lego-node-server&quot;</span>
+<span class="token constant">ENV</span> <span class="token constant">AUTHOR_NAME</span><span class="token operator">=</span><span class="token string">&quot;liugezhou&quot;</span>
+</code></pre></div><div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// 步骤一：构建</span>
+docker build <span class="token operator">-</span>t liugezhou<span class="token operator">-</span>server <span class="token punctuation">.</span>  # name为将要构建镜像的名字，<span class="token punctuation">.</span> 为当前目录
+<span class="token comment">// 步骤二：查看</span>
+docker images
+<span class="token comment">//步骤三：启动</span>
+docker run <span class="token operator">-</span>p <span class="token number">8081</span><span class="token operator">:</span><span class="token number">3000</span> <span class="token operator">-</span>d <span class="token operator">--</span>name server1 liugezhou<span class="token operator">-</span>server  # 创建容器，注意端口映射
+<span class="token comment">//步骤四：查看启动状态</span>
+docker ps
+<span class="token comment">// 步骤五 查看容器日志</span>
+docker logs <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;container-id&gt;</span><span class="token template-punctuation string">`</span></span>  # 需等待构建完成
+
+# 访问 localhost<span class="token operator">:</span><span class="token number">8081</span><span class="token operator">/</span>api<span class="token operator">/</span>db<span class="token operator">-</span>check ，查看 docker logs
+
+docker stop <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;container-id&gt;</span><span class="token template-punctuation string">`</span></span>
+docker rm <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;container-id&gt;</span><span class="token template-punctuation string">`</span></span>
+docker rmi <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;image-id&gt;</span><span class="token template-punctuation string">`</span></span>
+
+</code></pre></div><h2 id="第四章-docker-compose"><a href="#第四章-docker-compose" class="header-anchor">#</a> 第四章 Docker-compose</h2> <p><strong>4-1 docker-compose 章开始</strong><br>
+总的来说就是 Docker-compose就是一种组合，这章学到的内容就是这个英文单词的翻译。</p> <p><strong>4-2 docker-compose 配置文件</strong></p> <ul><li>文件名称必须为 <strong>docker-compose.yml</strong></li> <li>代码演示：多个service，代表多个docker镜像</li> <li>**image:redis **     表示引用官网的redis 镜像</li> <li>container-name    镜像名称</li> <li>ports    端口映射</li> <li>enviroment    环境变量 - TZ</li> <li>build：    docker build -t  <code>&lt;image-name&gt;</code> .
+<ul><li>context .  ：「当前目录」</li> <li>dockerfile：Dockerfile   ： 「基于Dockerfile构建」</li></ul></li></ul> <div class="language-typescript extra-class"><pre class="language-typescript"><code>version<span class="token operator">:</span> <span class="token string">'3'</span>
+services<span class="token operator">:</span>
+    editor<span class="token operator">-</span>server<span class="token operator">:</span>  # service name
+        build<span class="token operator">:</span>
+            context<span class="token operator">:</span> <span class="token punctuation">.</span>  # 当前目录
+            dockerfile<span class="token operator">:</span> Dockerfile  # 基于 Dockerfile 构建
+        image<span class="token operator">:</span> editor<span class="token operator">-</span>server # 依赖于当前 Dockerfile 创建出来的镜像
+        container_name<span class="token operator">:</span> editor<span class="token operator">-</span>server
+        ports<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token number">8081</span><span class="token operator">:</span><span class="token number">3000</span> # 宿主机通过 <span class="token number">8081</span> 访问
+    editor<span class="token operator">-</span>redis<span class="token operator">:</span>  # service name，重要！
+        image<span class="token operator">:</span> redis  # 引用官网 redis 镜像
+        container_name<span class="token operator">:</span> editor<span class="token operator">-</span>redis
+        ports<span class="token operator">:</span>
+ # 宿主机，可以用 <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">6378</span> 即可连接容器中的数据库 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">redis-cli -h 127.0.0.1 -p 6378</span><span class="token template-punctuation string">`</span></span>
+ # 但是，其他 docker 容器不能，因为此时 <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span> 是 docker 容器本身，而不是宿主机
+            <span class="token operator">-</span> <span class="token number">6378</span><span class="token operator">:</span><span class="token number">6379</span>
+        environment<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token constant">TZ</span><span class="token operator">=</span>Asia<span class="token operator">/</span>Shanghai # 设置时区
+
+</code></pre></div><p><strong>4-3 docker-compose 命令演示</strong></p> <ul><li>00：00    --    02：55    <strong>命令</strong> <ul><li>docker-compose build <code>&lt;service-name&gt;</code></li> <li>启动所有服务器：docker-compose up -d (后台启动)</li> <li>停止所有服务：    docker-compose down</li> <li>查看服务：    docker-compose ps</li> <li>docker 与docker-compose的命令执行范围</li></ul></li> <li>02：55    --    05：10    <strong>安装pm2</strong> <ul><li>本地安装pm2  npm i pm2 --S,或者Dockerfile中全局安装pm2</li> <li>再次强调 「阻塞控制台的命令」</li></ul></li> <li>05：10    --    06 :30    <strong>代码修改</strong> <ul><li>新建 docker-compose.yml</li> <li>新建 config/envs/prd-dev.js</li></ul></li> <li>06：30    --    08：16    <strong>prd-dev.js文件</strong> <ul><li>内容为修改redis连接配置，讲解</li></ul></li> <li>08：19    --    10：00    画图？
+<ul><li>罗里吧嗦</li></ul></li> <li>10：01    --    10：48    代码修改
+<ul><li>wtf，也不知道是出于什么原因，如此设计课程，观看视频体验 ：一颗星</li></ul></li> <li>10：49    --    13：17    <strong>build</strong> <ul><li>docker-compose build  editor-server</li></ul></li> <li>13：18    --    15：12    <strong>演示</strong> <ul><li>docker images     查看build是否成功</li> <li>docker-compose -d</li> <li>docker-compose ps</li> <li>docker ps</li> <li>访问：localhost:8081/api/db-check</li></ul></li> <li>15：12    --    17：17    <strong>redis-cli</strong> <ul><li>终端输入：<strong>redis-cli</strong>，进入到本地redis服务,查看本地 keys *。
+<ul><li>「执行redis-cli，我本地显示：Could not connect to Redis at 127.0.0.1:6379: Connection refused；这是因为我本地没启redis服务，于是：redis-server启动，redis-cli进入redis控制台」</li></ul></li> <li><strong>redis-cli -h 127.0.0.1 -p 6378</strong>      进入到docker容器中的redis</li></ul></li> <li>17：18    --    18：25    <strong>查看日志、down</strong> <ul><li>docker logs <code>&lt;container-id&gt;</code></li> <li>docker-compose down</li></ul></li></ul> <p><strong>4-4 数据持久化</strong> <strong>连接mysql和mongodb</strong> <strong>区别:</strong></p> <ul><li>redis无数据库，mysql与mongodb需要连接数据库</li> <li>redis是缓存，无需数据持久化，mysql与mongodb需要**。**</li></ul> <p>volumes:</p> <ul><li>'.docker-volumes/mongo/data:/data/db' # 数据持久化</li></ul> <p><strong>4-5 配置 mysql</strong></p> <div class="language-typescript extra-class"><pre class="language-typescript"><code>version<span class="token operator">:</span> <span class="token string">'3'</span>
+services<span class="token operator">:</span>
+    editor<span class="token operator">-</span>server<span class="token operator">:</span>
+        build<span class="token operator">:</span>
+            context<span class="token operator">:</span> <span class="token punctuation">.</span>
+            dockerfile<span class="token operator">:</span> Dockerfile
+        image<span class="token operator">:</span> editor<span class="token operator">-</span>server # 依赖于当前 Dockerfile 创建镜像
+        container_name<span class="token operator">:</span> editor<span class="token operator">-</span>server
+        ports<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token number">8081</span><span class="token operator">:</span><span class="token number">3000</span> # 宿主机通过 <span class="token number">8081</span> 访问
+    editor<span class="token operator">-</span>redis<span class="token operator">:</span>
+        image<span class="token operator">:</span> redis # 引用官网 redis 镜像
+        container_name<span class="token operator">:</span> editor<span class="token operator">-</span>redis
+        ports<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token number">6378</span><span class="token operator">:</span><span class="token number">6379</span> # 宿主机可以用 <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">6378</span> 即可连接容器中的数据库
+        environment<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token constant">TZ</span><span class="token operator">=</span>Asia<span class="token operator">/</span>Beijing # 设置时区
+    editor<span class="token operator">-</span>mysql<span class="token operator">:</span>
+        image<span class="token operator">:</span> mysql # 引用官网 mysql 镜像
+        container_name<span class="token operator">:</span> editor<span class="token operator">-</span>mysql
+        restart<span class="token operator">:</span> always
+        privileged<span class="token operator">:</span> <span class="token boolean">true</span> # 高权限，执行下面的 mysql<span class="token operator">/</span>init
+        command<span class="token operator">:</span> <span class="token operator">--</span><span class="token keyword">default</span><span class="token operator">-</span>authentication<span class="token operator">-</span>plugin<span class="token operator">=</span>mysql_native_password # 解决无法远程访问的问题
+        ports<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token number">3305</span><span class="token operator">:</span><span class="token number">3306</span> # 宿主机可以用 <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">3305</span> 即可连接容器中的数据库
+        volumes<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token punctuation">.</span>docker<span class="token operator">-</span>volumes<span class="token operator">/</span>mysql<span class="token operator">/</span>log<span class="token operator">:</span><span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>log<span class="token operator">/</span>mysql # 数据持久化
+            <span class="token operator">-</span> <span class="token punctuation">.</span>docker<span class="token operator">-</span>volumes<span class="token operator">/</span>mysql<span class="token operator">/</span>data<span class="token operator">:</span><span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>lib<span class="token operator">/</span>mysql
+            <span class="token operator">-</span> <span class="token punctuation">.</span><span class="token operator">/</span>mysql<span class="token operator">/</span>init<span class="token operator">:</span><span class="token operator">/</span>docker<span class="token operator">-</span>entrypoint<span class="token operator">-</span>initdb<span class="token punctuation">.</span>d<span class="token operator">/</span> # 初始化 sql
+        environment<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token constant">MYSQL_DATABASE</span><span class="token operator">=</span>imooc_lego_course # 初始化容器时创建数据库
+            <span class="token operator">-</span> <span class="token constant">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>liugezhou1205
+            # <span class="token operator">-</span> <span class="token constant">MYSQL_USER</span><span class="token operator">=</span>shuangyue #创建 test 用户
+            # <span class="token operator">-</span> <span class="token constant">MYSQL_PASSWORD</span><span class="token operator">=</span>shuangyue #设置 test 用户的密码
+            <span class="token operator">-</span> <span class="token constant">TZ</span><span class="token operator">=</span>Asia<span class="token operator">/</span>Beijing # 设置时区
+    editor<span class="token operator">-</span>mongo<span class="token operator">:</span>
+        image<span class="token operator">:</span> mongo # 引用官网 mongo 镜像
+        container_name<span class="token operator">:</span> editor<span class="token operator">-</span>mongo
+        restart<span class="token operator">:</span> always #出错则重启
+        volumes<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token string">'.docker-volumes/mongo/data:/data/db'</span> # 数据持久化
+        environment<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token constant">MONGO_INITDB_DATABASE</span><span class="token operator">=</span>imooc_lego_course
+            # <span class="token operator">-</span> <span class="token constant">MONGO_INITDB_ROOT_USERNAME</span><span class="token operator">=</span>root
+            # <span class="token operator">-</span> <span class="token constant">MONGO_INITDB_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token number">123456</span>
+            <span class="token operator">-</span> <span class="token constant">TZ</span><span class="token operator">=</span>Asia<span class="token operator">/</span>Beijing # 设置时区
+        ports<span class="token operator">:</span>
+            <span class="token operator">-</span> <span class="token string">'27016:27017'</span> # 宿主机可以用 <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">27016</span> 即可连接容器中的数据库
+
+</code></pre></div><h2 id="第五章-发布到测试机"><a href="#第五章-发布到测试机" class="header-anchor">#</a> 第五章 发布到测试机</h2> <p><strong>5-2  配置测试机</strong> <img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/15-2.5so88ss1y340.webp" alt="15-2"></p> <p><strong>5-3 自动发布到测试机-讲解配置</strong> <strong>5-4 自动发布到测试机-功能演示</strong></p> <div class="language-typescript extra-class"><pre class="language-typescript"><code># This workflow will <span class="token keyword">do</span> a clean install <span class="token keyword">of</span> node dependencies<span class="token punctuation">,</span> build the source code and run tests across different versions <span class="token keyword">of</span> node
+# For more information see<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>help<span class="token punctuation">.</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>actions<span class="token operator">/</span>language<span class="token operator">-</span>and<span class="token operator">-</span>framework<span class="token operator">-</span>guides<span class="token operator">/</span>using<span class="token operator">-</span>nodejs<span class="token operator">-</span><span class="token keyword">with</span><span class="token operator">-</span>github<span class="token operator">-</span>actions
+# github actions 中文文档 https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>docs<span class="token punctuation">.</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>cn<span class="token operator">/</span>actions<span class="token operator">/</span>getting<span class="token operator">-</span>started<span class="token operator">-</span><span class="token keyword">with</span><span class="token operator">-</span>github<span class="token operator">-</span>actions
+
+name<span class="token operator">:</span> deploy <span class="token keyword">for</span> dev
+
+on<span class="token operator">:</span>
+push<span class="token operator">:</span>
+branches<span class="token operator">:</span>
+<span class="token operator">-</span> <span class="token string">'dev'</span> # 只针对 dev 分支
+paths<span class="token operator">:</span>
+<span class="token operator">-</span> <span class="token string">'.github/workflows/*'</span>
+# <span class="token operator">-</span> <span class="token string">'__test__/**'</span> # dev 不需要立即测试
+  <span class="token operator">-</span> <span class="token string">'src/**'</span>
+    <span class="token operator">-</span> <span class="token string">'Dockerfile'</span>
+    <span class="token operator">-</span> <span class="token string">'docker-compose.yml'</span>
+    <span class="token operator">-</span> <span class="token string">'bin/*'</span>
+
+jobs<span class="token operator">:</span>
+  deploy<span class="token operator">-</span>dev<span class="token operator">:</span>
+ 	 runs<span class="token operator">-</span>on<span class="token operator">:</span> ubuntu<span class="token operator">-</span>latest
+
+    steps<span class="token operator">:</span>
+    <span class="token operator">-</span> uses<span class="token operator">:</span> actions<span class="token operator">/</span>checkout<span class="token decorator"><span class="token at operator">@</span><span class="token function">v2</span></span>
+      <span class="token operator">-</span> name<span class="token operator">:</span> <span class="token keyword">set</span> ssh key # 临时设置 ssh key
+      run<span class="token operator">:</span> <span class="token operator">|</span>
+        mkdir <span class="token operator">-</span>p <span class="token operator">~</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">.ssh</span><span class="token regex-delimiter">/</span></span>
+    echo <span class="token string">&quot;${{secrets.WFP_ID_RSA}}&quot;</span> <span class="token operator">&gt;</span> <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa
+    # secret 在这里配置 https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>imooc<span class="token operator">-</span>lego<span class="token operator">/</span>biz<span class="token operator">-</span>editor<span class="token operator">-</span>server<span class="token operator">/</span>settings<span class="token operator">/</span>secrets
+    chmod <span class="token number">600</span> <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa
+    ssh<span class="token operator">-</span>keyscan <span class="token string">&quot;182.92.xxx.xxx&quot;</span> <span class="token operator">&gt;&gt;</span> <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>known_hosts
+      <span class="token operator">-</span> name<span class="token operator">:</span> deploy # 部署
+      run<span class="token operator">:</span> <span class="token operator">|</span>
+        ssh work<span class="token decorator"><span class="token at operator">@</span><span class="token function">182</span></span><span class="token number">.92</span><span class="token punctuation">.</span>xxx<span class="token punctuation">.</span>xxx &quot;
+# 【注意】用 work 账号登录，手动创建 <span class="token operator">/</span>home<span class="token operator">/</span>work<span class="token operator">/</span>imooc<span class="token operator">-</span>lego 目录
+# 然后 git clone https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>username<span class="token operator">:</span>password<span class="token decorator"><span class="token at operator">@</span><span class="token function">github</span></span><span class="token punctuation">.</span>com<span class="token operator">/</span>imooc<span class="token operator">-</span>lego<span class="token operator">/</span>biz<span class="token operator">-</span>editor<span class="token operator">-</span>server<span class="token punctuation">.</span>git <span class="token operator">-</span>b dev （私有仓库，使用 github 用户名和密码）
+    # 记得删除 origin ，否则会暴露 github 密码
+
+    cd <span class="token operator">/</span>home<span class="token operator">/</span>work<span class="token operator">/</span>imooc<span class="token operator">-</span>lego<span class="token operator">/</span>biz<span class="token operator">-</span>editor<span class="token operator">-</span>server<span class="token punctuation">;</span>
+    git remote add origin https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>wangfupeng1988<span class="token operator">:</span>$<span class="token punctuation">{</span><span class="token punctuation">{</span>secrets<span class="token punctuation">.</span><span class="token constant">WFP_PASSWORD</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token decorator"><span class="token at operator">@</span><span class="token function">github</span></span><span class="token punctuation">.</span>com<span class="token operator">/</span>imooc<span class="token operator">-</span>lego<span class="token operator">/</span>biz<span class="token operator">-</span>editor<span class="token operator">-</span>server<span class="token punctuation">.</span>git<span class="token punctuation">;</span>
+    git checkout dev<span class="token punctuation">;</span>
+    git pull origin dev<span class="token punctuation">;</span> # 重新下载最新代码
+    git remote remove origin<span class="token punctuation">;</span> # 删除 origin ，否则会暴露 github 密码
+    # 启动 docker
+    docker<span class="token operator">-</span>compose build editor<span class="token operator">-</span>server<span class="token punctuation">;</span> # 和 docker<span class="token operator">-</span>compose<span class="token punctuation">.</span>yml service 名字一致
+    docker<span class="token operator">-</span>compose up <span class="token operator">-</span>d<span class="token punctuation">;</span>
+    &quot;
+      <span class="token operator">-</span> name<span class="token operator">:</span> <span class="token keyword">delete</span> ssh key # 删除 ssh key
+      run<span class="token operator">:</span> rm <span class="token operator">-</span>rf <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa
+</code></pre></div><p><strong>5-5 自动发布到测试机--章总结</strong></p> <blockquote><p>😔</p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/liugezhou/daydayup/edit/main//docs/web/15.md" target="_blank" rel="noopener noreferrer">错误反馈</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/14.html" class="prev">
+        14-服务端选型：磨刀不如砍柴功
+      </a></span> <span class="next"><a href="/web/16.html">
+        16-编辑器服务端API开发
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.4690e35c.js" defer></script><script src="/assets/js/2.505fbce2.js" defer></script><script src="/assets/js/1.8644e8ec.js" defer></script><script src="/assets/js/72.afe95f75.js" defer></script>
+  </body>
+</html>

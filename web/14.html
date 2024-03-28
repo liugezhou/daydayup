@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>14-服务端选型：磨刀不如砍柴功 | 今日前端</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4ef6dc604509807e9702b3851e114a74";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
+      </script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958" crossorigin="anonymous"></script>
+    <meta name="description" content="服务端选型：磨刀不如砍柴功">
+    
+    <link rel="preload" href="/assets/css/0.styles.ab222855.css" as="style"><link rel="preload" href="/assets/js/app.4690e35c.js" as="script"><link rel="preload" href="/assets/js/2.505fbce2.js" as="script"><link rel="preload" href="/assets/js/1.8644e8ec.js" as="script"><link rel="preload" href="/assets/js/71.f5f8e219.js" as="script"><link rel="prefetch" href="/assets/js/10.cab30127.js"><link rel="prefetch" href="/assets/js/11.dd4acf6f.js"><link rel="prefetch" href="/assets/js/12.30378d2b.js"><link rel="prefetch" href="/assets/js/13.52db13dd.js"><link rel="prefetch" href="/assets/js/14.b1e55c9a.js"><link rel="prefetch" href="/assets/js/15.397321e8.js"><link rel="prefetch" href="/assets/js/16.41ea9dc0.js"><link rel="prefetch" href="/assets/js/17.ae9bd38c.js"><link rel="prefetch" href="/assets/js/18.7f05db4f.js"><link rel="prefetch" href="/assets/js/19.e7419ed2.js"><link rel="prefetch" href="/assets/js/20.5de11ad9.js"><link rel="prefetch" href="/assets/js/21.d1e22ea1.js"><link rel="prefetch" href="/assets/js/22.72ada26c.js"><link rel="prefetch" href="/assets/js/23.c0a0b2d8.js"><link rel="prefetch" href="/assets/js/24.3e816b8b.js"><link rel="prefetch" href="/assets/js/25.3f733c03.js"><link rel="prefetch" href="/assets/js/26.db25a028.js"><link rel="prefetch" href="/assets/js/27.15ed1846.js"><link rel="prefetch" href="/assets/js/28.208ac68e.js"><link rel="prefetch" href="/assets/js/29.69d9bd33.js"><link rel="prefetch" href="/assets/js/3.7a4ab8e5.js"><link rel="prefetch" href="/assets/js/30.f039addb.js"><link rel="prefetch" href="/assets/js/31.b9fd445b.js"><link rel="prefetch" href="/assets/js/32.899591cb.js"><link rel="prefetch" href="/assets/js/33.f3808942.js"><link rel="prefetch" href="/assets/js/34.1c51bd04.js"><link rel="prefetch" href="/assets/js/35.5dec34de.js"><link rel="prefetch" href="/assets/js/36.08add187.js"><link rel="prefetch" href="/assets/js/37.5feb420b.js"><link rel="prefetch" href="/assets/js/38.afefe479.js"><link rel="prefetch" href="/assets/js/39.c9cdfded.js"><link rel="prefetch" href="/assets/js/4.0aef8d22.js"><link rel="prefetch" href="/assets/js/40.96b04497.js"><link rel="prefetch" href="/assets/js/41.04859dc6.js"><link rel="prefetch" href="/assets/js/42.3881136d.js"><link rel="prefetch" href="/assets/js/43.d142a153.js"><link rel="prefetch" href="/assets/js/44.5cb88048.js"><link rel="prefetch" href="/assets/js/45.3541cd11.js"><link rel="prefetch" href="/assets/js/46.e6c88c3b.js"><link rel="prefetch" href="/assets/js/47.3f992b97.js"><link rel="prefetch" href="/assets/js/48.5996b4fc.js"><link rel="prefetch" href="/assets/js/49.fea4d36b.js"><link rel="prefetch" href="/assets/js/5.baaddd77.js"><link rel="prefetch" href="/assets/js/50.4cd3422c.js"><link rel="prefetch" href="/assets/js/51.228fffda.js"><link rel="prefetch" href="/assets/js/52.92861e6c.js"><link rel="prefetch" href="/assets/js/53.b72d8ce0.js"><link rel="prefetch" href="/assets/js/54.c15c9cdc.js"><link rel="prefetch" href="/assets/js/55.9bc4f52b.js"><link rel="prefetch" href="/assets/js/56.947ab898.js"><link rel="prefetch" href="/assets/js/57.fa37cf58.js"><link rel="prefetch" href="/assets/js/58.d682c2a2.js"><link rel="prefetch" href="/assets/js/59.4499ef43.js"><link rel="prefetch" href="/assets/js/6.f5ab8614.js"><link rel="prefetch" href="/assets/js/60.aa57de27.js"><link rel="prefetch" href="/assets/js/61.5049d857.js"><link rel="prefetch" href="/assets/js/62.ec9a8087.js"><link rel="prefetch" href="/assets/js/63.38b9610d.js"><link rel="prefetch" href="/assets/js/64.0034d3be.js"><link rel="prefetch" href="/assets/js/65.5a44c8b1.js"><link rel="prefetch" href="/assets/js/66.ad0a55cb.js"><link rel="prefetch" href="/assets/js/67.ab2beac7.js"><link rel="prefetch" href="/assets/js/68.fa3c4346.js"><link rel="prefetch" href="/assets/js/69.4c304a67.js"><link rel="prefetch" href="/assets/js/7.62e43543.js"><link rel="prefetch" href="/assets/js/70.9965b915.js"><link rel="prefetch" href="/assets/js/72.afe95f75.js"><link rel="prefetch" href="/assets/js/73.55da3950.js"><link rel="prefetch" href="/assets/js/74.860ada40.js"><link rel="prefetch" href="/assets/js/75.66a003ea.js"><link rel="prefetch" href="/assets/js/76.886902cd.js"><link rel="prefetch" href="/assets/js/77.680b69b8.js"><link rel="prefetch" href="/assets/js/78.6440c559.js"><link rel="prefetch" href="/assets/js/79.4f3af818.js"><link rel="prefetch" href="/assets/js/80.b04f59cc.js"><link rel="prefetch" href="/assets/js/81.d4c4e4b3.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.03d43e08.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab222855.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.ico" alt="今日前端" class="logo"> <span class="site-name can-hide">今日前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/daily/day30.html" class="nav-link">
+  今日前端
+</a></div><div class="nav-item"><a href="/github/before.html" class="nav-link">
+  Github网站食用
+</a></div><div class="nav-item"><a href="/web/before.html" class="nav-link">
+  前端脚手架
+</a></div><div class="nav-item"><a href="https://blog.liugezhou.online" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  他的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/liugezhou/daydayup" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/daily/day30.html" class="nav-link">
+  今日前端
+</a></div><div class="nav-item"><a href="/github/before.html" class="nav-link">
+  Github网站食用
+</a></div><div class="nav-item"><a href="/web/before.html" class="nav-link">
+  前端脚手架
+</a></div><div class="nav-item"><a href="https://blog.liugezhou.online" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  他的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/liugezhou/daydayup" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/web/before.html" class="sidebar-link">关于</a></li><li><a href="/web/00.html" class="sidebar-link">00-整体架构设计文档范本V0.1</a></li><li><a href="/web/01.html" class="sidebar-link">01-需求分析与架构设计</a></li><li><a href="/web/02.html" class="sidebar-link">02-脚手架架构设计和框架搭建</a></li><li><a href="/web/03.html" class="sidebar-link">03-脚手架核心流程开发</a></li><li><a href="/web/04.html" class="sidebar-link">04-脚手架命令注册和执行过程开发</a></li><li><a href="/web/05.html" class="sidebar-link">05-脚手架创建项目流程设计和开发</a></li><li><a href="/web/06.html" class="sidebar-link">06-脚手架项目和组件初始化开发</a></li><li><a href="/web/14.html" aria-current="page" class="active sidebar-link">14-服务端选型：磨刀不如砍柴功</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/14.html#第一章-周介绍" class="sidebar-link">第一章 周介绍</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第二章-选择nodejs框架" class="sidebar-link">第二章 选择nodejs框架</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第三章-数据库使用-mysql-mongodb-和-redis" class="sidebar-link">第三章 数据库使用 Mysql Mongodb 和 Redis</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第四章-登录校验并使用jwt" class="sidebar-link">第四章 登录校验并使用JWT</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第五章-单元测试选择-jest" class="sidebar-link">第五章 单元测试选择 Jest</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第六章-线上服务使用pm2和nginx" class="sidebar-link">第六章：线上服务使用PM2和nginx</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第七章-周总结" class="sidebar-link">第七章 周总结</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第八章-nodejs框架-express" class="sidebar-link">第八章 nodejs框架：express</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第九章-nodejs框架-koa2" class="sidebar-link">第九章：nodejs框架：koa2</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第十章-mysql和sequelize" class="sidebar-link">第十章 mysql和Sequelize</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第十一章-mongodb基础学习" class="sidebar-link">第十一章 mongodb基础学习</a></li><li class="sidebar-sub-header"><a href="/web/14.html#第十二章-redis" class="sidebar-link">第十二章 redis</a></li></ul></li><li><a href="/web/15.html" class="sidebar-link">15-服务端 CI_CD：Github 自动化</a></li><li><a href="/web/16.html" class="sidebar-link">16-编辑器服务端API开发</a></li><li><a href="/web/17.html" class="sidebar-link">17-编辑器服务端调用第三方服务</a></li><li><a href="/web/28.html" class="sidebar-link">28-脚手架发布模块架构设计和核心流程开发</a></li><li><a href="/web/29.html" class="sidebar-link">29-脚手架发布模式git自动化流程开发</a></li><li><a href="/web/30.html" class="sidebar-link">30-脚手架发布模块云构建系统开发</a></li><li><a href="/web/31.html" class="sidebar-link">31-脚手架发布模块云发布功能开发</a></li><li><a href="/web/32.html" class="sidebar-link">32-脚手架组件发布功能开发</a></li><li><a href="/web/33.html" class="sidebar-link">33-组件平台开发</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="第一章-周介绍"><a href="#第一章-周介绍" class="header-anchor">#</a> 第一章 周介绍</h2> <p><strong>1-1 本周介绍</strong></p> <ul><li>服务端选型：所有技术为业务服务</li> <li>nodejs框架选型：Koa2</li> <li>数据库：Mysql  Mongodb Redis</li> <li>登录校验：JWT</li> <li>单元测试与接口测试：Jest</li> <li>线上服务：PM2 + nginx</li></ul> <h2 id="第二章-选择nodejs框架"><a href="#第二章-选择nodejs框架" class="header-anchor">#</a> 第二章 选择nodejs框架</h2> <p><strong>2-1 nodejs框架选型-开始</strong></p> <ul><li>所用常见的nodejs框架中，Koa2是最简单、最小的</li> <li>目的扩充广度，让你了解有这门技术</li> <li>Koa2和Express</li> <li>eggs.js</li> <li>Nest.js</li></ul> <p><strong>2-2 介绍koa2和express</strong></p> <ul><li><a href="https://koa.bootcss.com/" target="_blank" rel="noopener noreferrer">koa2<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:  基于Node.js平台的下一代web框架</li> <li><a href="https://expressjs.com/zh-cn/starter/generator.html" target="_blank" rel="noopener noreferrer">express<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:node平台web框架，koa2基于express。</li></ul> <p><strong>2-3 介绍egg.js</strong> <a href="https://eggjs.org/zh-cn/" target="_blank" rel="noopener noreferrer">egg.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:阿里开源，基于Koa2封装。</p> <p><strong>2-4 介绍nest.js</strong> <a href="https://docs.nestjs.cn/" target="_blank" rel="noopener noreferrer">nest.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>：也是一个框架，默认基于express封装，比较小众。
+使用ts语法，大量使用装饰品，学习成本高。</p> <h2 id="第三章-数据库使用-mysql-mongodb-和-redis"><a href="#第三章-数据库使用-mysql-mongodb-和-redis" class="header-anchor">#</a> 第三章 数据库使用 Mysql Mongodb 和 Redis</h2> <p><strong>3-1 章开始</strong>
+这一章会介绍：</p> <ul><li>Mysql和Sequelize</li> <li>Mongodb和Mongogoose</li> <li>Mysql和Mongodb的区别</li> <li>Redis。</li></ul> <p><strong>3-2 回顾数据结构设计</strong><br>
+对第一周内容做了个简单回顾</p> <p><strong>3-3 Mysql 和 Sequelize 1</strong>
+学习这节之前，先将代码clone到本地，代码地址：<a href="https://github.com/liugezhou/lego_node_server" target="_blank" rel="noopener noreferrer">https://github.com/liugezhou/lego_node_server<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ol><li>mysql是Web应用中最常见的关系型数据库</li> <li>本地安装mysql：Navicate Premium</li> <li>本地新建数据库 imooc_lego_course,使用mysql2测试数据库连接。新建路由 /api/db-check，用于展示结果。</li></ol> <p>a.修改src/conf/envs/dev.js中的mysqlConf为本地</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">mysqlConf</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+  	<span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">'liugezhou1205'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token string">'3306'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">database</span><span class="token operator">:</span> <span class="token string">'imooc_lego_course'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>b. 测试：node src/db/mysql2.js</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql2/promise'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> mysqlConf <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config/dev'</span><span class="token punctuation">)</span>   <span class="token comment">//这里加载dev</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">testMysqlConn</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">const</span> conn <span class="token operator">=</span> <span class="token keyword">await</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span>mysqlConf<span class="token punctuation">)</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>rows<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">await</span> conn<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token string">'select now()'</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> rows
+<span class="token punctuation">}</span>
+
+<span class="token function">testMysqlConn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+</code></pre></div><p><strong>3-4 Mysql 和 Sequelize 2</strong>
+Sequelize:最常用的ORM框架，它让开发者不用写繁琐的SQL语句，通过API即可操作数据库。</p> <ol><li>npm i -S sequelize  require-all  simple-git</li> <li>数据库连接测试文件：</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// src/db/seq/utils/conn-test.js</span>
+<span class="token keyword">const</span> seq <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../seq'</span><span class="token punctuation">)</span>
+
+seq<span class="token punctuation">.</span><span class="token function">authenticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'ok'</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fail'</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">finally</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+		process<span class="token punctuation">.</span><span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// src/db/seq/seq.js</span>
+<span class="token keyword">const</span> Sequelize <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'sequelize'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>mysqlConf <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config/dev'</span><span class="token punctuation">)</span> 
+<span class="token keyword">const</span> <span class="token punctuation">{</span> isPrd<span class="token punctuation">,</span> isTest <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../utils/env'</span><span class="token punctuation">)</span>
+
+<span class="token comment">//连接配置</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> database<span class="token punctuation">,</span> user<span class="token punctuation">,</span> password<span class="token punctuation">,</span> host<span class="token punctuation">,</span> port <span class="token punctuation">}</span> <span class="token operator">=</span> mysqlConf
+<span class="token keyword">const</span> conf <span class="token operator">=</span> <span class="token punctuation">{</span>
+	host<span class="token punctuation">,</span>
+  port<span class="token punctuation">,</span>
+  <span class="token literal-property property">dialect</span><span class="token operator">:</span><span class="token string">'mysql'</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//测试环境不打印日志</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>isTest<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	 conf<span class="token punctuation">.</span><span class="token function-variable function">logging</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 默认是 console.log</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 线上环境用 链接池</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>isPrd<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    conf<span class="token punctuation">.</span>pool <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">max</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token comment">// 连接池中最大连接数量</span>
+        <span class="token literal-property property">min</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 连接池中最小连接数量</span>
+        <span class="token literal-property property">idle</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token comment">// 如果一个线程 10 秒钟内没有被使用过的话，那么就释放线程</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 创建连接</span>
+<span class="token keyword">const</span> seq <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sequelize</span><span class="token punctuation">(</span>database<span class="token punctuation">,</span> user<span class="token punctuation">,</span> password<span class="token punctuation">,</span> conf<span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> seq
+</code></pre></div><ol start="3"><li>数据库模型：models</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// userModel</span>
+<span class="token comment">// src/models/UserModel.js</span>
+<span class="token keyword">const</span> seq <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../db/seq/seq'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token constant">STRING</span><span class="token punctuation">,</span> <span class="token constant">DATE</span><span class="token punctuation">,</span> <span class="token constant">BOOLEAN</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../db/seq/types'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> User <span class="token operator">=</span> seq<span class="token punctuation">.</span><span class="token function">define</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token constant">STRING</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">allowNull</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">unique</span><span class="token operator">:</span> <span class="token string">'username'</span><span class="token punctuation">,</span> <span class="token comment">// 不要用 unique: true, </span>
+        <span class="token literal-property property">comment</span><span class="token operator">:</span> <span class="token string">'用户名，唯一'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token constant">STRING</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">allowNull</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">comment</span><span class="token operator">:</span> <span class="token string">'密码'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> User
+
+</code></pre></div><ol start="4"><li>模型和数据表的同步</li></ol> <p>该代码逻辑在  bin/www中，通过www代码我们直到，数据表同步功能在sync-alter中</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token hashbang comment">#!/usr/bin/env node</span>
+
+………………
+
+<span class="token keyword">const</span> syncDb <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../src/db/seq/utils/sync-alter'</span><span class="token punctuation">)</span>
+
+………………
+
+<span class="token comment">// 先同步 mysql 数据表</span>
+<span class="token function">syncDb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 再启动服务</span>
+    server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">)</span>
+    ………………
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><blockquote><p>src/db/seq/utils/sync-alter</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> simpleGit <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'simple-git'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> seq <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../seq'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> isDev <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../../utils/env'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 获取所有 seq model</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'require-all'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">dirname</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">,</span> <span class="token string">'models'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// src/models 中可能会有 mongoose 的 model ，不过这里获取了也没关系</span>
+    <span class="token literal-property property">filter</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+    <span class="token literal-property property">excludeDirs</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^\.(git|svn)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+    <span class="token literal-property property">recursive</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 递归</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 同步数据表</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">syncDb</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> needToSyncDb <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token comment">// 只适用于开发环境！！！</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isDev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      ………………
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>fileChanged<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          …………
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>changedDbFiles<span class="token punctuation">)</span> needToSyncDb <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>needToSyncDb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">await</span> seq<span class="token punctuation">.</span><span class="token function">sync</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">alter</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> syncDb
+
+</code></pre></div><blockquote><p>上面代码的一些逻辑总结为一句话：seq.sync({ alter: true })</p></blockquote> <p><strong>3-5 Mongodb和Mongoose</strong></p> <ul><li>Mongodb是Web应用中最常见的NoSQL应用。</li> <li>本地在mongodb数据库中新建imooc_lego_course数据库，以及集合work。</li> <li>然后，修改代码配置</li> <li>接着，连接测试</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// src/config/envs/dev.js</span>
+
+<span class="token literal-property property">mongodbConf</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token string">'27017'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">dbName</span><span class="token operator">:</span> <span class="token string">'imooc_lego_course'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> mongodbConf <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config/index'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span> host<span class="token punctuation">,</span> port<span class="token punctuation">,</span> dbName<span class="token punctuation">,</span> user<span class="token punctuation">,</span> password <span class="token punctuation">}</span> <span class="token operator">=</span> mongodbConf
+
+<span class="token comment">// 拼接连接字符串</span>
+<span class="token keyword">let</span> url <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">mongodb://</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>host<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>port<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span> <span class="token comment">// dev 环境</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>user <span class="token operator">&amp;&amp;</span> password<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    url <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">mongodb://</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>user<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>password<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">@</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>host<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>port<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span> <span class="token comment">// prd 环境</span>
+<span class="token punctuation">}</span>
+
+mongoose<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'useCreateIndex'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+mongoose<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'useFindAndModify'</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 开始连接（ 使用用户名和密码时，需要 `?authSource=admin` ）</span>
+mongoose<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>url<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>dbName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">?authSource=admin</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">useNewUrlParser</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">useUnifiedTopology</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 连接对象</span>
+<span class="token keyword">const</span> db <span class="token operator">=</span> mongoose<span class="token punctuation">.</span>connection
+
+db<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'mongoose connect error'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+ <span class="token comment">// 演示注释掉即可</span>
+ db<span class="token punctuation">.</span><span class="token function">once</span><span class="token punctuation">(</span><span class="token string">'open'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+     <span class="token comment">// 用以测试数据库连接是否成功</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mongoose connect success'</span><span class="token punctuation">)</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+</code></pre></div><blockquote><p>再接着，新建数据库模型model--- work，[通过Schema生成一个model]</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @description 作品内容 Model ，存储到 Mongodb
+ * @author liugezhou
+ */</span>
+
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../db/mongoose'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 两个 model 公用一个 schema</span>
+<span class="token keyword">const</span> contentSchema <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">Schema</span><span class="token punctuation">(</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 页面的组件列表</span>
+        <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">[</span>Object<span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment">// 页面的属性，如页面背景图片</span>
+        <span class="token literal-property property">props</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+        <span class="token comment">// 配置信息，如微信分享配置</span>
+        <span class="token literal-property property">setting</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> <span class="token literal-property property">timestamps</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">// 未发布的内容</span>
+<span class="token keyword">const</span> WorkContentModel <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'workContent'</span><span class="token punctuation">,</span> contentSchema<span class="token punctuation">)</span>
+
+<span class="token comment">// 发布的内容</span>
+<span class="token keyword">const</span> WorkPublishContentModel <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'workPublishContent'</span><span class="token punctuation">,</span> contentSchema<span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    WorkContentModel<span class="token punctuation">,</span>
+    WorkPublishContentModel<span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>最后，我们在进行mysql与mongoose的测试的时候，在routes/index.js中将有关redis的内容暂时注释，
+然后执行：npm run start，出现下面则测试成功!
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/14-1.4dfeo10krko0.webp" alt="14-1">
+这里，讲师再次推荐了自己的一个课程，鉴于此次购买课程自己不是很满意，这里，我觉得自己补充mongoose的基础知识就够了，总结至：<a href="https://www.yuque.com/liugezhou/gofftg/zanx0w" target="_blank" rel="noopener noreferrer">https://www.yuque.com/liugezhou/gofftg/zanx0w<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><strong>3-6 Date 和时区</strong><br>
+new Date()直接打印，会显示世界标准时间，和北京差8个时区，要想获得当前时间，只需要toString()即可。</p> <p>在Docker虚拟机里，默认没有时区，需要在Dockerfile里面进行配置</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Dockerfile
+<span class="token constant">FROM</span> <span class="token literal-property property">node</span><span class="token operator">:</span><span class="token number">14</span>
+<span class="token constant">WORKDIR</span> <span class="token operator">/</span>app
+<span class="token constant">COPY</span> <span class="token punctuation">.</span> <span class="token operator">/</span>app
+
+# 设置时区
+<span class="token constant">RUN</span> ln <span class="token operator">-</span>sf <span class="token operator">/</span>usr<span class="token operator">/</span>share<span class="token operator">/</span>zoneinfo<span class="token operator">/</span>Asia<span class="token operator">/</span>Shanghai <span class="token operator">/</span>etc<span class="token operator">/</span>localtime <span class="token operator">&amp;&amp;</span> echo <span class="token string">'Asia/Shanghai'</span> <span class="token operator">&gt;</span><span class="token operator">/</span>etc<span class="token operator">/</span>timezone
+
+<span class="token constant">CMD</span> npm i <span class="token operator">&amp;&amp;</span> npm run prd<span class="token operator">-</span>dev <span class="token operator">&amp;&amp;</span> npx pm2 log
+
+</code></pre></div><p><strong>3-7 Mysql和Mongodb的区别</strong></p> <ul><li>Mysql:关系型数据库，用于存储表格形式，格式规整的数据</li> <li>Mongodb：文件数据库，用于存储文件，格式零散的数据。</li></ul> <p><strong>3-8 介绍Redis</strong></p> <p>在项目中：npm i -S redis
+然后根据前面Mysql以及Mongodb的调试方法，调试出本地的redis显示。</p> <p>课程中关于redis的其它内容依旧是给出实战课让自己去学习，其它的什么也没说，而我本地也是安装过redis的，但是不记得如何启动了，于是我的步骤是这么展开的：</p> <ul><li>第一步：首先看本地的redis是否已删除，即查找本地安装redis证据
+<ul><li>brew info redis:本地显示not install</li> <li>接着查看/usr/local/etc/下没有redis.conf文件</li> <li>结论：我本地的redis已经被我删除了 [其实，没有删除，后面才清楚]</li></ul></li> <li>第二步：安装redis
+<ul><li>brew install redis</li> <li>在/usr/local/etc下多了两个配置文件：redis.conf和redis-sentinel.conf</li> <li>启动redis：brew services start redis （这个命令会在后台启动redis服务，并且每一次登录系统，都会自动重启）</li> <li>假如不需要后台启动服务，可以配置文件启动：redis-server /usr/local/etc/redis.conf</li></ul></li></ul> <p>我这里使用 redis-server /usr/local/etc/redis.conf的方式启动redis，</p> <p>然后出现报错：
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/14-2.1a79q81ytxa8.webp" alt="14-2">
+接着查找错误，原因为配置错误,没有深究下去。<br>
+但是尝试了另一个启动命令  redis-server:<br> <img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/14-3.50llefpz7j00.webp" alt="14-3">
+成功了！<br>
+如图显示这个版本是5.0.8的，也就是说我之前电脑上其实是有redis的，我新安装的这个6.0.9的并没有用上。</p> <p>然后，我继续查看目录，发现我之前安装的5.0.8的版本,其实在  /usr/local/redis-5.0.8下面,而且我不是使用的brew安装的</p> <p>因此，我又把刚刚安装的redis删除：<br>
+brew uninstall redis<br>
+rm -rf /usr/local/etc/redis.conf<br>
+rm -rf /usr/local/etc/redis-sentinel.conf</p> <p>折腾了这么一趟，其实我开始的时候直接redis-server启动就可以了。
+此时在第三章3-3 clone的代码基础上，加入了redis配置后，执行npm run dev  发现redis连接成功了！</p> <p><strong>3-9 章总结</strong>
+啰里八嗦后一句话：大家自己去学习基础知识，从头开始讲不可能。</p> <h2 id="第四章-登录校验并使用jwt"><a href="#第四章-登录校验并使用jwt" class="header-anchor">#</a> 第四章 登录校验并使用JWT</h2> <p><strong>4-1 开始</strong>
+选择JWT，放弃Session。</p> <ul><li>Cookie和Session</li> <li>JWt</li> <li>SSO和OAuth2</li></ul> <p><strong>4-2 介绍 Session 登录</strong>
+Cookie做登录校验的过程</p> <ul><li>前端传入用户名密码，传给后端</li> <li>后端验证成功，返回信息时set-cookie</li> <li>接下来所有接口访问，都自动带上cookie</li></ul> <p>Session</p> <ul><li>cookie只存储用户userid，不暴露用户信息，session存储用户信息。</li> <li>Session原理简单、易于学习</li> <li>用户信息存储在服务端，可以快速封禁某个登录的用户</li> <li>但是： 占用服务端内存、多进程、多服务、跨域传递cookie</li></ul> <p><strong>4-3 介绍JWT登录</strong>
+JWT -- Json Web Token</p> <p>JWT过程</p> <ul><li>前端输入用户名密码，传给后端。</li> <li>后端验证成功，返回一段token字符串----将用户信息加密得到。</li> <li>前端获取token之后，存储起来。</li> <li>以后访问接口，都在header中带上token。</li></ul> <p>优缺点</p> <ul><li>优点：不占用服务器内存、多进程,多服务器,不受影响、不受跨域限制</li></ul> <ul><li>缺点：无法快速封禁登录的用户。</li></ul> <p>区别</p> <ul><li>Session用户信息存储在服务端</li> <li>JWT用户信息存储在客户端</li></ul> <p>代码演示
+首先需要第三方库：koa-jwt 和 jsonwebtoken<br>
+然后，简单对jwt以及loginCheck中间价进行了一个介绍,下面是jwt代码演示，loginCheck不贴了。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @description 封装 jwt 插件
+ * @author liugezhou
+ */</span>
+
+<span class="token keyword">const</span> jwtKoa <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-jwt'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token constant">JWT_SECRET</span><span class="token punctuation">,</span> <span class="token constant">JWT_IGNORE_PATH</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config/constant'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">jwtKoa</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">secret</span><span class="token operator">:</span> <span class="token constant">JWT_SECRET</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">cookie</span><span class="token operator">:</span> <span class="token string">'jwt_token'</span><span class="token punctuation">,</span> <span class="token comment">// 使用 cookie 存储 token</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">unless</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment">// 定义哪些路由忽略 jwt 验证</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token constant">JWT_IGNORE_PATH</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><p><strong>4-4 SSO和OAuth2</strong></p> <ul><li>SSO:单点登录</li> <li>OAuth2第三方鉴权的常用方式</li></ul> <p><strong>使用Cookie实现</strong>
+简单的，如果业务系统都在同一主域名下，比如wenku.baidu.com  tieba.baidu.com，就好办了。<br>
+可以直接把cookie domain设置为主域名 baidu.com。</p> <p><strong>SSO</strong>
+复杂一点，滴滴同时拥有 didichuxing.com xiaojukeji.com didiglobal.com等域名<br>
+各种cookie是完全绕不开的。</p> <p><strong>OAuth2验证</strong>
+上述SSO是oauth的实际案例，其他常见的还有微信登录、github登录。即，当涉及到第三方用户登录校验时，都会用到OAuth2.0标准。</p> <p><strong>4-5 章总结</strong>
+Cooike/Session/Jwt/OSS/OAuth2</p> <h2 id="第五章-单元测试选择-jest"><a href="#第五章-单元测试选择-jest" class="header-anchor">#</a> 第五章 单元测试选择 Jest</h2> <p><strong>5-1 开始</strong>
+保证软件质量：单元测试和接口测试。</p> <ul><li>Jest 和Mocha</li> <li>单元测试为何难以落实</li> <li>supertest接口测试</li> <li>测试驱动开发TDD</li></ul> <p><strong>5-2 介绍Jest和Mocha</strong></p> <blockquote><p>Jest官网：<a href="https://jestjs.io/zh-Hans/docs/getting-started" target="_blank" rel="noopener noreferrer">https://jestjs.io/zh-Hans/docs/getting-started<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+Mocha官网：<a href="https://mochajs.cn/#getting-started" target="_blank" rel="noopener noreferrer">https://mochajs.cn/#getting-started<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>代码演示</p> <ul><li>安装jest:npm i -S jest</li> <li>配置package.json</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+ 	 <span class="token string-property property">&quot;test:local&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env NODE_ENV=test_local jest --runInBand  --passWithNoTests --colors --forceExit&quot;</span><span class="token punctuation">,</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><ul><li><strong>test</strong>/demo.test.js</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'test demo'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'1+1 = 2'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>允许命令 npm run test:local
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/14-4.yr753gttyr4.webp" alt="14-4"> <strong>5-3 为何单元测试难以落实</strong><br> <strong>使用方式不合理</strong>：混淆了单元测试和集成测试，导致单元测试代码中有太多Mock。如果需要服务器启动才能执行的代码，就不是单元测试了。<br>
+**现状：**研发流程不规范</p> <p><strong>5-4 supertest接口测试</strong><br>
+supertest接口测试的目的是让所有接口稳起来。<br>
+本地测试： jest + supertest<br>
+远程测试： jest + axios<br>
+接口测试和单元测试，代码都放在 __test__下，但两者概念要区分开。</p> <p>代码演示：
+安装 supertest axios<br>
+package.json中添加 test:remote配置（远程才用到）<br>
+接口测试目录：<strong>test</strong>/api/</p> <h2 id="第六章-线上服务使用pm2和nginx"><a href="#第六章-线上服务使用pm2和nginx" class="header-anchor">#</a> 第六章：线上服务使用PM2和nginx</h2> <p><strong>6-1 pm2和nginx-章开始</strong></p> <p>线上服务：稳定和高效</p> <p><strong>6-2 pm2配置和使用</strong></p> <p>根据我之前的学习理解：pm2其实就是一个后台服务常驻的一个工具，我们平时在npm run dev后如果按Ctrl + c 停止后，服务就停止了，如果我们使用 pm2来启动，那么即使停止，我们的项目还是能够继续运行。</p> <p>另外，我本地正在开发一个vue项目，如果我想后台常驻，那么我可以直接执行：pm2 start npm -- run serve<br>
+我直接这么执行的话，那本地肯定会产生log日志文件，我在/Users/liugezhou/.pm2目录下找到了日志打印。</p> <p><strong>特点：</strong></p> <ul><li>进程守护--稳定</li> <li>多进程--高效</li> <li>日志记录--问题可追溯</li></ul> <p><strong>安装</strong></p> <blockquote><p>npm i -g pm2</p></blockquote> <p><strong>基本使用</strong></p> <ul><li>pm2 start xxx.js</li> <li>pm2 restart &lt;id/name&gt;</li> <li>pm2 reload</li> <li>pm2 list</li> <li>pm2 logs &lt;id/name&gt;</li> <li>pm2 stop &lt;id/name&gt;</li> <li>pm2 delete &lt;id/name&gt;</li> <li>pm2 monit</li></ul> <p><strong>配置</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> os <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'os'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> cpuCoreLength <span class="token operator">=</span> os<span class="token punctuation">.</span><span class="token function">cpus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token comment">// CPU 几核</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">apps</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'your-server-name'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">script</span><span class="token operator">:</span> <span class="token string">'bin/www'</span><span class="token punctuation">,</span>
+        <span class="token comment">// watch: true, // 无特殊情况，不用实时监听文件，否则可能会导致很多 restart</span>
+        <span class="token literal-property property">ignore_watch</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'node_modules'</span><span class="token punctuation">,</span> <span class="token string">'__test__'</span><span class="token punctuation">,</span> <span class="token string">'logs'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment">// instances: cpuCoreLength, // 线上环境，多进程</span>
+        <span class="token literal-property property">instances</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// 测试环境，一个进程即可</span>
+        <span class="token literal-property property">error_file</span><span class="token operator">:</span> <span class="token string">'./logs/err.log'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">out_file</span><span class="token operator">:</span> <span class="token string">'./logs/out.log'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">log_date_format</span><span class="token operator">:</span> <span class="token string">'YYYY-MM-DD HH:mm:ss Z'</span><span class="token punctuation">,</span> <span class="token comment">// Z 表示使用当前时区的时间格式</span>
+        <span class="token literal-property property">combine_logs</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 多个实例，合并日志</span>
+        <span class="token literal-property property">max_memory_restart</span><span class="token operator">:</span> <span class="token string">'300M'</span><span class="token punctuation">,</span> <span class="token comment">// 内存占用超过 300M ，则重启,可使用 pm2 monit查看初始内存占用，然后根据初始设置</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><blockquote><p>package.json配置：
+&quot;prd-dev&quot;: &quot;cross-env NODE_ENV=dev pm2 start bin/pm2-prd-dev.config.js&quot;
+运行：npm run prd-dev</p></blockquote> <p><strong>6-3 pm2日志拆分</strong>
+日志拆分的原因为：日志庞大，不利于检索且占用内存太大。<br>
+日志拆分的方式有按天拆分或者小时等。</p> <p>我们这里日志拆分使用的是：<strong>pm2-logrotate</strong><br>
+安装：pm2 install pm2-logrotate -g<br>
+运行 pm2 list 即可看到 pm2-logrotate的进程</p> <p><strong>默认配置如下：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>$ pm2 set pm2-logrotate:max_size 10M # 日志文件最大 10M
+$ pm2 set pm2-logrotate:retain 30 # 保留 30 个文件，多了就自动删掉
+$ pm2 set pm2-logrotate:compress false # gzip 压缩文件
+$ pm2 set pm2-logrotate:dateFormat YYYY-MM-DD_HH-mm-ss
+$ pm2 set pm2-logrotate:workerInterval 30 # 单位 s ，日志检查的时间间隔
+$ pm2 set pm2-logrotate:rotateInterval 0 0 * *_ _ * # 定时规则
+$ pm2 set pm2-logrotate:rotateModule true # 分割 pm2 模块的日志
+</code></pre></div><p>可修改配置 pm2 set pm2-logrotate: <code>&lt;key&gt;&lt;value&gt;</code> <strong>rotateInterval规则[crontab]：</strong> <img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/14-5.c6yvkmaj06o.webp" alt="14-5"></p> <p><strong>6-4 nginx配置和日志拆分</strong></p> <ul><li>静态服务</li> <li>反向代理</li> <li>负载均衡</li> <li>access log</li></ul> <p>常用命令</p> <ul><li>nginx</li> <li>nginx -s reload</li> <li>nginx -s stop</li> <li>nginx -t</li> <li>nginx -c xxx.conf</li></ul> <h2 id="第七章-周总结"><a href="#第七章-周总结" class="header-anchor">#</a> 第七章 周总结</h2> <p><strong>开发环境配置</strong></p> <ul><li>eslint premitter</li> <li>pre-commit</li> <li>commit规范</li> <li>validator</li> <li>cors</li></ul> <h2 id="第八章-nodejs框架-express"><a href="#第八章-nodejs框架-express" class="header-anchor">#</a> 第八章 nodejs框架：express</h2> <p><strong>8-1 安装</strong>
+通过脚手架安装：express-generator</p> <ul><li>npm i express-generator -g</li> <li>express express-test</li> <li>cd express-test</li> <li>npm i</li> <li>npm run start</li> <li>为了方便改代码后不用重启，我们使用  npm i nodemon cross-env --save-dev</li></ul> <p><strong>8-2 ｜8-3 介绍app-js</strong></p> <ul><li>各个插件的作用</li></ul> <blockquote><ul><li>http-errors:错误页处理</li> <li>express</li> <li>cookie-parse：只要经过这个中间件处理，我们纠结可以非常轻松的使用req.cookie()去访问所有cookie</li> <li>morgan:记录access log</li> <li>app.use(express.json()):post请求传入的数据直接在route中使用req.body获取</li> <li>app.use(express.urlencoded({ extended: false }));：请求参数为application/x-www-form-urlencoded</li></ul></blockquote> <ul><li>处理get和post请求</li></ul> <blockquote><ul><li>res.json()</li></ul></blockquote> <p><strong>8-4 使用中间件</strong></p> <blockquote><p>app.use()
+next参数作用。</p></blockquote> <h2 id="第九章-nodejs框架-koa2"><a href="#第九章-nodejs框架-koa2" class="header-anchor">#</a> 第九章：nodejs框架：koa2</h2> <p><strong>9-1 介绍koa2</strong></p> <ul><li>npm install koa-generator -g</li> <li>koa2 koa2-test</li> <li>npm install &amp;&amp; npm run dev</li></ul> <h2 id="第十章-mysql和sequelize"><a href="#第十章-mysql和sequelize" class="header-anchor">#</a> 第十章 mysql和Sequelize</h2> <blockquote><p>关于表的外键：表关联，有一些外键的设置，我发现之前的后端表中都没有对外键盘做一个级联操作，于是在回头查看一些表结构的时候，就不容易看出来一些表的关联关系，如果我们在新建表的时候就去设置外键表的关联，首先表结构一目了然，且在新增(外键关联的主键没有值得时候)会有错误提示，删除主键表的时候，关联的主键内容也会删掉。</p></blockquote> <blockquote><p>select * from blogs inner join users on users.id =blogs.userid
+select blogs.*,users.username,users.nickname from blogs inner join users on users.id =blogs.userid</p></blockquote> <blockquote><p>sequelize:mysql链接：const seq = new  Sequeslize('koa2_weibo_db','root','liugezhou1205',{host:'localhost',dislect:'mysql'})
+建模：</p> <p>数据库建表字段长度为255，varchar为可变长度，并不是会占用这么多的空间，数据库会自动计算缩短空间</p></blockquote> <h2 id="第十一章-mongodb基础学习"><a href="#第十一章-mongodb基础学习" class="header-anchor">#</a> 第十一章 mongodb基础学习</h2> <p><strong>11-1 mongodb是文档数据库</strong></p> <ul><li>Mongodb是一个文档数据库</li> <li>Mongodb和Mysql Redis的对比</li> <li>如何选择？举例说明</li></ul> <p><strong>文档数据库</strong></p> <ul><li>Mysql 以表格形式存储数据</li> <li>Redis以 key-value形式存储数据</li> <li>Mongodb是以文档形式存储数据，格式像JSON</li></ul> <p><strong>对比</strong></p> <table><thead><tr><th>Mysql</th> <th>关系型    ｜表格存储               ｜ SQL操作 ｜ 硬盘</th></tr></thead> <tbody><tr><td>Redis</td> <td>非关系型 ｜ key-value形式存储 ｜ NoSQL   ｜ 内存</td></tr> <tr><td>Mongodb</td> <td>非关系型 ｜文档存储               ｜ NoSQL   ｜ 硬盘</td></tr></tbody></table> <p><strong>11-2 安装mongodb--介绍</strong></p> <ul><li>安装mongodb服务端</li> <li>安装mongodb客户端</li> <li>启动和连接</li></ul> <p><strong>11-3 安装mongodb-mac-安装homebrew</strong></p> <ul><li>安装 homebrew</li> <li>用homebrew安装 mongodb</li> <li>安装客户端 compass</li></ul> <blockquote><ol><li>安装brew官网：</li></ol></blockquote> <p>/bin/bash -c &quot;$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh" target="_blank" rel="noopener noreferrer">https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>&quot;)</p> <blockquote><ol start="2"><li>验证 brew --version</li> <li>切换源：查找资料即可(我本地未切换)</li></ol></blockquote> <p><strong>11-4 安装mongodb-mac-安装mongodb</strong></p> <ul><li>brew install mongodb-community</li> <li>启动：brew services start mongodb-community</li> <li>验证启动：mongo &gt; 1 + 1 mongo</li> <li>停止：brew services start mongodb-community</li></ul> <p><strong>11-5 安装mongodb-mac-安装compass</strong></p> <blockquote><p>mongodb官网下载 composs</p></blockquote> <p><strong>11-6 compass操作mongodb</strong></p> <blockquote><p>数据库--集合--文档</p></blockquote> <p><strong>11-7 用命令行操作mongodb</strong></p> <ul><li>show dbs</li> <li>use myblogs --新建或者使用数据库</li> <li>show collections</li> <li>db.blogs.insert({&quot;title&quot;:&quot;标题1&quot;,&quot;content&quot;:&quot;内容1&quot;,&quot;author&quot;:&quot;liugezhou&quot;})</li> <li>db.blogs.find()</li> <li>db.blogs.find({&quot;author&quot;:&quot;liugezhou&quot;})</li> <li>db.blogs.update({&quot;title&quot;:&quot;标题1&quot;},{$set:{&quot;author&quot;:&quot;lisi&quot;}})</li> <li>db.blogs.find().sort({_id:-1})</li></ul> <p><strong>11-8 mongodb的几个重要概念</strong></p> <ul><li>databse:一个应用对应多个数据库服务</li> <li>collection</li> <li>document</li> <li>bson：类JSON格式，Binary JSON  二进制类型的JSON</li> <li>NoSQL：无需sql语句查询</li></ul> <p><strong>11-9 nodejs连接mongodb</strong></p> <ul><li>mkdir mongodb-test</li> <li>cd mongodb-test</li> <li>npm init -y</li> <li>npm i mongodb --save</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> MongoClient <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongodb'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> url <span class="token operator">=</span>  <span class="token string">'mongodb://localhost:27017'</span>
+<span class="token keyword">const</span> dbName <span class="token operator">=</span> <span class="token string">'myblog'</span>
+
+MongoClient<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span>
+    url<span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">//配置</span>
+         <span class="token literal-property property">useUnifiedTopology</span><span class="token operator">:</span> <span class="token boolean">true</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>client</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'mongodb  connect error'</span><span class="token punctuation">,</span>err<span class="token punctuation">)</span>
+            <span class="token keyword">return</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 连接成功</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mongodb connect success'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// 切换数据库</span>
+        <span class="token keyword">const</span> db <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">db</span><span class="token punctuation">(</span>dbName<span class="token punctuation">)</span>
+        <span class="token comment">//关闭连接</span>
+        client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre></div><p><strong>11-10 nodejs操作mongodb</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> MongoClient <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongodb'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> url <span class="token operator">=</span>  <span class="token string">'mongodb://localhost:27017'</span>
+<span class="token keyword">const</span> dbName <span class="token operator">=</span> <span class="token string">'myblog'</span>
+
+MongoClient<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span>
+    url<span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">//配置</span>
+         <span class="token literal-property property">useUnifiedTopology</span><span class="token operator">:</span> <span class="token boolean">true</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>client</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'mongodb  connect error'</span><span class="token punctuation">,</span>err<span class="token punctuation">)</span>
+            <span class="token keyword">return</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 连接成功</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mongodb connect success'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// 切换数据库</span>
+        <span class="token keyword">const</span> db <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">db</span><span class="token punctuation">(</span>dbName<span class="token punctuation">)</span>
+
+        <span class="token comment">//集合</span>
+        <span class="token keyword">const</span> userCollection <span class="token operator">=</span> db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'users'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">//删除</span>
+        userCollection<span class="token punctuation">.</span><span class="token function">deleteOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">username</span><span class="token operator">:</span><span class="token string">'mongodb'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>result</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'user delete error'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+                    <span class="token keyword">return</span>
+                <span class="token punctuation">}</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+                client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">)</span>
+        <span class="token comment">//修改</span>
+        userCollection<span class="token punctuation">.</span><span class="token function">updateOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">username</span><span class="token operator">:</span><span class="token string">'mongodb'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token literal-property property">$set</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token literal-property property">username</span><span class="token operator">:</span><span class="token string">'mongoose'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>result</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'user update error'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            <span class="token punctuation">}</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+            client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// 新增</span>
+        userCollection<span class="token punctuation">.</span><span class="token function">insertOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">username</span><span class="token operator">:</span><span class="token string">'mongodb'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">password</span><span class="token operator">:</span><span class="token string">'abc'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">nickname</span><span class="token operator">:</span><span class="token string">'mongoose'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'user insert error'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            <span class="token punctuation">}</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+            client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token comment">// 文档--查询</span>
+        userCollection<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'user find error'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            <span class="token punctuation">}</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+              <span class="token comment">//关闭连接</span>
+            client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre></div><p><strong>11-11 使用mongoose连接mongodb服务</strong></p> <ul><li>Schema定义数据格式的规范</li> <li>以Model规范Collection</li> <li>规范数据操作的APi</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../db'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 用Schema定义数据规范</span>
+<span class="token keyword">const</span> UserSchema <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span>String<span class="token punctuation">,</span>
+        <span class="token literal-property property">required</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">unique</span><span class="token operator">:</span><span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">password</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token literal-property property">nickname</span><span class="token operator">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Model对应 collection</span>
+<span class="token keyword">const</span> User <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span>UserSchema<span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> User
+</code></pre></div><p><strong>11-12 mongoose操作mongodb</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> Blog <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../models/Blog'</span><span class="token punctuation">)</span>
+
+<span class="token operator">!</span><span class="token punctuation">(</span><span class="token keyword">async</span>  <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token comment">// 创建博客</span>
+    <span class="token comment">// const blog = await Blog.create({</span>
+    <span class="token comment">//     title:'liugezhou4',</span>
+    <span class="token comment">//     content:'内容4',</span>
+    <span class="token comment">//     author:'mongoose'</span>
+    <span class="token comment">// })</span>
+    <span class="token comment">// console.log(blog)</span>
+
+    <span class="token comment">// 查询</span>
+<span class="token comment">//    const blogList =  await Blog.find({author:'mongoose'}).sort({_id:-1})</span>
+<span class="token comment">//    console.log(blogList)</span>
+
+   <span class="token comment">//修改</span>
+   <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> Blog<span class="token punctuation">.</span><span class="token function">findOneAndUpdate</span><span class="token punctuation">(</span>
+       <span class="token punctuation">{</span> <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'liugezhou'</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+       <span class="token punctuation">{</span><span class="token literal-property property">content</span><span class="token operator">:</span><span class="token string">'new content'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+       <span class="token punctuation">{</span><span class="token keyword">new</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">}</span>    
+   <span class="token punctuation">)</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="第十二章-redis"><a href="#第十二章-redis" class="header-anchor">#</a> 第十二章 redis</h2> <p><strong>12-1 介绍redis基本使用</strong></p> <ul><li>内存数据库：比硬盘快很多很多。</li> <li>公共数据可以使用redis做缓存</li> <li>登录信息</li> <li>brew install redis</li> <li>启动：redis-server</li> <li>客户端启动：redis-cli</li> <li>set name 'liugezhou'</li> <li>get name</li></ul> <p><strong>12-2 介绍redis-nodejs操作redis-1</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> redis <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'redis'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token constant">REDIS_CONF</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../conf/db'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 创建客户端</span>
+<span class="token keyword">const</span> redisClient <span class="token operator">=</span> redis<span class="token punctuation">.</span><span class="token function">createClient</span><span class="token punctuation">(</span><span class="token constant">REDIS_CONF</span><span class="token punctuation">.</span>port<span class="token punctuation">,</span><span class="token constant">REDIS_CONF</span><span class="token punctuation">.</span>host<span class="token punctuation">)</span>
+
+redisClient<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token parameter">err</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'redis error'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p><strong>12-3 介绍redis-nodejs操作redis-2</strong>
+没什么印象深刻的</p> <ul><li>服务器--如何查看redis安装在哪个目录</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/liugezhou/daydayup/edit/main//docs/web/14.md" target="_blank" rel="noopener noreferrer">错误反馈</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/06.html" class="prev">
+        06-脚手架项目和组件初始化开发
+      </a></span> <span class="next"><a href="/web/15.html">
+        15-服务端 CI_CD：Github 自动化
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.4690e35c.js" defer></script><script src="/assets/js/2.505fbce2.js" defer></script><script src="/assets/js/1.8644e8ec.js" defer></script><script src="/assets/js/71.f5f8e219.js" defer></script>
+  </body>
+</html>

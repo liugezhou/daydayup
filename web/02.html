@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>02-脚手架架构设计和框架搭建 | 今日前端</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4ef6dc604509807e9702b3851e114a74";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
+      </script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1183508160150958" crossorigin="anonymous"></script>
+    <meta name="description" content="脚手架架构设计和框架搭建">
+    
+    <link rel="preload" href="/assets/css/0.styles.ab222855.css" as="style"><link rel="preload" href="/assets/js/app.4690e35c.js" as="script"><link rel="preload" href="/assets/js/2.505fbce2.js" as="script"><link rel="preload" href="/assets/js/1.8644e8ec.js" as="script"><link rel="preload" href="/assets/js/66.ad0a55cb.js" as="script"><link rel="prefetch" href="/assets/js/10.cab30127.js"><link rel="prefetch" href="/assets/js/11.dd4acf6f.js"><link rel="prefetch" href="/assets/js/12.30378d2b.js"><link rel="prefetch" href="/assets/js/13.52db13dd.js"><link rel="prefetch" href="/assets/js/14.b1e55c9a.js"><link rel="prefetch" href="/assets/js/15.397321e8.js"><link rel="prefetch" href="/assets/js/16.41ea9dc0.js"><link rel="prefetch" href="/assets/js/17.ae9bd38c.js"><link rel="prefetch" href="/assets/js/18.7f05db4f.js"><link rel="prefetch" href="/assets/js/19.e7419ed2.js"><link rel="prefetch" href="/assets/js/20.5de11ad9.js"><link rel="prefetch" href="/assets/js/21.d1e22ea1.js"><link rel="prefetch" href="/assets/js/22.72ada26c.js"><link rel="prefetch" href="/assets/js/23.c0a0b2d8.js"><link rel="prefetch" href="/assets/js/24.3e816b8b.js"><link rel="prefetch" href="/assets/js/25.3f733c03.js"><link rel="prefetch" href="/assets/js/26.db25a028.js"><link rel="prefetch" href="/assets/js/27.15ed1846.js"><link rel="prefetch" href="/assets/js/28.208ac68e.js"><link rel="prefetch" href="/assets/js/29.69d9bd33.js"><link rel="prefetch" href="/assets/js/3.7a4ab8e5.js"><link rel="prefetch" href="/assets/js/30.f039addb.js"><link rel="prefetch" href="/assets/js/31.b9fd445b.js"><link rel="prefetch" href="/assets/js/32.899591cb.js"><link rel="prefetch" href="/assets/js/33.f3808942.js"><link rel="prefetch" href="/assets/js/34.1c51bd04.js"><link rel="prefetch" href="/assets/js/35.5dec34de.js"><link rel="prefetch" href="/assets/js/36.08add187.js"><link rel="prefetch" href="/assets/js/37.5feb420b.js"><link rel="prefetch" href="/assets/js/38.afefe479.js"><link rel="prefetch" href="/assets/js/39.c9cdfded.js"><link rel="prefetch" href="/assets/js/4.0aef8d22.js"><link rel="prefetch" href="/assets/js/40.96b04497.js"><link rel="prefetch" href="/assets/js/41.04859dc6.js"><link rel="prefetch" href="/assets/js/42.3881136d.js"><link rel="prefetch" href="/assets/js/43.d142a153.js"><link rel="prefetch" href="/assets/js/44.5cb88048.js"><link rel="prefetch" href="/assets/js/45.3541cd11.js"><link rel="prefetch" href="/assets/js/46.e6c88c3b.js"><link rel="prefetch" href="/assets/js/47.3f992b97.js"><link rel="prefetch" href="/assets/js/48.5996b4fc.js"><link rel="prefetch" href="/assets/js/49.fea4d36b.js"><link rel="prefetch" href="/assets/js/5.baaddd77.js"><link rel="prefetch" href="/assets/js/50.4cd3422c.js"><link rel="prefetch" href="/assets/js/51.228fffda.js"><link rel="prefetch" href="/assets/js/52.92861e6c.js"><link rel="prefetch" href="/assets/js/53.b72d8ce0.js"><link rel="prefetch" href="/assets/js/54.c15c9cdc.js"><link rel="prefetch" href="/assets/js/55.9bc4f52b.js"><link rel="prefetch" href="/assets/js/56.947ab898.js"><link rel="prefetch" href="/assets/js/57.fa37cf58.js"><link rel="prefetch" href="/assets/js/58.d682c2a2.js"><link rel="prefetch" href="/assets/js/59.4499ef43.js"><link rel="prefetch" href="/assets/js/6.f5ab8614.js"><link rel="prefetch" href="/assets/js/60.aa57de27.js"><link rel="prefetch" href="/assets/js/61.5049d857.js"><link rel="prefetch" href="/assets/js/62.ec9a8087.js"><link rel="prefetch" href="/assets/js/63.38b9610d.js"><link rel="prefetch" href="/assets/js/64.0034d3be.js"><link rel="prefetch" href="/assets/js/65.5a44c8b1.js"><link rel="prefetch" href="/assets/js/67.ab2beac7.js"><link rel="prefetch" href="/assets/js/68.fa3c4346.js"><link rel="prefetch" href="/assets/js/69.4c304a67.js"><link rel="prefetch" href="/assets/js/7.62e43543.js"><link rel="prefetch" href="/assets/js/70.9965b915.js"><link rel="prefetch" href="/assets/js/71.f5f8e219.js"><link rel="prefetch" href="/assets/js/72.afe95f75.js"><link rel="prefetch" href="/assets/js/73.55da3950.js"><link rel="prefetch" href="/assets/js/74.860ada40.js"><link rel="prefetch" href="/assets/js/75.66a003ea.js"><link rel="prefetch" href="/assets/js/76.886902cd.js"><link rel="prefetch" href="/assets/js/77.680b69b8.js"><link rel="prefetch" href="/assets/js/78.6440c559.js"><link rel="prefetch" href="/assets/js/79.4f3af818.js"><link rel="prefetch" href="/assets/js/80.b04f59cc.js"><link rel="prefetch" href="/assets/js/81.d4c4e4b3.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.03d43e08.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab222855.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.ico" alt="今日前端" class="logo"> <span class="site-name can-hide">今日前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/daily/day30.html" class="nav-link">
+  今日前端
+</a></div><div class="nav-item"><a href="/github/before.html" class="nav-link">
+  Github网站食用
+</a></div><div class="nav-item"><a href="/web/before.html" class="nav-link">
+  前端脚手架
+</a></div><div class="nav-item"><a href="https://blog.liugezhou.online" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  他的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/liugezhou/daydayup" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/daily/day30.html" class="nav-link">
+  今日前端
+</a></div><div class="nav-item"><a href="/github/before.html" class="nav-link">
+  Github网站食用
+</a></div><div class="nav-item"><a href="/web/before.html" class="nav-link">
+  前端脚手架
+</a></div><div class="nav-item"><a href="https://blog.liugezhou.online" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  他的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/liugezhou/daydayup" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/web/before.html" class="sidebar-link">关于</a></li><li><a href="/web/00.html" class="sidebar-link">00-整体架构设计文档范本V0.1</a></li><li><a href="/web/01.html" class="sidebar-link">01-需求分析与架构设计</a></li><li><a href="/web/02.html" aria-current="page" class="active sidebar-link">02-脚手架架构设计和框架搭建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/02.html#第一章-本周介绍" class="sidebar-link">第一章 本周介绍</a></li><li class="sidebar-sub-header"><a href="/web/02.html#第二章-脚手架开发入门" class="sidebar-link">第二章 脚手架开发入门</a></li><li class="sidebar-sub-header"><a href="/web/02.html#第三章-脚手架框架搭建" class="sidebar-link">第三章 脚手架框架搭建</a></li><li class="sidebar-sub-header"><a href="/web/02.html#第四章-lerna源码解析" class="sidebar-link">第四章 Lerna源码解析</a></li></ul></li><li><a href="/web/03.html" class="sidebar-link">03-脚手架核心流程开发</a></li><li><a href="/web/04.html" class="sidebar-link">04-脚手架命令注册和执行过程开发</a></li><li><a href="/web/05.html" class="sidebar-link">05-脚手架创建项目流程设计和开发</a></li><li><a href="/web/06.html" class="sidebar-link">06-脚手架项目和组件初始化开发</a></li><li><a href="/web/14.html" class="sidebar-link">14-服务端选型：磨刀不如砍柴功</a></li><li><a href="/web/15.html" class="sidebar-link">15-服务端 CI_CD：Github 自动化</a></li><li><a href="/web/16.html" class="sidebar-link">16-编辑器服务端API开发</a></li><li><a href="/web/17.html" class="sidebar-link">17-编辑器服务端调用第三方服务</a></li><li><a href="/web/28.html" class="sidebar-link">28-脚手架发布模块架构设计和核心流程开发</a></li><li><a href="/web/29.html" class="sidebar-link">29-脚手架发布模式git自动化流程开发</a></li><li><a href="/web/30.html" class="sidebar-link">30-脚手架发布模块云构建系统开发</a></li><li><a href="/web/31.html" class="sidebar-link">31-脚手架发布模块云发布功能开发</a></li><li><a href="/web/32.html" class="sidebar-link">32-脚手架组件发布功能开发</a></li><li><a href="/web/33.html" class="sidebar-link">33-组件平台开发</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="第一章-本周介绍"><a href="#第一章-本周介绍" class="header-anchor">#</a> 第一章 本周介绍</h2> <p><strong>1-1 确立本周目标</strong></p> <ul><li>脚手架的实现原理、调试原理</li> <li>Lerna的常见用法、源码分析</li> <li>架构设计技巧和架构图绘制方法</li> <li>Node的module模块分析</li> <li>yargs使用方法</li> <li>剖析Lerna架构设计</li></ul> <p><strong>1-2 前端研发脚手架imooc-cli核心功能演示</strong></p> <ul><li>安装imooc-cli脚手架： <em><strong>npm i -g  @imooc-cli/core</strong></em></li> <li>查看脚手架相关内容： <em>** **<strong>imooc-cli</strong></em></li> <li>通过脚手架新建项目:   <em>** imooc-cli init**</em></li> <li>项目发布到测试环境：  <em><strong>imooc-cli publish</strong></em></li> <li>项目发布到正式环境:    <em><strong>imooc-cli publish --prod</strong></em></li></ul> <p><strong>1-3 脚手架在课程中的定位</strong></p> <ul><li>本项目中基础项目均由脚手架管理</li> <li>技术简历突出</li> <li>提高技能</li></ul> <h2 id="第二章-脚手架开发入门"><a href="#第二章-脚手架开发入门" class="header-anchor">#</a> 第二章 脚手架开发入门</h2> <p><strong>2-1 本章知识脉络和难点解析</strong></p> <ul><li>分析开发脚手架的必要性</li> <li>从使用角度去理解什么是脚手架</li> <li>脚手架的实现原理(与操作系统关联)</li> <li>脚手架的开发流程</li></ul> <p><strong>2-2 站在前端研发的视角，分析开发脚手架的必要性</strong></p> <ul><li>开发imooc-cli脚手架的核心目标：提升前端研发效能【提炼通用代码、通用流程、构建发布上线】</li></ul> <p><img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-1.3vft5c4ms5m0.webp" alt="2-1"></p> <ul><li>脚手架核心价值：<em>**自动化、标准化、数据化    **</em></li></ul> <p>和自动化构建工具(jenkins、travia)区别：自动化构建工具在服务端执行，无法覆盖本地操作且定制自动化的构建工具需要用到Java等后端语言，对前端不友好。</p> <p><strong>2-3 从使用角度理解什么是脚手架？</strong></p> <ul><li>脚手架简介：脚手架的本质是一个操作系统的客户端，通过命令行执行。</li> <li>脚手架执行原理：</li></ul> <p><img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-2.5sd3oxy068s0.webp" alt="2-2"></p> <ul><li>从应用角度看vue-cli开发脚手架过程：</li></ul> <ol><li>首先是个npm项目，项目中有一个bin/vue.js的文件，且这个项目发布到了npm上</li> <li>将npm项目安装到了lib/node_modules</li> <li>在node的bin目录下配置软链接到lib/node_modules/@vue/cli/bin/vue.js</li></ol> <p><strong>脚手架执行原理解析：</strong>
+在终端输入：vue create vue-test-app</p> <ol><li>终端解析vue命令【通过_which vue查找vue_】</li> <li>根据vue命令链接到实际的vue.js文件</li> <li>终端使用node执行vue.js文件</li> <li>vue.js文件解析command/options</li> <li>vue.js文件执行command</li> <li>执行完毕，退出执行</li></ol> <p><strong>2-4 脚手架原理讲解(上)</strong></p> <p><strong>问题一：为什么全局安装@vue/cli后,我们执行的命令为 vue呢？</strong></p> <p>答：这是因为通过which vue后我们会看到vue所在目录，而这个vue是一个软链接，指向的是@vue/cli。确定这个vue命令名称的是在<code>node/v12.16.1/lib/node_modules/@vue/cli</code>目录下package.json中的bin的键值。</p> <p><strong>问题二：全局安装@vue/cli时发生了什么？</strong></p> <p>答：执行 npm install -g @vue/cli的时候，首先node会把我们当前包下载到node下的node_modules中去。下载完成后，会在下载好的包中查找package.json中是否有bin，如果有，会通过package.json中的bin中的键去配置软链接。</p> <p>上面两个问题其实问题二在前，问题一在后，两个问题说的是一个流程的双向解释，理解了问题二，问题一就清楚了。</p> <p><strong>问题三：执行vue命令时发生了什么？为什么vue指向一个js文件，我们却可以通过vue命令执行它？</strong></p> <p>答：首先执行vue命令，与执行which vue打印出来的地址  效果是等价的(即执行的是which vue的那个软连接:/Users/liugezhou/.nvm/versions/node/v12.16.1/bin/vue)。
+而软连接又指向它的实际文件存在路径(../lib/node_modules/@vue/cli/bin/vue.js)。</p> <p>我们知道，一个test.js文件可以通过node执行，但不能单独执行，这是因为它没有可执行权限。
+我们在/Users/liugezhou/Desktop目录下新建一个test.js文件，我们可以给这个js文件一个执行权限：chmod 777 test.js  然后在命令行直接输入 ./test.js仍然不可以执行。这是因为js文件需要一个解释器来进行执行，这个node就是一个解释器。(.py文件需要 python解释器执行，.java文件需要java解释器进行执行)。</p> <p>那么我们上面的vue.js文件是怎么执行的呢？
+通过查看vue.js文件源码，我们发现第一行代码是这样的：#!/usr/bin/env node
+这行代码的意思是：告诉我们的操作系统，直接调用这个文件的时候，到环境变量中查找node命令执行。
+(/usr/bin/env 是我们的环境变量)</p> <p>然后，我们在我们的test.js文件中第一行加入这行代码  #!/usr/bin/env node
+直接输入 ./test.js 即可执行这个js文件。</p> <p>接着，我们不想用 ./test.js这样的方式执行js文件，我们想通过一个命令，比如 liugezhou 这个命令来执行这个test.js文件，我们需要怎么做呢？
+第一种方式，我们去找环境变量，通过 echo $PATH</p> <p>首先，我们创建一个环境变量：
+cd  /Users/liugezhou/.nvm/versions/node/v12.16.1/bin
+创建软连接：ln -s  /Users/liugezhou/Desktop/test.js  liugezhou
+创建完毕后，就可以看到一个liugezhou软连接，我们在任何目录执行liugezhou就可以执行test.js文件了。</p> <p><strong>2-5 脚手架原理讲解（下）</strong></p> <p><strong>问题一：为什么说脚手架本质是操作系统的客户端？它和我们在PC上安装的应用/软件有什么区别</strong>
+脚手架执行起来的本质是靠node这个命令，node是一个操作系统客户端，而test.js 这个文件仅仅是作为一个参数注入到node命令中。node本质上是一个可执行文件(在window操作系统中可以看到node的扩展名为.exe的)。
+本质来说没有区别。区别仅仅是安装的应用软件会提供一个GUI,而node并没有提供GUI</p> <p><strong>问题二：如何为node脚手架命令创建别名</strong>
+方法一：即为上文提到的创建一个软连接。
+接着，我们希望继续为上文提到的  liugezhou 软连接继续添加一个别名，我们需要这么做
+在上文的bin目录下，执行命令  ln -s ./liugezhou liugezhou2
+即 软连接可以嵌套。</p> <p><strong>问题三：描述脚手架命令执行的全过程</strong></p> <p><img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-3.79oyc1dprz80.webp" alt="2-3"></p> <p><strong>2-6 脚手架开发流程和难点解析</strong></p> <p><strong>通过以上分析，我们大致了解一个脚手架的开发流程如下：</strong></p> <ul><li>创建一个npm项目</li> <li>创建脚手架的入口文件，且入口文件需要添加代码：#!/usr/bin/env node</li> <li>配置package.json文件，添加bin属性(指定脚手架命令与地址)</li> <li>编写脚手架代码</li> <li>将脚手架发布到npm</li></ul> <p><strong>使用流程</strong>：</p> <ul><li>安装脚手架： npm install - g your-own-cli</li> <li>使用脚手架： your-own-cli</li></ul> <p><strong>脚手架开发难点</strong>：</p> <ol><li>脚手架开发过程中通常需要将复杂的系统拆分为多个模块_<strong>(分包)</strong>_</li> <li>脚手架开发过程中需要注册一系列的命令。如何对命令进行注册是一个重要的环节</li> <li>需要对参数进行解析:     [vue command <code>[options] &lt;params&gt;</code>]</li> <li>帮助文档：global[主命令]</li></ol> <p>…………
+命令行交互、日志打印、命令行文字变色、网络通信 HTTP/WebSocket、文件处理等。</p> <p><strong>2-7 快速入门第一个脚手架</strong></p> <p>通过上节流程，我们本节快速开发一个liugezhou-test脚手架并发布，流程如下:</p> <ul><li>cd /Users/liugezhou/Desktop</li> <li>mkdir liugezhou-test</li> <li>cd liugezhou-test</li> <li>npm init -y</li> <li>终端打开liugezhou-test项目：新建lib目录，lib目录下新建index.js文件（index.js文件内容如下）</li> <li>修改package.json文件，添加 &quot;bin&quot;:{&quot;liugezhou-test&quot;:&quot;lib/index.js&quot;}</li> <li>npm publish 发布npm包</li> <li>下载安装：npm i -g liugezhou-test</li> <li>测试：liugezhou-test</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token hashbang comment">#!/usr/bin/env node</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'welcome liugezhou-test'</span><span class="token punctuation">)</span>
+</code></pre></div><p>这里注意一点，在npm publish的时候，如果是在Descktop目录下执行的，那么我们下载liugezhou-test包之后，会看到软链指向的是本地，这是因为npm为了我们本地调试：如果/Desktop目录下有这个包，会指向本地。</p> <p><strong>2-8 脚手架本地调试方法</strong></p> <p>方式一：如上文所说，直接在Desktop目录下执行：npm install -g liugezhou-test,即调试本地包。
+(移除本地安装的包：<em><strong>npm remove -g liugezhou-test</strong></em>)</p> <p>方式二：直接在liugezhou-test文件目录下，执行：<strong><em>npm link</em></strong>,软链指向的node_modules源文件指向本地包。</p> <p><strong>分包情况下，如何调试本地包？</strong>
+如果/Desktop/liugezhou-test要使用/Desktop/lilugezhou-test/lib包下的方法，如何做呢？</p> <ul><li>在/Desktop/liugezhou-test/lib目录下，npm link</li> <li>在/Desktop/liugezhou-test/目录下，npm link liugezhou-test-lib</li></ul> <p><strong>2-9 脚手架本地调试标准流程总结</strong></p> <p><strong>链接本地脚手架</strong></p> <ul><li>cd your-cli-dir</li> <li>npm link</li></ul> <p><strong>链接本地库文件</strong></p> <ul><li>cd your-lib-dir</li> <li>npm link</li> <li>cd your-cli-dir</li> <li>npm link your-lib-dir</li></ul> <p><strong>取消链接本地库文件</strong></p> <ul><li>cd your-lib-dir</li> <li>npm unlink</li> <li>cd your-cli-dir</li> <li>npm unlink your-lib-dir  #link存在</li> <li>rm -rf node_modules     # link不存在</li> <li>npm i -S your-lib-dir</li></ul> <p><strong>理解 npm  link</strong></p> <ul><li>npm link : 将当前项目链接到node全局node_modules中作为一个库文件，并解析bin配置创建可执行文件。</li> <li>npm link your-libr:将当前项目中node_modules下指定的库文件链接到node全局node_modules下的库文件</li></ul> <p><strong>理解 npm unlink</strong></p> <ul><li>npm unlink:将当前项目从node全局node_modules中移除</li> <li>npm unlink your-lib:将当前项目中的库文件依赖删除。</li></ul> <p><strong>2-10 脚手架命令注册和参数解析</strong></p> <p>process是node的内置库
+我们在index.js中写代码： console.log(require('process'))</p> <p>通过命令行执行 liugezhou-test init
+会看到process有许许多多个属性，其中有一个argv属性。
+通过分析这个argv属性，我们就看到了init这个属性。</p> <p>因此我们可以通过argv来判断是否输入了  init 这个命令。</p> <p><strong>2-11 脚手架项目发布</strong></p> <p>老生常谈，npm publish
+通过判断argv输入的参数，在liugezhou-test-lib中与liugezhou-test中加入相关逻辑
+实现 liugezhou-test init 与 liugezhou -V的输出显示
+然后分别发布，remove掉本地链接。</p> <h2 id="第三章-脚手架框架搭建"><a href="#第三章-脚手架框架搭建" class="header-anchor">#</a> 第三章 脚手架框架搭建</h2> <hr> <p><strong>3-1 <strong>本章的收获是什么，难点是什么？</strong></strong></p> <p>本节课程非常下饭：</p> <ul><li>收获一：Lerna简介 [Lerna管理的项目有:babel、create-reat-app、vue-cli]</li> <li>通过学习lerna将学会如何管理一个复杂的Javascript项目</li> <li>收获二：Lerna源码分析：讲解源码结构、执行流程、源码精读</li> <li>收获三：基于lerna设计简历。</li></ul> <p><strong>3-2 原生脚手架开发痛点分析</strong></p> <p>lerna设计源于其要解决的问题，首先我们要分析写原生脚手架开发的痛点：</p> <ol><li>痛点一：重复操作</li></ol> <ul><li>多Package本地link</li> <li>多Package依赖安装</li> <li>多Package单元测试</li> <li>多Package代码提交</li> <li>多Package代码发布</li></ul> <ol start="2"><li>版本一致性</li></ol> <ul><li>发布时版本一致性</li> <li>发布后相互依赖版本升级</li></ul> <p><strong>3-3 本章重点：lerna简介及脚手架开发流程</strong></p> <p><strong>Lerna简介</strong>
+Lerna : <strong>A tool for managing JavaScript projects with multiple packages.</strong>
+用于管理具有多个程序包的JavaScript项目的工具。</p> <p>Lerna : <strong>Lerna is a tool that optimizes the workflow around managing multi-package repositories with git and npm.</strong>
+Lerna是一个基于 <strong>git+npm <strong>的优化工作流的</strong>多package</strong>项目的管理工具。</p> <p><strong>优势</strong></p> <ul><li>大幅减少重复操作</li> <li>提升操作的标准化</li></ul> <p>Lerna 是架构优化的产物，它揭示了一个架构真理：项目复杂度提升后，就需要对项目进行架构优化。架构优化的主要目标往往都是以效能为核心。
+lerna官网：<a href="https://lerna.js.org/" target="_blank" rel="noopener noreferrer">https://lerna.js.org/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><strong>Lerna开发脚手架流程 ⭐️⭐️⭐️</strong> <img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-4.1fovy6rqci3k.webp" alt="2-4"> <img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-5.ry7x197y6ow.webp" alt="2-5"></p> <p><strong>3-4 基于lerna搭建脚手架框架</strong> <strong>本节使用命令依次如下</strong></p> <ul><li><p>mkdir  liugezhou-cli-dev</p></li> <li><p>cd liugezhou-cli-dev</p></li> <li><p>npm init -y</p></li> <li><p>npm i -g lerna【全局安装】</p></li> <li><p>npm i -S lerna</p></li> <li><p>lerna init</p></li> <li><p>lerna create core</p></li> <li><p>lerna create utils</p></li></ul> <p><strong>3-5 Lerna核心操作</strong></p> <p>本节使用命令依次如下：</p> <ul><li><p>lerna add liugezhou-test  (在packages目录下所有包中安装liugezhou-test包)</p></li> <li><p>lerna add liugezhou-test packages/core  （在指定包core中添加依赖）</p></li> <li><p>lerna clean (清除packages目录下的依赖)</p></li> <li><p>lerna bootstrap (将刚清除的所有依赖，重新安装)</p></li> <li><p>lerna link (开发的版本互相存在依赖，可用此命令完成)</p></li> <li><p>lerna exec -- <code>&lt;commands&gt;</code> [...args]</p></li></ul> <p>lerna exec -- rm -rf  node_modules   删除packages目录下的所有node_modules文件夹
+lerna exec --scope @liugezhou-cli/utils--rm -rf node_modules 删除packages目录下utils的。。。。
+【上下文为packages目录】</p> <ul><li>lerna run test</li> <li>lerna run --scope @liugezhou-cli/core test  [执行core包package.json中script标签的test属性]</li></ul> <p><strong>3-6 Lerna发布流程(lerna使用总结)</strong></p> <ul><li><p><code>lerna init</code>
+会自动完成 git 初始化，但不会创建 .gitignore，这个必须要手动添加，否则会将 node_modules 目录都上传到 git</p></li> <li><p><code>lerna add:</code>
+第一个参数：添加npm包名
+第二个参数：本地package的路径（如果不加，则全部安装）
+可选参数：--dev：将依赖安装到devDependencies,不加时安装到dependencies</p></li> <li><p><code>lerna link</code>
+如果未发布上线，需要手动添加到package.json中再执行。</p></li> <li><p><code>lerna clean</code>
+只会删除 node_modules,不会删除package.json中的依赖</p></li> <li><p><code>lerna exec 和 lerna run</code>
+--scope属性后添加的是包名，不是package的路径，这点和 lerna add 不同</p></li> <li><p><code>lerna publish</code></p></li></ul> <ol><li>发布时会自动执行 git add package-lock.json,所以该文件不能加入到.gitignore中去。</li> <li>发布时先创建远程仓库，且push代码。</li> <li>执行npm publish前完成 npm login</li> <li>如果发布的包名为 @xxxx/yyy 的格式，需要现在npmjs.org上注册organization</li> <li>发布到npm group时默认为private，package.json中需手动添加配置：</li></ol> <p><code>&quot;publishConfig&quot;: {  &quot;access&quot;: &quot;public&quot;}</code></p> <h2 id="第四章-lerna源码解析"><a href="#第四章-lerna源码解析" class="header-anchor">#</a> 第四章 Lerna源码解析</h2> <p><strong>4-1 赚回学费：武装简历、升职加薪</strong></p> <p>为什么要做源码解析：赚回学费、走上人生巅峰</p> <ul><li>自我成长、提升编码能力和技术深度的需要</li> <li>为我所用，应用到实际开发，实际产生效益</li> <li>学习借鉴，站在巨人的肩膀上，登高望远</li></ul> <p>为什么要分析Lerna源码</p> <ul><li>2W+ star的明星项目</li> <li>Lerna是脚手架，对我们开发脚手架有借鉴意义</li> <li>Lerna项目中蕴含大量的最佳实践，值得深入研究和学习</li></ul> <p>学习目标</p> <ul><li>Lerna源码结构和执行流程分析</li> <li>import-local源码深度精读</li></ul> <p>学习收获</p> <ul><li>如何将源码分析写进简历</li> <li>学习明星项目的架构设计</li> <li>获得脚手架执行流程的一种实现思路</li> <li>获得脚手架调试本地源码的另一种方式</li> <li>Node.js加载node_modules模块的流程 ✨✨✨✨✨</li> <li>各种文件操作算法和最佳实践</li></ul> <p><strong>4-2 lerna源码结构分析和调试技巧</strong></p> <ol><li>github下载lerna源码到本地且安装依赖！</li> <li>使用webstorm打开源码，找到入口文件--package.json中的bin属性。</li> <li>webstorm添加调试：Edit Configurations，这里需要在Configuration中添加<code>node parameters</code></li></ol> <p>这里遇到一个问题，代码调试的时候，Variables窗口内没内容。</p> <p><strong>4-3 Node源码调试过程中必会的小技巧</strong></p> <ul><li>WebStorm -&gt; Preferences... -&gt; 搜索 Node.js and NPM -&gt; 勾选 Coding assistance for Node.js</li></ul> <p>这个目的是：对当前项目中的一些默认库或内置库做一些高亮,使得node提供的一些库文件可以进行跳转。</p> <ul><li>搜索 Debugger -&gt; Stepping -&gt; 默认勾选的都取消掉</li></ul> <p>这个目的是在调试的时候，取消勾选就可以进去一些库文件查看源码</p> <p><strong>4-4 lerna初始化过程源码详细分析</strong></p> <p>通过前面分析，我们知道，入口文件为：lerna/core/lerna/cli.js文件，从这里开始看源码：
+require(&quot;.&quot;)(<strong>process</strong>.argv.slice(2));</p> <ul><li>require('.'):这里的 <code>.</code> 是相对路径,相当于是 require('./index.js)</li> <li>到这行代码后，先加载与该cli.js同级别目录下的index.js文件。</li> <li>等文件加载完毕后，将<strong>process</strong>.argv.slice(2)参数， 也就是我们写入的参数，传入到 index.js文件中module.exports出来的方法 main</li></ul> <p><strong>4-5 【高能知识点】npm项目本地依赖引用方法</strong></p> <p><strong>本地依赖的最佳实践</strong>：引用本地包的方式可以使用 file的方式，这是因为lerna publish的时候可以在线上环境把fiel的方式改成引用线上包的方式。大概是个这么个意思。这种方式可以去除之前使用 npm link的方式。</p> <p>理解了这里本地依赖的file引用后，回到之前的3-6 lerna-publish发布流程项目，将本地引用的@cloudscope-cli/utils改为file引用，这里需要注意：在@cloudscope-cli/core中使用file方式引用了本地的utils包后，需要npm install一下。</p> <p><strong>4-6 脚手架框架yargs快速入门</strong></p> <p>首先在npmjs官网搜索yargs，看一下基本使用情况,然后开始我们的学习：
+在某目录下，新建一个空的项目，具体操作如下：
+mkdir liugezhou-test
+npm init -y
+新建lib/index.js
+package.json文件添加 &quot;bin&quot;:&quot;lib/index.js&quot;
+npm install -S yarns
+npm install -S dedent</p> <p>然后，开始编辑index.js文件，进行yargs相关用法的学习：
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-6.2vup03ac3eg0.webp" alt="2-6"></p> <p><strong>4-7 yargs高级用法讲解</strong></p> <p>关于yargs的command用法，我们从npmjs官网，看到示例如下：
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-7.6vlv3vzsg740.webp" alt="2-7">
+通过以上代码，我们可以看到定义command的时候，传入了四个参数：</p> <ul><li>'serve [port]': command的格式,port为我们自定义的option，相当于  liugezhou-test  serve</li> <li>'start the serve':关于此serve  command命令的补充描述</li> <li>第三个参数为builder函数：在执行此command具体命令之前做的动作，比如上文为serve这个命令定义了一个参数 port，且给定port的默认值为5000</li> <li>第四个参数我们叫做handler：是用来具体执行command的一个行为</li></ul> <p>在对上面demo有个简单了解后，回到我们上一节的代码中，继续添加command定义：
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-8.hrcclk4of0w.webp" alt="2-8"></p> <p><strong>4-8 lerna脚手架初始化过程超详细讲解</strong></p> <p>通过 4-6、4-7两节内容，分析lerna脚手架的初始化过程讲解。
+<strong>4-9 lerna脚手架Command执行过程详解</strong></p> <p>大致流程了解，未画流程图。</p> <p><strong>4-10 【关键知识复习】javascript事件循环--EventLoop</strong></p> <ul><li>EventLoop中存在两种事件：宏任务(MacroTask)和微任务(MicroTask)</li> <li>JavaScript脚本中加入到宏任务中去</li> <li>当宏任务队列中任务执行完毕后，会将微任务队列中任务清空，清空之后再去执行宏任务队列。这种循环往复的执行流程就称为事件循环--EventLoop。</li> <li>然后：我们在宏任务中加入一个setTimeout。</li> <li>接着，我们在宏任务队列中加入一个 Promise.then() , Promise.then()中的内容会被加入到微任务队列中去。</li></ul> <p><strong>4-11 import-local执行流程深度分析</strong></p> <p>import-local的作用是：当我们的项目当中本地存在一个脚手架命令，同时全局在node当中也存在一个脚手架命令的时候，优先选用本地的node_modules中的版本。</p> <p>在执行一个node代码的时候，默认会向node代码当中注入一些变量：__filename 、 __dirname 、 require 、 module、exports.</p> <p>首先，执行lerna命令的时候，会执行node全局下的lerna，即which  lerna 指向的：
+软连接：/Users/liugezhou/.nvm/versions/node/v12.16.1，
+实际指向：/Users/liugezhou/.nvm/versions/node/v12.16.1/lib/node_modules/lerna/cli.js<code>[PRATIC]</code></p> <p>然后，在webstorm的debug调试中，Node parameters修改为<code>[PRATIC]</code> 地址。
+接着，点击调试按钮，我们知道，程序首先进入的文件是<code>[PRATIC]</code></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token hashbang comment">#!/usr/bin/env node</span>
+<span class="token string">&quot;use strict&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">/* eslint-disable import/no-dynamic-require, global-require */</span>
+<span class="token keyword">const</span> importLocal <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;import-local&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">importLocal</span><span class="token punctuation">(</span>__filename<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;npmlog&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;cli&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;using local version of lerna&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>argv<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>通过上面分析我们知道了执行流程，现在的重点就是看代码中的 require('import-local')中的源码。
+我们进入到import-local源码中：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> resolveCwd <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'resolve-cwd'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> pkgDir <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pkg-dir'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token parameter">filename</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+ <span class="token keyword">const</span> globalDir <span class="token operator">=</span> pkgDir<span class="token punctuation">.</span><span class="token function">sync</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">dirname</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> relativePath <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">relative</span><span class="token punctuation">(</span>globalDir<span class="token punctuation">,</span> filename<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> pkg <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>globalDir<span class="token punctuation">,</span> <span class="token string">'package.json'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> localFile <span class="token operator">=</span> resolveCwd<span class="token punctuation">.</span><span class="token function">silent</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>pkg<span class="token punctuation">.</span>name<span class="token punctuation">,</span> relativePath<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">return</span> localFile <span class="token operator">&amp;&amp;</span> path<span class="token punctuation">.</span><span class="token function">relative</span><span class="token punctuation">(</span>localFile<span class="token punctuation">,</span> filename<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">''</span> <span class="token operator">?</span> <span class="token function">require</span><span class="token punctuation">(</span>localFile<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>path.dirname(filename)</code>：这句代码的意思是获取到文件filename的上级目录。</p> <p><strong>4-12 pkg-dir源码解析（一大波优秀的文件操作库)</strong></p> <p>本节分析上面代码，对import-local源码细节分析，本节分析代码流程为globalDir是如何获得的：</p> <p>const pkgDir = require('pkg-dir')
+pkg-dir:字面意思为，获得package.json文件的上级目录</p> <p>进入 pkg-dir源码：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> findUp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'find-up'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token parameter">cwd</span> <span class="token operator">=&gt;</span> <span class="token function">findUp</span><span class="token punctuation">(</span><span class="token string">'package.json'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>cwd<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">fp</span> <span class="token operator">=&gt;</span> fp <span class="token operator">?</span> path<span class="token punctuation">.</span><span class="token function">dirname</span><span class="token punctuation">(</span>fp<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">sync</span> <span class="token operator">=</span> <span class="token parameter">cwd</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token keyword">const</span> fp <span class="token operator">=</span> findUp<span class="token punctuation">.</span><span class="token function">sync</span><span class="token punctuation">(</span><span class="token string">'package.json'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>cwd<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">return</span> fp <span class="token operator">?</span> path<span class="token punctuation">.</span><span class="token function">dirname</span><span class="token punctuation">(</span>fp<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>我们分析pkg-dir代码可知：pkg-dir这个库向我们暴露了两个方法：默认cwd和sync方法，其中sync方法会以同步的方式执行。</p> <p>同时，这里又引用find-up这个库</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> locatePath <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'locate-path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">filename<span class="token punctuation">,</span> opts <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token keyword">const</span> startDir <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>opts<span class="token punctuation">.</span>cwd <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> <span class="token punctuation">{</span>root<span class="token punctuation">}</span> <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>startDir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> filenames <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">dir</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token function">locatePath</span><span class="token punctuation">(</span>filenames<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">cwd</span><span class="token operator">:</span> dir<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">file</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token function">resolve</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>dir<span class="token punctuation">,</span> file<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>dir <span class="token operator">===</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+     <span class="token function">find</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">dirname</span><span class="token punctuation">(</span>dir<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>startDir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">sync</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">filename<span class="token punctuation">,</span> opts <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token keyword">let</span> dir <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>opts<span class="token punctuation">.</span>cwd <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> <span class="token punctuation">{</span>root<span class="token punctuation">}</span> <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>dir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> filenames <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token comment">// eslint-disable-next-line no-constant-condition</span>
+ <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> file <span class="token operator">=</span> locatePath<span class="token punctuation">.</span><span class="token function">sync</span><span class="token punctuation">(</span>filenames<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">cwd</span><span class="token operator">:</span> dir<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>dir<span class="token punctuation">,</span> file<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>dir <span class="token operator">===</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  dir <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">dirname</span><span class="token punctuation">(</span>dir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>同理，find-up这个库也是默认的module.exports方法与同步返回的sync方法。
+这里我们继续分析find-up这个库的sync方法，一行一行代码解析：</p> <ol><li>let dir = path.resolve(opts.cwd || '');
+path.resolve是我node当中经常使用的方法，它主要作用是把两个相对路径进行结合。
+path.resolve('/Users','/liugezhou'),返回的路径为 /liugezhou
+path.join('/Users','/liugezhou'),返回的路径为 /Users/liugezhou</li></ol> <p>这里有个注意点是path.resolve('.')返回的是当前路径,而path.join('.'),返回的就是. 不会帮我们判定当前的 . 与上级路径的关系。</p> <ol start="2"><li>const {root} = path.parse(dir);
+path.parse(&quot;/Users/liugezhou/Documents/imoocCourse/Web前端架构师/lerna/core&quot;)
+返回的结果为：</li></ol> <p>{
+root:'/',
+dir:'/Users/liugezhou/Documents/imoocCourse/Web前端架构师/lerna/core',
+base:'lerna',
+ext:'',
+name:'lerna'
+}</p> <ol start="3"><li><p>const filenames = [].concat(filename);
+通过分析上下文，我们知道这行代码的filename指的是 package.json,于是filenames = ['package.json']</p></li> <li><p>while (true) {}
+这里是个无限循环，需要注意的一点是退出条件</p></li> <li><p>const file = locatePath.sync(filenames, {cwd: dir});
+这里又调用了这个locatePath这个库的sync方法，local-path这个库的作用是磁盘中是否存在这个路径，如果存在会把第一个文件返回。</p></li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">...</span>
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">sync</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">iterable<span class="token punctuation">,</span> options</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+ options <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">cwd</span><span class="token operator">:</span> process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> el <span class="token keyword">of</span> iterable<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>pathExists<span class="token punctuation">.</span><span class="token function">sync</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>options<span class="token punctuation">.</span>cwd<span class="token punctuation">,</span> el<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> el<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>通过上面的代码，我们看到上面又用到了一个库：pathExists(通过名字我们显而易见的知道，这个库的作用是判断传入的一个路径是否存在的)，pathExists这个库源码不贴了，主要的一行代码是：fs.accessSync(fp),这行代码就是判断是否能到达一个文件，如果报错就会被try catch捕获返回false</p> <ol start="6"><li>if (file) {</li></ol> <p>return path.join(dir, file);         
+ }
+通过前面分析 path.join(dir, file)返回的就是
+/Users/liugezhou/Documents/imoocCourse/Web前端架构师/lerna/core/lerna/package.json</p> <p>最终获得globalDir！</p> <p><strong>4-13 resolve-from源码解析（彻底搞懂node_modules模块加载逻辑）</strong></p> <p>我们回到import-local源码，继续看
+const relativePath = path.relative(globalDir, filename);</p> <p>demo:
+const relativePath = path.relative(&quot;/a/b/c&quot;, '/a/b/c/d.js');
+relativePath返回值为  d.js</p> <p>const pkg = require(path.join(globalDir, 'package.json'));
+这里获得package.json这个文件</p> <p>import-local最关键的一部分来了：
+const localFile = resolveCwd.silent(path.join(pkg.name, relativePath));
+resolveCwd的含义是给出一个包名和主进入文件名，去本地文件中查找是否存在这样的路径</p> <p>然后我们就进入resolveCwd这个引用库的源码，查看是如何实现的(传入的参数为 lerna/cli.js)</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> resolveFrom <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'resolve-from'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token parameter">moduleId</span> <span class="token operator">=&gt;</span> <span class="token function">resolveFrom</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> moduleId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">silent</span> <span class="token operator">=</span> <span class="token parameter">moduleId</span> <span class="token operator">=&gt;</span> resolveFrom<span class="token punctuation">.</span><span class="token function">silent</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> moduleId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>这里又引用了resolve-from这个库的silent静默方法(源码见下)：
+这里需要引起注意一点的是resolve-from这个库传入的两个参数分别是上面提到的 lerna/cli.js以及 process.cwd()这个参数，这个process.cwd的传入参数为Working directory：
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-9.5jf81z9j35c0.webp" alt="2-9"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> Module <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'module'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">resolveFrom</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">fromDir<span class="token punctuation">,</span> moduleId<span class="token punctuation">,</span> silent</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> fromDir <span class="token operator">!==</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">TypeError</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Expected \`fromDir\` to be of type \`string\`, got \`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">typeof</span> fromDir<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">\`</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> moduleId <span class="token operator">!==</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">TypeError</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Expected \`moduleId\` to be of type \`string\`, got \`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">typeof</span> moduleId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">\`</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	fromDir <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>fromDir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> fromFile <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>fromDir<span class="token punctuation">,</span> <span class="token string">'noop.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">const</span> <span class="token function-variable function">resolveFileName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> Module<span class="token punctuation">.</span><span class="token function">_resolveFilename</span><span class="token punctuation">(</span>moduleId<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">id</span><span class="token operator">:</span> fromFile<span class="token punctuation">,</span>
+		<span class="token literal-property property">filename</span><span class="token operator">:</span> fromFile<span class="token punctuation">,</span>
+		<span class="token literal-property property">paths</span><span class="token operator">:</span> Module<span class="token punctuation">.</span><span class="token function">_nodeModulePaths</span><span class="token punctuation">(</span>fromDir<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>silent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">try</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token function">resolveFileName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">return</span> <span class="token function">resolveFileName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">fromDir<span class="token punctuation">,</span> moduleId</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">resolveFrom</span><span class="token punctuation">(</span>fromDir<span class="token punctuation">,</span> moduleId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">silent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">fromDir<span class="token punctuation">,</span> moduleId</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">resolveFrom</span><span class="token punctuation">(</span>fromDir<span class="token punctuation">,</span> moduleId<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>分析上面代码，最关键的代码为：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>	<span class="token keyword">const</span> <span class="token function-variable function">resolveFileName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> Module<span class="token punctuation">.</span><span class="token function">_resolveFilename</span><span class="token punctuation">(</span>moduleId<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">id</span><span class="token operator">:</span> fromFile<span class="token punctuation">,</span>
+		<span class="token literal-property property">filename</span><span class="token operator">:</span> fromFile<span class="token punctuation">,</span>
+		<span class="token literal-property property">paths</span><span class="token operator">:</span> Module<span class="token punctuation">.</span><span class="token function">_nodeModulePaths</span><span class="token punctuation">(</span>fromDir<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><blockquote><p>Module：node的内置模块，(通常开发过程中是不需要使用的),Module中的 下划线(_)方法，都称为内置方法
+_resolveFilename方法，是我们node中  require方法实现的核心方法之一，关于require方法的实现，参考阮一峰老师的这篇文章：<a href="http://www.ruanyifeng.com/blog/2015/05/require.html" target="_blank" rel="noopener noreferrer">require()源码解读<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>分析上面这段代码，Module._resolveFilename的作用是解析模块的真实路径，这个方法传进去两个参数，其中第一个options我们发现了：
+Module._nodeModulesPaths(fromDir)这个方法，这个方法的作用是生成node_modules的可能路径。
+在对这个方法源码进行学习前，我们预先从老师那了解到了这个方法的实现逻辑：</p></blockquote> <p><img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-10.6yvj127gn0w0.webp" alt="2-10"></p> <p>然后我们进入到Module._nodeModulesPaths方法中：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>Module<span class="token punctuation">.</span><span class="token function-variable function">_nodeModulePaths</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token keyword">from</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Guarantee that 'from' is absolute.</span>
+    from <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>from<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// Return early not only to avoid unnecessary work, but to *avoid* returning</span>
+    <span class="token comment">// an array of two items for a root: [ '//node_modules', '/node_modules' ]</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>from <span class="token operator">===</span> <span class="token string">'/'</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string">'/node_modules'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// note: this approach *only* works when the path is guaranteed</span>
+    <span class="token comment">// to be absolute.  Doing a fully-edge-case-correct path.split</span>
+    <span class="token comment">// that works on both Windows and Posix is non-trivial.</span>
+    <span class="token keyword">const</span> paths <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> from<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> p <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> last <span class="token operator">=</span> from<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> code <span class="token operator">=</span> from<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>code <span class="token operator">===</span> <span class="token constant">CHAR_FORWARD_SLASH</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!==</span> nmLen<span class="token punctuation">)</span>
+          paths<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>from<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> last<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'/node_modules'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        last <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        p <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>nmChars<span class="token punctuation">[</span>p<span class="token punctuation">]</span> <span class="token operator">===</span> code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token operator">++</span>p<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          p <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Append /node_modules to handle root paths.</span>
+    paths<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/node_modules'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> paths<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>分析以上代码，这里我们的from是：/Users/liugezhou/Documents/imoocCourse/Web前端架构师/lerna
+然后通过上面算法计算，最后得到的结果是：</p> <div class="language- extra-class"><pre class="language-text"><code>[/Users/liugezhou/Documents/imoocCourse/Web前端架构师/lerna/node_modules,
+/Users/liugezhou/Documents/imoocCourse/Web前端架构师/node_modules,
+/Users/liugezhou/Documents/imoocCourse/node_modules,
+/Users/liugezhou/Documents/node_modules,
+/Users/liugezhou/node_modules,
+/Users/node_modules,
+/node_modules]
+</code></pre></div><p>将这个数组返回后，我们继续分析Module._resolveFilename这个方法的源码：
+同样在对这个方法源码进行学习前，我们也预先从老师那了解到了这个方法的实现逻辑：
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-11.666n2zheeec0.webp" alt="2-11"></p> <p><strong>4-14 Node模块加载核心方法_resovleFileName源码深入解析</strong></p> <p>首先，关于Module._resolveFileName的源码分析要更为复杂，这是因为算法部分较多。</p> <p>Module._resolveFilename这个方法的源码为如下(代码逻辑添加注释)：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>Module<span class="token punctuation">.</span><span class="token function-variable function">_resolveFilename</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> parent<span class="token punctuation">,</span> isMain<span class="token punctuation">,</span> options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>NativeModule<span class="token punctuation">.</span><span class="token function">canBeRequiredByUsers</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">//判断是否为可加载的内置模块</span>
+    <span class="token keyword">return</span> request<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">let</span> paths<span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> options <span class="token operator">===</span> <span class="token string">'object'</span> <span class="token operator">&amp;&amp;</span> options <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment">//我们在这传入的options是	   undefined，因此之间跳过到else中---即执行Module._resolveLookupPaths(request, parent);</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">ArrayIsArray</span><span class="token punctuation">(</span>options<span class="token punctuation">.</span>paths<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> isRelative <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">'./'</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+          request<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">'../'</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+          <span class="token punctuation">(</span><span class="token punctuation">(</span>isWindows <span class="token operator">&amp;&amp;</span> request<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">'.\\'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+          request<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">'..\\'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>isRelative<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        paths <span class="token operator">=</span> options<span class="token punctuation">.</span>paths<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> fakeParent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Module</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        paths <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> options<span class="token punctuation">.</span>paths<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> path <span class="token operator">=</span> options<span class="token punctuation">.</span>paths<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          fakeParent<span class="token punctuation">.</span>paths <span class="token operator">=</span> Module<span class="token punctuation">.</span><span class="token function">_nodeModulePaths</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">const</span> lookupPaths <span class="token operator">=</span> Module<span class="token punctuation">.</span><span class="token function">_resolveLookupPaths</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> fakeParent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> lookupPaths<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>paths<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>lookupPaths<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+              paths<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>lookupPaths<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>options<span class="token punctuation">.</span>paths <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      paths <span class="token operator">=</span> Module<span class="token punctuation">.</span><span class="token function">_resolveLookupPaths</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> parent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">ERR_INVALID_OPT_VALUE</span><span class="token punctuation">(</span><span class="token string">'options.paths'</span><span class="token punctuation">,</span> options<span class="token punctuation">.</span>paths<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    paths <span class="token operator">=</span> Module<span class="token punctuation">.</span><span class="token function">_resolveLookupPaths</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> parent<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 然后就进入了_resolveLookPaths，进行了paths的一些合并，拿到合并的数组</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>parent <span class="token operator">&amp;&amp;</span> parent<span class="token punctuation">.</span>filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>      <span class="token comment">// 我们这里是有filename的</span>
+    <span class="token keyword">const</span> filename <span class="token operator">=</span> <span class="token function">trySelf</span><span class="token punctuation">(</span>parent<span class="token punctuation">.</span>filename<span class="token punctuation">,</span> isMain<span class="token punctuation">,</span> request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">emitExperimentalWarning</span><span class="token punctuation">(</span><span class="token string">'Package name self resolution'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> cacheKey <span class="token operator">=</span> request <span class="token operator">+</span> <span class="token string">'\x00'</span> <span class="token operator">+</span>
+          <span class="token punctuation">(</span>paths<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span> <span class="token operator">?</span> paths<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">:</span> paths<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'\x00'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Module<span class="token punctuation">.</span>_pathCache<span class="token punctuation">[</span>cacheKey<span class="token punctuation">]</span> <span class="token operator">=</span> filename<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> filename<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Look up the filename first, since that's the cache key.</span>
+  <span class="token keyword">const</span> filename <span class="token operator">=</span> Module<span class="token punctuation">.</span><span class="token function">_findPath</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> paths<span class="token punctuation">,</span> isMain<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//另一非常有难度的方法，源代码见下面的下面</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>filename<span class="token punctuation">)</span> <span class="token keyword">return</span> filename<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> requireStack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> cursor <span class="token operator">=</span> parent<span class="token punctuation">;</span>
+    cursor<span class="token punctuation">;</span>
+    cursor <span class="token operator">=</span> cursor<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    requireStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>cursor<span class="token punctuation">.</span>filename <span class="token operator">||</span> cursor<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Cannot find module '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>request<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">'</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>requireStack<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    message <span class="token operator">=</span> message <span class="token operator">+</span> <span class="token string">'\nRequire stack:\n- '</span> <span class="token operator">+</span> requireStack<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'\n- '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// eslint-disable-next-line no-restricted-syntax</span>
+  <span class="token keyword">const</span> err <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  err<span class="token punctuation">.</span>code <span class="token operator">=</span> <span class="token string">'MODULE_NOT_FOUND'</span><span class="token punctuation">;</span>
+  err<span class="token punctuation">.</span>requireStack <span class="token operator">=</span> requireStack<span class="token punctuation">;</span>
+  <span class="token keyword">throw</span> err<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>Module._resolveLookupPaths这个方法的源码为如下(代码逻辑添加注释)：
+主要功能就是将paths和环境变量node_modules合并</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>Module<span class="token punctuation">.</span><span class="token function-variable function">_resolveLookupPaths</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> parent</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>NativeModule<span class="token punctuation">.</span><span class="token function">canBeRequiredByUsers</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment">// 先判断是否为内置模块</span>
+    <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'looking for %j in []'</span><span class="token punctuation">,</span> request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Check for node modules paths.</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">'.'</span> <span class="token operator">||</span>
+      <span class="token punctuation">(</span>request<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span>
+      request<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">'.'</span> <span class="token operator">&amp;&amp;</span>
+      request<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">'/'</span> <span class="token operator">&amp;&amp;</span>
+      <span class="token punctuation">(</span><span class="token operator">!</span>isWindows <span class="token operator">||</span> request<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">'\\'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">let</span> paths <span class="token operator">=</span> modulePaths<span class="token punctuation">;</span>        <span class="token comment">//环境变量中存储的一些node_modules目录</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>parent <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> parent<span class="token punctuation">.</span>paths <span class="token operator">&amp;&amp;</span> parent<span class="token punctuation">.</span>paths<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      paths <span class="token operator">=</span> parent<span class="token punctuation">.</span>paths<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>paths<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 与之前传进来的paths进行合并</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'looking for %j in %j'</span><span class="token punctuation">,</span> request<span class="token punctuation">,</span> paths<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> paths<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">?</span> paths <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">;</span>    <span class="token comment">// 将合并的paths返回  </span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// In REPL, parent.filename is null.</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>parent <span class="token operator">||</span> <span class="token operator">!</span>parent<span class="token punctuation">.</span>id <span class="token operator">||</span> <span class="token operator">!</span>parent<span class="token punctuation">.</span>filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Make require('./path/to/foo') work - normally the path is taken</span>
+    <span class="token comment">// from realpath(__filename) but in REPL there is no filename</span>
+    <span class="token keyword">const</span> mainPaths <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'.'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'looking for %j in %j'</span><span class="token punctuation">,</span> request<span class="token punctuation">,</span> mainPaths<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> mainPaths<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'RELATIVE: requested: %s from parent.id %s'</span><span class="token punctuation">,</span> request<span class="token punctuation">,</span> parent<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> parentDir <span class="token operator">=</span> <span class="token punctuation">[</span>path<span class="token punctuation">.</span><span class="token function">dirname</span><span class="token punctuation">(</span>parent<span class="token punctuation">.</span>filename<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'looking for %j'</span><span class="token punctuation">,</span> parentDir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> parentDir<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>Module._findPath要解决的问题是在paths中解析模块的真实路径，
+同样在对这个方法源码进行学习前，我们也预先从老师那了解到了这个方法的实现逻辑：
+<img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-12.2oq71qhv97u0.webp" alt="2-12">
+源码如下：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>Module<span class="token punctuation">.</span><span class="token function-variable function">_findPath</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> paths<span class="token punctuation">,</span> isMain</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> absoluteRequest <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">isAbsolute</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//判断是否为绝对路径</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>absoluteRequest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    paths <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>paths <span class="token operator">||</span> paths<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 通过 \x00 生成一大段的cacheKey</span>
+  <span class="token keyword">const</span> cacheKey <span class="token operator">=</span> request <span class="token operator">+</span> <span class="token string">'\x00'</span> <span class="token operator">+</span>
+                <span class="token punctuation">(</span>paths<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span> <span class="token operator">?</span> paths<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">:</span> paths<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'\x00'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> entry <span class="token operator">=</span> Module<span class="token punctuation">.</span>_pathCache<span class="token punctuation">[</span>cacheKey<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>entry<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> entry<span class="token punctuation">;</span>
+
+  <span class="token keyword">let</span> exts<span class="token punctuation">;</span>
+  <span class="token comment">// trailingSlash判断request是否已 / 结尾的</span>
+  <span class="token keyword">let</span> trailingSlash <span class="token operator">=</span> request<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span>
+    request<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token constant">CHAR_FORWARD_SLASH</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">// 若不是以 / 结尾，</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>trailingSlash<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//会以正则进行匹配，这里的正则在下下节专门学习，这里暂时略过，这里的结论：该正则表示的结果为  是否是以“/..、/.、.. 、 . ”结尾</span>
+    trailingSlash <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(?:^|\/)\.?\.$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// For each path</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> paths<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Don't search further if path doesn't exist</span>
+    <span class="token comment">//一次拿出paths中存储的值</span>
+    <span class="token keyword">const</span> curPath <span class="token operator">=</span> paths<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>  
+    
+    <span class="token comment">//stat(curPath)返回结果 1是文件夹，0为文件，我们这里第一个返回的是文件夹 1，因此，不会跳出循环，继续向下执行</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>curPath <span class="token operator">&amp;&amp;</span> <span class="token function">stat</span><span class="token punctuation">(</span>curPath<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span> 
+    
+    <span class="token comment">//这里的意思就是将我们的curPath与request做一个结合</span>
+    <span class="token keyword">const</span> basePath <span class="token operator">=</span> <span class="token function">resolveExports</span><span class="token punctuation">(</span>curPath<span class="token punctuation">,</span> request<span class="token punctuation">,</span> absoluteRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> filename<span class="token punctuation">;</span>
+
+    <span class="token comment">//stat(basePath)看上面合成的文件是否存在，为0说明为文件且文件存在</span>
+    <span class="token keyword">const</span> rc <span class="token operator">=</span> <span class="token function">stat</span><span class="token punctuation">(</span>basePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// 判断结尾是不是一个 /</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>trailingSlash<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      
+     <span class="token comment">// 判断当前的basePath是否为一个文件 </span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>rc <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// File.</span>
+        
+     <span class="token comment">// isMain是否传入   </span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isMain<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          
+          <span class="token comment">//是否阻止去做超链接，根据我们的分析，这里不是 preserveSymlinks为false</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>preserveSymlinks<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            filename <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>basePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            
+            <span class="token comment">// toRealPath：我们的分析 basePath在这里为软连接，然后通过此方法，找到真实的文件路径。然后，我们进入下一节，看看这个toRealPath是如何实现的</span>
+            filename <span class="token operator">=</span> <span class="token function">toRealPath</span><span class="token punctuation">(</span>basePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>preserveSymlinksMain<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// For the main module, we use the preserveSymlinksMain flag instead</span>
+          <span class="token comment">// mainly for backward compatibility, as the preserveSymlinks flag</span>
+          <span class="token comment">// historically has not applied to the main module.  Most likely this</span>
+          <span class="token comment">// was intended to keep .bin/ binaries working, as following those</span>
+          <span class="token comment">// symlinks is usually required for the imports in the corresponding</span>
+          <span class="token comment">// files to resolve; that said, in some use cases following symlinks</span>
+          <span class="token comment">// causes bigger problems which is why the preserveSymlinksMain option</span>
+          <span class="token comment">// is needed.</span>
+          filename <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>basePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          filename <span class="token operator">=</span> <span class="token function">toRealPath</span><span class="token punctuation">(</span>basePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Try it with each of the extensions</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>exts <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span>
+          exts <span class="token operator">=</span> <span class="token function">ObjectKeys</span><span class="token punctuation">(</span>Module<span class="token punctuation">.</span>_extensions<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        filename <span class="token operator">=</span> <span class="token function">tryExtensions</span><span class="token punctuation">(</span>basePath<span class="token punctuation">,</span> exts<span class="token punctuation">,</span> isMain<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>filename <span class="token operator">&amp;&amp;</span> rc <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// Directory.</span>
+      <span class="token comment">// try it with each of the extensions at &quot;index&quot;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>exts <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span>
+        exts <span class="token operator">=</span> <span class="token function">ObjectKeys</span><span class="token punctuation">(</span>Module<span class="token punctuation">.</span>_extensions<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      filename <span class="token operator">=</span> <span class="token function">tryPackage</span><span class="token punctuation">(</span>basePath<span class="token punctuation">,</span> exts<span class="token punctuation">,</span> isMain<span class="token punctuation">,</span> request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      Module<span class="token punctuation">.</span>_pathCache<span class="token punctuation">[</span>cacheKey<span class="token punctuation">]</span> <span class="token operator">=</span> filename<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> filename<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><p><strong>4-15 fs模块toRealPath源码深入解析</strong></p> <p>我们到toRealPath方法后，webStorm的node调试工具，点击继续 Step Into到该方法中，代码如下：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token comment">// 通过代码，我们知道toRealPath的方法实现，正如上面的逻辑图显示的，使用的是 fs.realpathSync这个模块。</span>
+<span class="token keyword">function</span> <span class="token function">toRealPath</span><span class="token punctuation">(</span><span class="token parameter">requestPath</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+  <span class="token comment">// 该方法传入两个参数，一个路径地址 requestPath，以及一个options</span>
+  <span class="token comment">// realpathCache为一个chche，表示的是当前已经做过路径判断的所有路径缓存，绝大多数的key值与value值是一样的，并没有软链接，但是也存在少量的有软连接的：key与value值不同</span>
+  <span class="token keyword">return</span> fs<span class="token punctuation">.</span><span class="token function">realpathSync</span><span class="token punctuation">(</span>requestPath<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>internalFS<span class="token punctuation">.</span>realpathCacheKey<span class="token punctuation">]</span><span class="token operator">:</span> realpathCache
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>同样的，我们在进去toRealPath这个方法，看到fs.realpathSync实现之前，我们先从老师哪里有拿到逻辑图，并根据图进行分析学习该代码里面的逻辑：</p> <p><img src="https://cdn.jsdelivr.net/gh/liugezhou/image@master/imooc-course/2-13.21kw7t7x45pc.webp" alt="2-13"></p> <p>然后我们继续 Step Into到fs.realpathSync这个方法中，源码如下：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// options 为Symbol</span>
+<span class="token keyword">function</span> <span class="token function">realpathSync</span><span class="token punctuation">(</span><span class="token parameter">p<span class="token punctuation">,</span> options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>options<span class="token punctuation">)</span>
+    options <span class="token operator">=</span> emptyObj<span class="token punctuation">;</span>
+  <span class="token keyword">else</span>
+    options <span class="token operator">=</span> <span class="token function">getOptions</span><span class="token punctuation">(</span>options<span class="token punctuation">,</span> emptyObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  p <span class="token operator">=</span> <span class="token function">toPathIfFileURL</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">// 如果不是string格式的，进行格式转换</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> p <span class="token operator">!==</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p <span class="token operator">+=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token comment">//判断该路径是否为有效路径</span>
+  <span class="token function">validatePath</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">//pathModule 与我们直接引用的path模块没有区别：相对路径转为绝对路径</span>
+  p <span class="token operator">=</span> pathModule<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// cache为一个map对象</span>
+  <span class="token keyword">const</span> cache <span class="token operator">=</span> options<span class="token punctuation">[</span>realpathCacheKey<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">// 查找缓存</span>
+  <span class="token keyword">const</span> maybeCachedResult <span class="token operator">=</span> cache <span class="token operator">&amp;&amp;</span> cache<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">// 是否查到了缓存，如果查到直接返回，如果没有查到，继续向后</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>maybeCachedResult<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> maybeCachedResult<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 定义所有软连接的缓存，ObjectCreate(null)创建的对象没有原型链，好处为它是一个纯粹的对象，节约内存空间</span>
+  <span class="token keyword">const</span> seenLinks <span class="token operator">=</span> <span class="token function">ObjectCreate</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> knownHard <span class="token operator">=</span> <span class="token function">ObjectCreate</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">//将传入的path保存下来，做了一个缓存，这里的p相当于缓存中的key(若是软连接，则为软连接路径)，original相当于value(实际路径)，这么做的原因为：这里的p我们后面可能会发生改变</span>
+  <span class="token keyword">const</span> original <span class="token operator">=</span> p<span class="token punctuation">;</span>
+
+  
+  <span class="token comment">// 然后下面代码，进入到上图流程图中的路径是否存在/这个流程</span>
+  
+  
+  <span class="token comment">// Current character position in p</span>
+  <span class="token keyword">let</span> pos<span class="token punctuation">;</span>
+  <span class="token comment">// The partial path so far, including a trailing slash if any</span>
+  <span class="token keyword">let</span> current<span class="token punctuation">;</span>
+  <span class="token comment">// The partial path without a trailing slash (except when pointing at a root)</span>
+  <span class="token keyword">let</span> base<span class="token punctuation">;</span>
+  <span class="token comment">// The partial path scanned in the previous round, with slash</span>
+  <span class="token keyword">let</span> previous<span class="token punctuation">;</span>
+
+  <span class="token comment">// Skip over roots</span>
+  <span class="token comment">// 找到p中的根路径</span>
+  current <span class="token operator">=</span> base <span class="token operator">=</span> <span class="token function">splitRoot</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  pos <span class="token operator">=</span> current<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+
+  <span class="token comment">// On windows, check that the root exists. On unix there is no need.</span>
+  <span class="token comment">// 这里是windows系统的逻辑，我们是mac的，所以可以先跳过</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>isWindows <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>knownHard<span class="token punctuation">[</span>base<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> ctx <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">path</span><span class="token operator">:</span> base <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    binding<span class="token punctuation">.</span><span class="token function">lstat</span><span class="token punctuation">(</span>pathModule<span class="token punctuation">.</span><span class="token function">toNamespacedPath</span><span class="token punctuation">(</span>base<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">handleErrorFromBinding</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    knownHard<span class="token punctuation">[</span>base<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Walk down the path, swapping out linked path parts for their real</span>
+  <span class="token comment">// values</span>
+  <span class="token comment">// NB: p.length changes.</span>
+  <span class="token comment">// 然后开始循环 由上文得知，我们的pos长度为1，p的长度为传入的path的长度</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>pos <span class="token operator">&lt;</span> p<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// find the next part</span>
+    <span class="token comment">// nextPart这里调用的就是p.indexOf('/',pos),这个方法举例如下：</span>
+    <span class="token comment">// &quot;/xxx/yyy&quot;.indexOf('/')  =&gt; 0  这里我们找到的是第一个“/”的位置，如果我们想找第二个“/”位置</span>
+    <span class="token comment">// &quot;/xxx/yyy&quot;.indexOf('/',1) =&gt; 4,这里的1指的是跳过第一个元素，从第二个元素开始寻找</span>
+    <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">nextPart</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> pos<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    previous <span class="token operator">=</span> current<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> last <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>pos<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      current <span class="token operator">+=</span> last<span class="token punctuation">;</span>
+      base <span class="token operator">=</span> previous <span class="token operator">+</span> last<span class="token punctuation">;</span>
+      pos <span class="token operator">=</span> p<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      current <span class="token operator">+=</span> p<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>pos<span class="token punctuation">,</span> result <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      base <span class="token operator">=</span> previous <span class="token operator">+</span> p<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>pos<span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      pos <span class="token operator">=</span> result <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    
+    <span class="token comment">// 判断一下在cahe中是否存在</span>
+    <span class="token comment">// Continue if not a symlink, break if a pipe/socket</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>knownHard<span class="token punctuation">[</span>base<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">(</span>cache <span class="token operator">&amp;&amp;</span> cache<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>base<span class="token punctuation">)</span> <span class="token operator">===</span> base<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      
+      <span class="token comment">// 判断是否为一个file</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isFileType</span><span class="token punctuation">(</span>statValues<span class="token punctuation">,</span> <span class="token constant">S_IFIFO</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+          <span class="token function">isFileType</span><span class="token punctuation">(</span>statValues<span class="token punctuation">,</span> <span class="token constant">S_IFSOCK</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">continue</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> resolvedLink<span class="token punctuation">;</span>
+    
+    <span class="token comment">// 判断是不是软链接，从缓存中去拿</span>
+    <span class="token keyword">const</span> maybeCachedResolved <span class="token operator">=</span> cache <span class="token operator">&amp;&amp;</span> cache<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>base<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>maybeCachedResolved<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      resolvedLink <span class="token operator">=</span> maybeCachedResolved<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Use stats array directly to avoid creating an fs.Stats instance just</span>
+      <span class="token comment">// for our internal use.</span>
+
+      <span class="token comment">// 没有拿到，然后做处理</span>
+      <span class="token keyword">const</span> baseLong <span class="token operator">=</span> pathModule<span class="token punctuation">.</span><span class="token function">toNamespacedPath</span><span class="token punctuation">(</span>base<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> ctx <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">path</span><span class="token operator">:</span> base <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      
+      <span class="token comment">// stats可以打印出 文件在操作系统下的各种信息/ dev_t:文件的设备编号 ino_t:文件在此设备的唯一标识</span>
+      <span class="token keyword">const</span> stats <span class="token operator">=</span> binding<span class="token punctuation">.</span><span class="token function">lstat</span><span class="token punctuation">(</span>baseLong<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">handleErrorFromBinding</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 判断是否为一个软连接</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isFileType</span><span class="token punctuation">(</span>stats<span class="token punctuation">,</span> <span class="token constant">S_IFLNK</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+        <span class="token comment">// 如果不是软连接，将判断过的路径放入到 knowHard当中</span>
+        knownHard<span class="token punctuation">[</span>base<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>cache<span class="token punctuation">)</span> cache<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>base<span class="token punctuation">,</span> base<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">continue</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// 判断到该路径是一个软连接，然后继续执行下面的代码</span>
+      <span class="token comment">// Read the link if it wasn't read before</span>
+      <span class="token comment">// dev/ino always return 0 on windows, so skip the check.</span>
+      <span class="token comment">//linkTarget 软连接实际的路径地址</span>
+      <span class="token keyword">let</span> linkTarget <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+      <span class="token keyword">let</span> id<span class="token punctuation">;</span>
+      
+      <span class="token comment">// 判断是否为window操作系统</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isWindows<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 拿到stat的0号元素，即我们上面注释提到的文件设备编号</span>
+        <span class="token keyword">const</span> dev <span class="token operator">=</span> stats<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 拿到stat的7号元素，即我们上面注释提到的文件唯一标识</span>
+        
+        <span class="token comment">//拿到这两个是想生成一个唯一键：这个文件在当下PC系统下的唯一键</span>
+        <span class="token keyword">const</span> ino <span class="token operator">=</span> stats<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        id <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>dev<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>ino<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// 通过这两个唯一键生成的唯一键作为 seenLinks的唯一键</span>
+        <span class="token comment">// 下面代码为在seenLinks中查找是否有这个id，如果有就直接拿出来</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>seenLinks<span class="token punctuation">[</span>id<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          linkTarget <span class="token operator">=</span> seenLinks<span class="token punctuation">[</span>id<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      
+      <span class="token comment">// 没有这个软连接的实际路径地址</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>linkTarget <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> ctx <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">path</span><span class="token operator">:</span> base <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        binding<span class="token punctuation">.</span><span class="token function">stat</span><span class="token punctuation">(</span>baseLong<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">handleErrorFromBinding</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 拿到软连接的实际路径</span>
+        linkTarget <span class="token operator">=</span> binding<span class="token punctuation">.</span><span class="token function">readlink</span><span class="token punctuation">(</span>baseLong<span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">handleErrorFromBinding</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      resolvedLink <span class="token operator">=</span> pathModule<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>previous<span class="token punctuation">,</span> linkTarget<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>cache<span class="token punctuation">)</span> cache<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>base<span class="token punctuation">,</span> resolvedLink<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isWindows<span class="token punctuation">)</span> seenLinks<span class="token punctuation">[</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> linkTarget<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Resolve the link, then start over</span>
+    <span class="token comment">// 将path真实路径重新生成</span>
+    p <span class="token operator">=</span> pathModule<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>resolvedLink<span class="token punctuation">,</span> p<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>pos<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// Skip over roots</span>
+    current <span class="token operator">=</span> base <span class="token operator">=</span> <span class="token function">splitRoot</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pos <span class="token operator">=</span> current<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+
+    <span class="token comment">// On windows, check that the root exists. On unix there is no need.</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isWindows <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>knownHard<span class="token punctuation">[</span>base<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> ctx <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">path</span><span class="token operator">:</span> base <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      binding<span class="token punctuation">.</span><span class="token function">lstat</span><span class="token punctuation">(</span>pathModule<span class="token punctuation">.</span><span class="token function">toNamespacedPath</span><span class="token punctuation">(</span>base<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">handleErrorFromBinding</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      knownHard<span class="token punctuation">[</span>base<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>cache<span class="token punctuation">)</span> cache<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>original<span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token function">encodeRealpathResult</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><strong>4-16 讲一个高难度的正则表达式（想挑战的点进来）</strong></p> <div class="language- extra-class"><pre class="language-text"><code>trailingSlash = /(?:^|\/)\.?\.$/.test(request);
+
+
+console.log(/(?:^|\/)\.?\.$/.test('a'))    --&gt; false
+console.log(/(?:^|\/)\.?\.$/.test('..'))    --&gt; true
+console.log(/(?:^|\/)\.?\.$/.test('/..'))    --&gt; true
+console.log(/(?:^|\/)\.?\.$/.test('/Users'))    --&gt; false
+</code></pre></div><p>'\'  转译字符</p> <p>在正则表达式中  ‘.‘ 是有含义的，表示匹配任意一个字符：
+const str = 'a';
+console.log(a.match(/./))  --&gt; ['a', index:0, input:'a', groups:undefined]</p> <p>因此在正则表达式中要匹配 . 的话，需要加一个 反斜杠 ‘\’，因此‘.’ 匹配的就是一个点
+console.log(a.match(/./))  --&gt; null</p> <ul><li>'?':表示匹配0个或1个字符</li> <li>'$':表示最后的匹配样式</li> <li>():表示需要返回匹配结果，分组</li> <li>(?:  ) 表示非匹配分组,不把()中分组的内容显示出来</li> <li>^:表示非的符号：[!.]表示的是匹配没有. 符号的，需要加[]，但是上文的正则没有[]，上文表示的是匹配一个空格，</li> <li>'|' : 或</li></ul> <p><strong>4-17 大招：如何快速拿到面试“一血”</strong></p> <p><strong>简历简介</strong>
+简历中简介部分至关重要，因为它位于简历的第一屏，是面试官最容易关注的部分，所以我们应该在简介部分充分突出我们的个人特长和优势</p> <p><strong>认真学完本章内容后应该怎么修改简历？</strong></p> <ul><li>熟悉yargs脚手架开发框架</li> <li>熟悉多Package管理工具lerna的使用方法和使用原理</li> <li>深入理解Node.js模块路径解析流程</li></ul> <p><strong>面试官问起细节后如何回答？</strong></p> <ul><li>如何通过yargs开发一个脚手架？
+答：比如vue-cli的脚手架为：vue create myProjectName</li></ul> <ol><li><p>脚手架的构成一般由三个部分构成：
+第一个部分就是： 主命令，也就是bin，它是在packag.json中配置的，通过npm link 进行本地安装
+第二个部分 ：command：命令
+第三个部分：options 参数
+然后需要的一点是主命令bin的配置指向的主文件中，需要在文件顶部加上  #!/usr/bin/env node,就是说在环境变量中找到node命令来执行。</p></li> <li><p>脚手架的初始化流程
+第一步：首先是直接调用Yargs的构造函数，直接去生成一个脚手架</p></li></ol> <p>第二步：会调用一系列的Yargs提供的常用方法，对脚手架功能进行一个增强。
+比如 yargs.usage(用法)、
+yargs.options(注册一些脚手架参数熟悉)、
+可以调用yargs.group(来对脚手架参数熟悉进行分组)、
+yargs.fail(对脚手架异常进行监听)，
+还有包括yargs尾部结语的设置yargs.elipogue()、
+脚手架窗口设置yargs.wrap()
+以及yargs.decomandrecommed(至少输入一个参数)
+以及yargs.recommedCommands()推荐命令的提示等</p> <p>第三步：需要对脚手架的参数进行一些解析：hideBin(process.argv),其实也就是直接取出从第三个开始的参数.调用的时候直接 yargs.argv
+还有一种解析方式就是通过yargs.parse(argv,options)的方法</p> <p>第四步：当脚手架的参数解析完成之后，我们要进行命令注册
+命令注册我们使用的是yargs.command()方法。
+command的注册方式有两种：第一种是一次传参(command,describe,builder,handler),还有一种方式就是传入一个对象，对象属性与第一种方式传入的相同。</p> <ul><li>熟悉多Package管理工具lerna的使用方法和使用原理
+答：首先lerna是基于一个 git + npm的多package，也就是多包的项目管理工具，像一些开源的大型库：vue-vcli/create-react-app/babel等都是基于lerna进行多包管理的。他的作用就是降低包的管理操作成本，提高开发效率。像包的安装、依赖的添加、依赖的解除以及包的发布、打标签等功能。</li></ul> <p>实现原理：
+首先就是通过 import-local这个库优先调用lerna的本地命令，
+然后通过yargs生成一个脚手架、生成脚手架后生成一些全局参数、然后注册命令，通过yargs.parse方法进行参数解析。
+需要注意的是lerna的命令注册过程中，需要传入builder以及handler两个方法，builder命令用于注册命令专属的options，而handelr用来处理命令的业务逻辑。
+有一点非常值得学习的内容就是lerna它是通过配置本地依赖的方式进行开发的，具体写法就是在package.json的依赖当中通过file的格式书写，在lerna publish的时候再将该路径替换。</p> <ul><li>对Node.js模块路径解析流程的一个理解
+第一：首先Node.js模块的路径解析是通过 require.resolve()方法来实现的
+第二：这个resolve方法就是Module._resolveFileName()方法
+它的作用就是我们给定一个模块名称的时候，查找处这个模块的真实路径。</li></ul> <blockquote><p>然后，他的核心实现流程有三点：</p></blockquote> <ol><li>在执行流程中判断当前路径是否为内置模块，若是内置模块直接返回</li> <li>若不是内置模块，它会继续调用自身的Module._resolveLookupPaths()方法生成node_modules的所有可能路径</li> <li>最后再通过Module._findPath()去查询模块的真实路径。</li></ol> <blockquote><p>这里关于Module._findPaths()方法的核心实现流程有四步</p></blockquote> <ol><li>查询缓存(将request[模块名称]和paths[上面返回的所有可生成的node_modules路径]通过\x00合并成cacheKey)</li> <li>缓存查不到，就会遍历paths，将每一个path与request结合组成文件路径basePath</li> <li>然后判断这个basePath路径是否存在，如果存在会调用 fs.realPathSync()方法获取文件的真实路径，不存在就会继续遍历。</li> <li>同时，将文件的真实路径缓存到Module._pathcache()中。</li></ol> <p>这里关于fs.realPathsync()方法的核心流程有三点：</p> <ol><li>仍然是查询缓存，缓存的key就是我们的path，即basePath，</li> <li>如果这个key没有找到，就会将这个key从左到右开始遍历，通过/进行循环遍历，拆分路径，然后判断这个路径是否为软链接，如果是软链接，就去查询它的真实路径，并生成新的path路径，这个新的path路径继续传入这个遍历函数，继续往后遍历，(这里有一个细节需要注意的是：遍历过程中生成的子路径base会缓存在knowHard和ache中，避免重复查询)。</li> <li>遍历完成后，就会得到模块的真实路径，并且将原始路径，也就是我们说的软连接路径作为key值，将真实值作为值，保存在缓存中</li></ol> <p>在require中还有一个方法是 require.resolve.paths()方法，这个方法的作用是用于获取所有node_modules可能存在的路径，他的核心内容就是Module._resolveLookupPaths()</p> <p>Module._resolveLookupPaths()的实现原理有两点
+第一点，如果是 /路径，就在后面加入 node_modules
+第二点，将路径从后往前遍历，如果查询到 / ，就拆分路径，在后面加上node_modules,一直遍历到查找不到 /路径，就会返回这个paths数组。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/liugezhou/daydayup/edit/main//docs/web/02.md" target="_blank" rel="noopener noreferrer">错误反馈</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/01.html" class="prev">
+        01-需求分析与架构设计
+      </a></span> <span class="next"><a href="/web/03.html">
+        03-脚手架核心流程开发
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.4690e35c.js" defer></script><script src="/assets/js/2.505fbce2.js" defer></script><script src="/assets/js/1.8644e8ec.js" defer></script><script src="/assets/js/66.ad0a55cb.js" defer></script>
+  </body>
+</html>
